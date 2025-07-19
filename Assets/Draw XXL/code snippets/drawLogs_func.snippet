@@ -1,0 +1,217 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLogsAtGameObject_func</Title>
+			<Shortcut>drawLogsAtGameObject_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LogsAtGameObject in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLogsAtGameObject$name$()
+					{
+						GameObject gameObject = $end$;
+						bool drawNormalPrio = true;
+						bool drawWarningPrio = true;
+						bool drawErrorPrio = true;
+						int maxNumberOfDisplayedLogMessages = 10;
+						float forceTextSize = 0.0f;
+						Color textColor = default(Color);
+						Color boxColor = default(Color);
+						float width_ofBoxLines = 0.0f;
+						bool drawnBoxEncapsulatesChildren = true;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawLogs.LogsAtGameObject(gameObject, drawNormalPrio, drawWarningPrio, drawErrorPrio, maxNumberOfDisplayedLogMessages, forceTextSize, textColor, boxColor, width_ofBoxLines, drawnBoxEncapsulatesChildren, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LogsAtGameObject</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLogsAtGameObjectScreenspace_func</Title>
+			<Shortcut>drawLogsAtGameObjectScreenspace_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LogsAtGameObjectScreenspace in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLogsAtGameObjectScreenspace$name$()
+					{
+						GameObject gameObject = $end$;
+						bool drawNormalPrio = true;
+						bool drawWarningPrio = true;
+						bool drawErrorPrio = true;
+						bool clampIntoScreen = true;
+						int maxNumberOfDisplayedLogMessages = 10;
+						float relTextSizeScaling = 1.0f;
+						Color textColor = default(Color);
+						Color boxColor = default(Color);
+						float widthOfBoxLines_relToViewportHeight = 0.0f;
+						bool drawnBoxEncapsulatesChildren = true;
+						float durationInSec = 0.0f;
+						DrawLogs.LogsAtGameObjectScreenspace(gameObject, drawNormalPrio, drawWarningPrio, drawErrorPrio, clampIntoScreen, maxNumberOfDisplayedLogMessages, relTextSizeScaling, textColor, boxColor, widthOfBoxLines_relToViewportHeight, drawnBoxEncapsulatesChildren, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LogsAtGameObjectScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLogsAtGameObjectScreenspace_cam_func</Title>
+			<Shortcut>drawLogsAtGameObjectScreenspace_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LogsAtGameObjectScreenspace in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLogsAtGameObjectScreenspace$name$()
+					{
+						Camera cameraWhereToDraw = $end$;
+						GameObject gameObject = ;
+						bool drawNormalPrio = true;
+						bool drawWarningPrio = true;
+						bool drawErrorPrio = true;
+						bool clampIntoScreen = true;
+						int maxNumberOfDisplayedLogMessages = 10;
+						float relTextSizeScaling = 1.0f;
+						Color textColor = default(Color);
+						Color boxColor = default(Color);
+						float widthOfBoxLines_relToViewportHeight = 0.0f;
+						bool drawnBoxEncapsulatesChildren = true;
+						float durationInSec = 0.0f;
+						DrawLogs.LogsAtGameObjectScreenspace(cameraWhereToDraw, gameObject, drawNormalPrio, drawWarningPrio, drawErrorPrio, clampIntoScreen, maxNumberOfDisplayedLogMessages, relTextSizeScaling, textColor, boxColor, widthOfBoxLines_relToViewportHeight, drawnBoxEncapsulatesChildren, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LogsAtGameObjectScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLogsOnScreen_func</Title>
+			<Shortcut>drawLogsOnScreen_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LogsOnScreen in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLogsOnScreen$name$()
+					{
+						bool drawNormalPrio = true;$end$
+						bool drawWarningPrio = true;
+						bool drawErrorPrio = true;
+						int maxNumberOfDisplayedLogMessages = 10;
+						float textSize_relToViewportHeight = 0.014f;
+						Color textColor = default(Color);
+						bool stackTraceForNormalPrio = false;
+						bool stackTraceForWarningPrio = false;
+						bool stackTraceForErrorPrio = true;
+						float durationInSec = 0.0f;
+						DrawLogs.LogsOnScreen(drawNormalPrio, drawWarningPrio, drawErrorPrio, maxNumberOfDisplayedLogMessages, textSize_relToViewportHeight, textColor, stackTraceForNormalPrio, stackTraceForWarningPrio, stackTraceForErrorPrio, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LogsOnScreen</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLogsOnScreen_cam_func</Title>
+			<Shortcut>drawLogsOnScreen_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LogsOnScreen in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLogsOnScreen$name$()
+					{
+						Camera cameraWhereToDraw = $end$;
+						bool drawNormalPrio = true;
+						bool drawWarningPrio = true;
+						bool drawErrorPrio = true;
+						int maxNumberOfDisplayedLogMessages = 10;
+						float textSize_relToViewportHeight = 0.014f;
+						Color textColor = default(Color);
+						bool stackTraceForNormalPrio = false;
+						bool stackTraceForWarningPrio = false;
+						bool stackTraceForErrorPrio = true;
+						float durationInSec = 0.0f;
+						DrawLogs.LogsOnScreen(cameraWhereToDraw, drawNormalPrio, drawWarningPrio, drawErrorPrio, maxNumberOfDisplayedLogMessages, textSize_relToViewportHeight, textColor, stackTraceForNormalPrio, stackTraceForWarningPrio, stackTraceForErrorPrio, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LogsOnScreen</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

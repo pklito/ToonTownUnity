@@ -1,0 +1,4941 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_3Dpos_dirViaVec_func</Title>
+			<Shortcut>drawTextScreenspace_3Dpos_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 3D worldspace) (text direction defined via vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						string text = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(text, position_in3DWorldspace, color, size_relToViewportHeight, textDirection, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_3Dpos_dirViaVec_cam_func</Title>
+			<Shortcut>drawTextScreenspace_3Dpos_dirViaVec_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 3D worldspace) (text direction defined via vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(screenCamera, text, position_in3DWorldspace, color, size_relToViewportHeight, textDirection, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_2Dpos_dirViaVec_func</Title>
+			<Shortcut>drawTextScreenspace_2Dpos_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 2D screenspace) (text direction defined via vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						string text = $end$;
+						Vector2 position_in2DViewportSpace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(text, position_in2DViewportSpace, color, size_relToViewportHeight, textDirection, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_2Dpos_dirViaVec_cam_func</Title>
+			<Shortcut>drawTextScreenspace_2Dpos_dirViaVec_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 2D screenspace) (text direction defined via vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 position_in2DViewportSpace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(screenCamera, text, position_in2DViewportSpace, color, size_relToViewportHeight, textDirection, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_3Dpos_dirViaVec_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_3Dpos_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 3D worldspace) (text direction defined via vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						string text = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(text, position_in3DWorldspace, color, size_relToViewportHeight, textDirection, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_3Dpos_dirViaVec_cam_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_3Dpos_dirViaVec_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 3D worldspace) (text direction defined via vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(screenCamera, text, position_in3DWorldspace, color, size_relToViewportHeight, textDirection, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_2Dpos_dirViaVec_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_2Dpos_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 2D screenspace) (text direction defined via vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						string text = $end$;
+						Vector2 position_in2DViewportSpace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(text, position_in2DViewportSpace, color, size_relToViewportHeight, textDirection, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_2Dpos_dirViaVec_cam_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_2Dpos_dirViaVec_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 2D screenspace) (text direction defined via vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 position_in2DViewportSpace = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textDirection = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(screenCamera, text, position_in2DViewportSpace, color, size_relToViewportHeight, textDirection, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_3Dpos_dirViaAngle_func</Title>
+			<Shortcut>drawTextScreenspace_3Dpos_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 3D worldspace) (text direction defined via angle) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						string text = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(text, position_in3DWorldspace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_3Dpos_dirViaAngle_cam_func</Title>
+			<Shortcut>drawTextScreenspace_3Dpos_dirViaAngle_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 3D worldspace) (text direction defined via angle) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(screenCamera, text, position_in3DWorldspace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_2Dpos_dirViaAngle_func</Title>
+			<Shortcut>drawTextScreenspace_2Dpos_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 2D screenspace) (text direction defined via angle) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						string text = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(text, position_in2DViewportSpace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspace_2Dpos_dirViaAngle_cam_func</Title>
+			<Shortcut>drawTextScreenspace_2Dpos_dirViaAngle_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspace in the Unity Editor. (position defined in 2D screenspace) (text direction defined via angle) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspace(screenCamera, text, position_in2DViewportSpace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_3Dpos_dirViaAngle_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_3Dpos_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 3D worldspace) (text direction defined via angle) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						string text = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(text, position_in3DWorldspace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_3Dpos_dirViaAngle_cam_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_3Dpos_dirViaAngle_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 3D worldspace) (text direction defined via angle) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(screenCamera, text, position_in3DWorldspace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_2Dpos_dirViaAngle_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_2Dpos_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 2D screenspace) (text direction defined via angle) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						string text = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(text, position_in2DViewportSpace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextScreenspaceFramed_2Dpos_dirViaAngle_cam_func</Title>
+			<Shortcut>drawTextScreenspaceFramed_2Dpos_dirViaAngle_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextScreenspaceFramed in the Unity Editor. (position defined in 2D screenspace) (text direction defined via angle) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextScreenspaceFramed$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float zRotationDegCC = 0.0f;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth_relToViewportWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth = 0.0f;
+						bool autoLineBreakAtViewportBorder = true;
+						float autoLineBreakWidth_relToViewportWidth = 0.0f;
+						bool autoFlipTextToPreventUpsideDown = true;
+						float durationInSec = 0.0f;
+						DrawText.WriteScreenspaceFramed(screenCamera, text, position_in2DViewportSpace, color, size_relToViewportHeight, zRotationDegCC, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth_relToViewportWidth, forceRestrictTextBlockSizeToThisMaxTextWidth_relToViewportWidth, autoLineBreakAtViewportBorder, autoLineBreakWidth_relToViewportWidth, autoFlipTextToPreventUpsideDown, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextScreenspaceFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText2D_dirViaVec_func</Title>
+			<Shortcut>drawText2D_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text2D in the Unity Editor. (text direction defined via vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText2D$name$()
+					{
+						string text = $end$;
+						Vector2 position = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Vector2 textDirection = default(Vector2);
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float custom_zPos = float.PositiveInfinity;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write2D(text, position, color, size, textDirection, textAnchor, custom_zPos, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText2DFramed_dirViaVec_func</Title>
+			<Shortcut>drawText2DFramed_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text2DFramed in the Unity Editor. (text direction defined via vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText2DFramed$name$()
+					{
+						string text = $end$;
+						Vector2 position = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Vector2 textDirection = default(Vector2);
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float custom_zPos = float.PositiveInfinity;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write2DFramed(text, position, color, size, textDirection, textAnchor, custom_zPos, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text2DFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText2D_dirViaAngle_func</Title>
+			<Shortcut>drawText2D_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text2D in the Unity Editor. (text direction defined via angle)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText2D$name$()
+					{
+						string text = $end$;
+						Vector2 position = ;
+						Color color = ;
+						float size = ;
+						float zRotationDegCC = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float custom_zPos = float.PositiveInfinity;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write2D(text, position, color, size, zRotationDegCC, textAnchor, custom_zPos, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText2DFramed_dirViaAngle_func</Title>
+			<Shortcut>drawText2DFramed_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text2DFramed in the Unity Editor. (text direction defined via angle)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText2DFramed$name$()
+					{
+						string text = $end$;
+						Vector2 position = ;
+						Color color = ;
+						float size = ;
+						float zRotationDegCC = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float custom_zPos = float.PositiveInfinity;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write2DFramed(text, position, color, size, zRotationDegCC, textAnchor, custom_zPos, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text2DFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText_dirViaQuat_func</Title>
+			<Shortcut>drawText_dirViaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text in the Unity Editor. (text direction defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText$name$()
+					{
+						string text = $end$;
+						Vector3 position = ;
+						Color color = ;
+						float size = ;
+						Quaternion rotation = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write(text, position, color, size, rotation, textAnchor, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextFramed_dirViaQuat_func</Title>
+			<Shortcut>drawTextFramed_dirViaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextFramed in the Unity Editor. (text direction defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextFramed$name$()
+					{
+						string text = $end$;
+						Vector3 position = ;
+						Color color = ;
+						float size = ;
+						Quaternion rotation = ;
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteFramed(text, position, color, size, rotation, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawText_dirViaVec_func</Title>
+			<Shortcut>drawText_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Text in the Unity Editor. (text direction defined via vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawText$name$()
+					{
+						string text = $end$;
+						Vector3 position = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Vector3 textDirection = default(Vector3);
+						Vector3 textUp = default(Vector3);
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.Write(text, position, color, size, textDirection, textUp, textAnchor, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Text</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextFramed_dirViaVec_func</Title>
+			<Shortcut>drawTextFramed_dirViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextFramed in the Unity Editor. (text direction defined via vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextFramed$name$()
+					{
+						string text = $end$;
+						Vector3 position = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Vector3 textDirection = default(Vector3);
+						Vector3 textUp = default(Vector3);
+						DrawText.TextAnchorDXXL textAnchor = DrawText.TextAnchorDXXL.LowerLeftOfFirstLine;
+						DrawBasics.LineStyle enclosingBoxLineStyle = DrawBasics.LineStyle.solid;
+						float enclosingBox_lineWidth_relToTextSize = 0.0f;
+						float enclosingBox_paddingSize_relToTextSize = 0.0f;
+						float forceTextBlockEnlargementToThisMinWidth = 0.0f;
+						float forceRestrictTextBlockSizeToThisMaxTextWidth = 0.0f;
+						float autoLineBreakWidth = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteFramed(text, position, color, size, textDirection, textUp, textAnchor, enclosingBoxLineStyle, enclosingBox_lineWidth_relToTextSize, enclosingBox_paddingSize_relToTextSize, forceTextBlockEnlargementToThisMinWidth, forceRestrictTextBlockSizeToThisMaxTextWidth, autoLineBreakWidth, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextFramed</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_viaStartPos_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_viaStartPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (defined via text start position, instead of circle center position) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						string text = $end$;
+						Vector2 textStartPos = ;
+						Vector2 circleCenterPosition = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(text, textStartPos, circleCenterPosition, color, size_relToViewportHeight, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_viaStartPos_cam_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_viaStartPos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (defined via text start position, instead of circle center position) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 textStartPos = ;
+						Vector2 circleCenterPosition = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(screenCamera, text, textStartPos, circleCenterPosition, color, size_relToViewportHeight, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_dirViaVecUp_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_dirViaVecUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (text initial upDirection defined via vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						string text = $end$;
+						Vector2 circleCenterPosition = ;
+						float radius_relToViewportHeight = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textsInitialUp = ;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(text, circleCenterPosition, radius_relToViewportHeight, color, size_relToViewportHeight, textsInitialUp, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_dirViaVecUp_cam_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_dirViaVecUp_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (text initial upDirection defined via vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 circleCenterPosition = ;
+						float radius_relToViewportHeight = ;
+						Color color = ;
+						float size_relToViewportHeight = ;
+						Vector2 textsInitialUp = ;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(screenCamera, text, circleCenterPosition, radius_relToViewportHeight, color, size_relToViewportHeight, textsInitialUp, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_dirViaAngle_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (initial text direction defined via angle) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						string text = $end$;
+						Vector2 circleCenterPosition = ;
+						float radius_relToViewportHeight = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float initialTextDirection_as_zRotationDegCCfromCamUp = 0.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(text, circleCenterPosition, radius_relToViewportHeight, color, size_relToViewportHeight, initialTextDirection_as_zRotationDegCCfromCamUp, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircleScreenspace_dirViaAngle_cam_func</Title>
+			<Shortcut>drawTextOnCircleScreenspace_dirViaAngle_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircleScreenspace in the Unity Editor. (initial text direction defined via angle) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircleScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						string text = ;
+						Vector2 circleCenterPosition = ;
+						float radius_relToViewportHeight = ;
+						Color color = default(Color);
+						float size_relToViewportHeight = 0.025f;
+						float initialTextDirection_as_zRotationDegCCfromCamUp = 0.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						float durationInSec = 0.0f;
+						DrawText.WriteOnCircleScreenspace(screenCamera, text, circleCenterPosition, radius_relToViewportHeight, color, size_relToViewportHeight, initialTextDirection_as_zRotationDegCCfromCamUp, textAnchor, autoLineBreakAngleDeg, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircleScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle2D_viaStartPos_func</Title>
+			<Shortcut>drawTextOnCircle2D_viaStartPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle2D in the Unity Editor. (defined via text start position, instead of circle center position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle2D$name$()
+					{
+						string text = $end$;
+						Vector2 textStartPos = ;
+						Vector2 circleCenterPosition = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						float custom_zPos = float.PositiveInfinity;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle2D(text, textStartPos, circleCenterPosition, color, size, custom_zPos, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle2D_dirViaVecUp_func</Title>
+			<Shortcut>drawTextOnCircle2D_dirViaVecUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle2D in the Unity Editor. (text initial upDirection defined via vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle2D$name$()
+					{
+						string text = $end$;
+						Vector2 circleCenterPosition = ;
+						float radius = ;
+						Color color = ;
+						float size = ;
+						Vector2 textsInitialUp = ;
+						float custom_zPos = float.PositiveInfinity;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle2D(text, circleCenterPosition, radius, color, size, textsInitialUp, custom_zPos, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle2D_dirViaAngle_func</Title>
+			<Shortcut>drawTextOnCircle2D_dirViaAngle_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle2D in the Unity Editor. (initial text direction defined via angle)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle2D$name$()
+					{
+						string text = $end$;
+						Vector2 circleCenterPosition = ;
+						float radius = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						float initialTextDirection_as_zRotationDegCCfromV3Right = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle2D(text, circleCenterPosition, radius, color, size, initialTextDirection_as_zRotationDegCCfromV3Right, custom_zPos, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle_viaStartPos_func</Title>
+			<Shortcut>drawTextOnCircle_viaStartPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle in the Unity Editor. (defined via text start position, instead of circle center position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle$name$()
+					{
+						string text = $end$;
+						Vector3 textStartPos = ;
+						Vector3 circleCenterPosition = ;
+						Vector3 turnAxis_direction = default(Vector3);
+						Color color = default(Color);
+						float size = 0.1f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle(text, textStartPos, circleCenterPosition, turnAxis_direction, color, size, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle_viaQuat_func</Title>
+			<Shortcut>drawTextOnCircle_viaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle in the Unity Editor. (orientation defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle$name$()
+					{
+						string text = $end$;
+						Vector3 circleCenterPosition = ;
+						float radius = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Quaternion orientation = default(Quaternion);
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle(text, circleCenterPosition, radius, color, size, orientation, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTextOnCircle_viaVec_func</Title>
+			<Shortcut>drawTextOnCircle_viaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TextOnCircle in the Unity Editor. (orientation defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTextOnCircle$name$()
+					{
+						string text = $end$;
+						Vector3 circleCenterPosition = ;
+						float radius = ;
+						Color color = default(Color);
+						float size = 0.1f;
+						Vector3 textsInitialDir = default(Vector3);
+						Vector3 textsInitialUp = default(Vector3);
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float autoLineBreakAngleDeg = 0.0f;
+						bool autoFlipToPreventMirrorInverted = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteOnCircle(text, circleCenterPosition, radius, color, size, textsInitialDir, textsInitialUp, textAnchor, autoLineBreakAngleDeg, autoFlipToPreventMirrorInverted, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TextOnCircle</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_func</Title>
+			<Shortcut>drawArrayOfBool_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						bool[] boolArray = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(boolArray, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_in2D_func</Title>
+			<Shortcut>drawArrayOfBool_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						bool[] boolArray = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(boolArray, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfBool_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						bool[] boolArray = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(boolArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfBool_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						Camera screenCamera = $end$;
+						bool[] boolArray = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, boolArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfBool_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						bool[] boolArray = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(boolArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfBool_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfBool_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfBool in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfBool$name$()
+					{
+						Camera screenCamera = $end$;
+						bool[] boolArray = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, boolArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_func</Title>
+			<Shortcut>drawListOfBool_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						List<bool> boolList = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(boolList, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_in2D_func</Title>
+			<Shortcut>drawListOfBool_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						List<bool> boolList = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(boolList, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfBool_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						List<bool> boolList = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(boolList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfBool_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						Camera screenCamera = $end$;
+						List<bool> boolList = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, boolList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfBool_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						List<bool> boolList = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(boolList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfBool_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfBool_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfBool in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfBool$name$()
+					{
+						Camera screenCamera = $end$;
+						List<bool> boolList = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, boolList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfBool</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_func</Title>
+			<Shortcut>drawArrayOfInt_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						int[] intArray = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(intArray, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_in2D_func</Title>
+			<Shortcut>drawArrayOfInt_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						int[] intArray = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(intArray, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfInt_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						int[] intArray = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(intArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfInt_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						Camera screenCamera = $end$;
+						int[] intArray = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, intArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfInt_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						int[] intArray = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(intArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfInt_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfInt_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfInt in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfInt$name$()
+					{
+						Camera screenCamera = $end$;
+						int[] intArray = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, intArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_func</Title>
+			<Shortcut>drawListOfInt_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						List<int> intList = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(intList, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_in2D_func</Title>
+			<Shortcut>drawListOfInt_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						List<int> intList = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(intList, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfInt_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						List<int> intList = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(intList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfInt_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						Camera screenCamera = $end$;
+						List<int> intList = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, intList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfInt_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						List<int> intList = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(intList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfInt_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfInt_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfInt in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfInt$name$()
+					{
+						Camera screenCamera = $end$;
+						List<int> intList = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, intList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfInt</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_func</Title>
+			<Shortcut>drawArrayOfFloat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						float[] floatArray = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(floatArray, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_in2D_func</Title>
+			<Shortcut>drawArrayOfFloat_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						float[] floatArray = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(floatArray, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfFloat_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						float[] floatArray = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(floatArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfFloat_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						Camera screenCamera = $end$;
+						float[] floatArray = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, floatArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfFloat_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						float[] floatArray = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(floatArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfFloat_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfFloat_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfFloat in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfFloat$name$()
+					{
+						Camera screenCamera = $end$;
+						float[] floatArray = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, floatArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_func</Title>
+			<Shortcut>drawListOfFloat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						List<float> floatList = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(floatList, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_in2D_func</Title>
+			<Shortcut>drawListOfFloat_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						List<float> floatList = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(floatList, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfFloat_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						List<float> floatList = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(floatList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfFloat_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						Camera screenCamera = $end$;
+						List<float> floatList = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, floatList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfFloat_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						List<float> floatList = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(floatList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfFloat_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfFloat_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfFloat in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfFloat$name$()
+					{
+						Camera screenCamera = $end$;
+						List<float> floatList = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, floatList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfFloat</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_func</Title>
+			<Shortcut>drawArrayOfString_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						string[] stringArray = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(stringArray, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_in2D_func</Title>
+			<Shortcut>drawArrayOfString_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						string[] stringArray = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(stringArray, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfString_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						string[] stringArray = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(stringArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfString_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						Camera screenCamera = $end$;
+						string[] stringArray = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, stringArray, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfString_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						string[] stringArray = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(stringArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfString_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfString_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfString in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfString$name$()
+					{
+						Camera screenCamera = $end$;
+						string[] stringArray = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, stringArray, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_func</Title>
+			<Shortcut>drawListOfString_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						List<string> stringList = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(stringList, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_in2D_func</Title>
+			<Shortcut>drawListOfString_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						List<string> stringList = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(stringList, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfString_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						List<string> stringList = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(stringList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfString_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						Camera screenCamera = $end$;
+						List<string> stringList = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, stringList, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfString_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						List<string> stringList = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(stringList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfString_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfString_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfString in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfString$name$()
+					{
+						Camera screenCamera = $end$;
+						List<string> stringList = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, stringList, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_func</Title>
+			<Shortcut>drawArrayOfVector2_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Vector2[] vector2Array = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(vector2Array, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_in2D_func</Title>
+			<Shortcut>drawArrayOfVector2_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Vector2[] vector2Array = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(vector2Array, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfVector2_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Vector2[] vector2Array = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector2Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector2_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector2[] vector2Array = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector2Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfVector2_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Vector2[] vector2Array = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector2Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector2_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector2_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector2 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector2$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector2[] vector2Array = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector2Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_func</Title>
+			<Shortcut>drawListOfVector2_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						List<Vector2> vector2List = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(vector2List, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_in2D_func</Title>
+			<Shortcut>drawListOfVector2_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						List<Vector2> vector2List = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(vector2List, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfVector2_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						List<Vector2> vector2List = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector2List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector2_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector2> vector2List = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector2List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfVector2_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						List<Vector2> vector2List = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector2List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector2_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector2_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector2 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector2$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector2> vector2List = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector2List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector2</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_func</Title>
+			<Shortcut>drawArrayOfVector3_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Vector3[] vector3Array = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(vector3Array, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_in2D_func</Title>
+			<Shortcut>drawArrayOfVector3_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Vector3[] vector3Array = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(vector3Array, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfVector3_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Vector3[] vector3Array = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector3Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector3_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector3[] vector3Array = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector3Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfVector3_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Vector3[] vector3Array = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector3Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector3_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector3_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector3 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector3$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector3[] vector3Array = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector3Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_func</Title>
+			<Shortcut>drawListOfVector3_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						List<Vector3> vector3List = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(vector3List, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_in2D_func</Title>
+			<Shortcut>drawListOfVector3_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						List<Vector3> vector3List = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(vector3List, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfVector3_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						List<Vector3> vector3List = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector3List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector3_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector3> vector3List = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector3List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfVector3_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						List<Vector3> vector3List = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector3List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector3_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector3_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector3 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector3$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector3> vector3List = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector3List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector3</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_func</Title>
+			<Shortcut>drawArrayOfVector4_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Vector4[] vector4Array = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray(vector4Array, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_in2D_func</Title>
+			<Shortcut>drawArrayOfVector4_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Vector4[] vector4Array = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteArray2D(vector4Array, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_screenspace_3Dpos_func</Title>
+			<Shortcut>drawArrayOfVector4_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Vector4[] vector4Array = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector4Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector4_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector4[] vector4Array = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector4Array, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_screenspace_2Dpos_func</Title>
+			<Shortcut>drawArrayOfVector4_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Vector4[] vector4Array = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(vector4Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawArrayOfVector4_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawArrayOfVector4_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ArrayOfVector4 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawArrayOfVector4$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector4[] vector4Array = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteArrayScreenspace(screenCamera, vector4Array, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ArrayOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_func</Title>
+			<Shortcut>drawListOfVector4_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						List<Vector4> vector4List = $end$;
+						Vector3 position = default(Vector3);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						Quaternion rotation = default(Quaternion);
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList(vector4List, position, color, title, textSize, forceHeightOfWholeTableBox, rotation, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_in2D_func</Title>
+			<Shortcut>drawListOfVector4_in2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						List<Vector4> vector4List = $end$;
+						Vector2 position = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize = 0.05f;
+						float forceHeightOfWholeTableBox = 0.0f;
+						float custom_zPos = float.PositiveInfinity;
+						bool position_isTopLeft_notLowLeft = true;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawText.WriteList2D(vector4List, position, color, title, textSize, forceHeightOfWholeTableBox, custom_zPos, position_isTopLeft_notLowLeft, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_screenspace_3Dpos_func</Title>
+			<Shortcut>drawListOfVector4_screenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						List<Vector4> vector4List = $end$;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector4List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_screenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector4_screenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector4> vector4List = ;
+						Vector3 position_in3DWorldspace = ;
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector4List, position_in3DWorldspace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_screenspace_2Dpos_func</Title>
+			<Shortcut>drawListOfVector4_screenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						List<Vector4> vector4List = $end$;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(vector4List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawListOfVector4_screenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawListOfVector4_screenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ListOfVector4 in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawListOfVector4$name$()
+					{
+						Camera screenCamera = $end$;
+						List<Vector4> vector4List = ;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						Color color = default(Color);
+						string title = null;
+						float textSize_relToViewportHeight = 0.025f;
+						float forceHeightOfWholeTableBox_relToViewportHeight = 0.0f;
+						bool position_isTopLeft_notLowLeft = false;
+						float durationInSec = 0.0f;
+						DrawText.WriteListScreenspace(screenCamera, vector4List, position_in2DViewportSpace, color, title, textSize_relToViewportHeight, forceHeightOfWholeTableBox_relToViewportHeight, position_isTopLeft_notLowLeft, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ListOfVector4</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

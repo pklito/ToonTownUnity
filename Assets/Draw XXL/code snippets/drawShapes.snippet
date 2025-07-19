@@ -1,0 +1,4610 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRegularPolygon_rotViaQuat</Title>
+			<Shortcut>drawRegularPolygon_rotViaQuat</Shortcut>
+			<Description>Draw a RegularPolygon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					int corners_of_$name$ = $end$;
+					Vector3 centerPosition_of_$name$ = ;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.RegularPolygon(corners_of_$name$, centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RegularPolygon</ToolTip>
+					<Default>regularPolygon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRegularPolygon_rotViaVec</Title>
+			<Shortcut>drawRegularPolygon_rotViaVec</Shortcut>
+			<Description>Draw a RegularPolygon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					int corners_of_$name$ = $end$;
+					Vector3 centerPosition_of_$name$ = ;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insidePolygonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.RegularPolygon(corners_of_$name$, centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insidePolygonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RegularPolygon</ToolTip>
+					<Default>regularPolygon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTriangle_rotViaQuat</Title>
+			<Shortcut>drawTriangle_rotViaQuat</Shortcut>
+			<Description>Draw a Triangle in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Triangle(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Triangle</ToolTip>
+					<Default>triangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTriangle_rotViaVec</Title>
+			<Shortcut>drawTriangle_rotViaVec</Shortcut>
+			<Description>Draw a Triangle in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideTrianglePlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Triangle(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insideTrianglePlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Triangle</ToolTip>
+					<Default>triangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSquare_rotViaQuat</Title>
+			<Shortcut>drawSquare_rotViaQuat</Shortcut>
+			<Description>Draw a Square in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float sideLength_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Square(centerPosition_of_$name$, sideLength_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Square</ToolTip>
+					<Default>square</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSquare_rotViaVec</Title>
+			<Shortcut>drawSquare_rotViaVec</Shortcut>
+			<Description>Draw a Square in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float sideLength_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideSquarePlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Square(centerPosition_of_$name$, sideLength_of_$name$, color_of_$name$, normal_of_$name$, up_insideSquarePlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Square</ToolTip>
+					<Default>square</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPentagon_rotViaQuat</Title>
+			<Shortcut>drawPentagon_rotViaQuat</Shortcut>
+			<Description>Draw a Pentagon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pentagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pentagon</ToolTip>
+					<Default>pentagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPentagon_rotViaVec</Title>
+			<Shortcut>drawPentagon_rotViaVec</Shortcut>
+			<Description>Draw a Pentagon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insidePentagonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pentagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insidePentagonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pentagon</ToolTip>
+					<Default>pentagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawHexagon_rotViaQuat</Title>
+			<Shortcut>drawHexagon_rotViaQuat</Shortcut>
+			<Description>Draw a Hexagon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Hexagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Hexagon</ToolTip>
+					<Default>hexagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawHexagon_rotViaVec</Title>
+			<Shortcut>drawHexagon_rotViaVec</Shortcut>
+			<Description>Draw a Hexagon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideHexagonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Hexagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insideHexagonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Hexagon</ToolTip>
+					<Default>hexagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSeptagon_rotViaQuat</Title>
+			<Shortcut>drawSeptagon_rotViaQuat</Shortcut>
+			<Description>Draw a Septagon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Septagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Septagon</ToolTip>
+					<Default>septagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSeptagon_rotViaVec</Title>
+			<Shortcut>drawSeptagon_rotViaVec</Shortcut>
+			<Description>Draw a Septagon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideSeptagonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Septagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insideSeptagonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Septagon</ToolTip>
+					<Default>septagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOctagon_rotViaQuat</Title>
+			<Shortcut>drawOctagon_rotViaQuat</Shortcut>
+			<Description>Draw an Octagon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Octagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Octagon</ToolTip>
+					<Default>octagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOctagon_rotViaVec</Title>
+			<Shortcut>drawOctagon_rotViaVec</Shortcut>
+			<Description>Draw an Octagon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideOctagonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Octagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insideOctagonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Octagon</ToolTip>
+					<Default>octagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDecagon_rotViaQuat</Title>
+			<Shortcut>drawDecagon_rotViaQuat</Shortcut>
+			<Description>Draw a Decagon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Decagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Decagon</ToolTip>
+					<Default>decagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDecagon_rotViaVec</Title>
+			<Shortcut>drawDecagon_rotViaVec</Shortcut>
+			<Description>Draw a Decagon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float hullRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideDecagonPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Decagon(centerPosition_of_$name$, hullRadius_of_$name$, color_of_$name$, normal_of_$name$, up_insideDecagonPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Decagon</ToolTip>
+					<Default>decagon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircle_rotViaQuat</Title>
+			<Shortcut>drawCircle_rotViaQuat</Shortcut>
+			<Description>Draw a Circle in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float radius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Circle(centerPosition_of_$name$, radius_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Circle</ToolTip>
+					<Default>circle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircle_rotViaVec</Title>
+			<Shortcut>drawCircle_rotViaVec</Shortcut>
+			<Description>Draw a Circle in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideCirclePlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Circle(centerPosition_of_$name$, radius_of_$name$, color_of_$name$, normal_of_$name$, up_insideCirclePlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Circle</ToolTip>
+					<Default>circle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipse_rotViaQuat</Title>
+			<Shortcut>drawEllipse_rotViaQuat</Shortcut>
+			<Description>Draw an Ellipse in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float radiusSideward_of_$name$ = 0.25f;
+					float radiusUpward_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Ellipse(centerPosition_of_$name$, radiusSideward_of_$name$, radiusUpward_of_$name$, color_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ellipse</ToolTip>
+					<Default>ellipse</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipse_rotViaVec</Title>
+			<Shortcut>drawEllipse_rotViaVec</Shortcut>
+			<Description>Draw an Ellipse in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float radiusSideward_of_$name$ = ;
+					float radiusUpward_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideEllipsePlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Ellipse(centerPosition_of_$name$, radiusSideward_of_$name$, radiusUpward_of_$name$, color_of_$name$, normal_of_$name$, up_insideEllipsePlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ellipse</ToolTip>
+					<Default>ellipse</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawStar_rotViaQuat</Title>
+			<Shortcut>drawStar_rotViaQuat</Shortcut>
+			<Description>Draw a Star in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float outerRadius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					int corners_of_$name$ = 5;
+					float innerRadiusFactor_of_$name$ = 0.5f;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Star(centerPosition_of_$name$, outerRadius_of_$name$, color_of_$name$, corners_of_$name$, innerRadiusFactor_of_$name$, rotation_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Star</ToolTip>
+					<Default>star</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawStar_rotViaVec</Title>
+			<Shortcut>drawStar_rotViaVec</Shortcut>
+			<Description>Draw a Star in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float outerRadius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					int corners_of_$name$ = ;
+					float innerRadiusFactor_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideStarPlane_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Star(centerPosition_of_$name$, outerRadius_of_$name$, color_of_$name$, corners_of_$name$, innerRadiusFactor_of_$name$, normal_of_$name$, up_insideStarPlane_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Star</ToolTip>
+					<Default>star</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatCapsule_vecC1C2Pos</Title>
+			<Shortcut>drawFlatCapsule_vecC1C2Pos</Shortcut>
+			<Description>Draw a FlatCapsule in the Unity Editor. (capsule defined via position of circle1 and circle2)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 posOfCircle1_of_$name$ = $end$;
+					Vector3 posOfCircle2_of_$name$ = ;
+					float radius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Vector3 normal_of_$name$ = default(Vector3);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatCapsule(posOfCircle1_of_$name$, posOfCircle2_of_$name$, radius_of_$name$, color_of_$name$, normal_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatCapsule</ToolTip>
+					<Default>flatCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatCapsule_rotViaQuat</Title>
+			<Shortcut>drawFlatCapsule_rotViaQuat</Shortcut>
+			<Description>Draw a FlatCapsule in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float width_of_$name$ = 0.5f;
+					float height_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					CapsuleDirection2D direction_of_$name$ = CapsuleDirection2D.Vertical;
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatCapsule(centerPosition_of_$name$, width_of_$name$, height_of_$name$, color_of_$name$, rotation_of_$name$, direction_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatCapsule</ToolTip>
+					<Default>flatCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatCapsule_rotViaVec</Title>
+			<Shortcut>drawFlatCapsule_rotViaVec</Shortcut>
+			<Description>Draw a FlatCapsule in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					float width_of_$name$ = ;
+					float height_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 upAlongVert_insideCapsulePlane_of_$name$ = default(Vector3);
+					CapsuleDirection2D direction_of_$name$ = CapsuleDirection2D.Vertical;
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle outlineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatCapsule(centerPosition_of_$name$, width_of_$name$, height_of_$name$, color_of_$name$, normal_of_$name$, upAlongVert_insideCapsulePlane_of_$name$, direction_of_$name$, lineWidth_of_$name$, text_of_$name$, outlineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatCapsule</ToolTip>
+					<Default>flatCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPlane_tr</Title>
+			<Shortcut>drawPlane_tr</Shortcut>
+			<Description>Draw a Plane in the Unity Editor. (defined via transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform planeTransform_of_$name$ = $end$;
+					DrawShapes.PlaneNormalFromTransform normal_of_$name$ = DrawShapes.PlaneNormalFromTransform.up;
+					Vector3 planeAreaExtentionPosition_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float widthFactor_of_$name$ = 10.0f;
+					float lengthFactor_of_$name$ = 10.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float subSegments_signFlipsInterpretation_of_$name$ = 10.0f;
+					bool pointer_as_textAttachStyle_of_$name$ = false;
+					float anchorVisualizationSize_of_$name$ = 0.0f;
+					bool drawPlumbLine_fromExtentionPosition_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Plane(planeTransform_of_$name$, normal_of_$name$, planeAreaExtentionPosition_of_$name$, color_of_$name$, widthFactor_of_$name$, lengthFactor_of_$name$, linesWidth_of_$name$, text_of_$name$, subSegments_signFlipsInterpretation_of_$name$, pointer_as_textAttachStyle_of_$name$, anchorVisualizationSize_of_$name$, drawPlumbLine_fromExtentionPosition_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Plane</ToolTip>
+					<Default>plane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPlane_pl</Title>
+			<Shortcut>drawPlane_pl</Shortcut>
+			<Description>Draw a Plane in the Unity Editor. (defined via plane struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Plane plane_of_$name$ = $end$;
+					Vector3 drawPositionApproximately_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_of_$name$ = 10.0f;
+					float length_of_$name$ = 10.0f;
+					Vector3 forward_insidePlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float subSegments_signFlipsInterpretation_of_$name$ = 10.0f;
+					bool pointer_as_textAttachStyle_of_$name$ = false;
+					bool drawPlumbLine_fromApproximateDrawPosition_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Plane(plane_of_$name$, drawPositionApproximately_of_$name$, color_of_$name$, width_of_$name$, length_of_$name$, forward_insidePlane_of_$name$, linesWidth_of_$name$, text_of_$name$, subSegments_signFlipsInterpretation_of_$name$, pointer_as_textAttachStyle_of_$name$, drawPlumbLine_fromApproximateDrawPosition_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Plane</ToolTip>
+					<Default>plane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPlane_vec</Title>
+			<Shortcut>drawPlane_vec</Shortcut>
+			<Description>Draw a Plane in the Unity Editor. (defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 planeMountingPoint_of_$name$ = $end$;
+					Vector3 normal_of_$name$ = default(Vector3);
+					Vector3 planeAreaExtentionPosition_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float width_of_$name$ = 10.0f;
+					float length_of_$name$ = 10.0f;
+					Vector3 forward_insidePlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float subSegments_signFlipsInterpretation_of_$name$ = 10.0f;
+					bool pointer_as_textAttachStyle_of_$name$ = false;
+					float anchorVisualizationSize_of_$name$ = 0.0f;
+					bool drawPlumbLine_fromExtentionPosition_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Plane(planeMountingPoint_of_$name$, normal_of_$name$, planeAreaExtentionPosition_of_$name$, color_of_$name$, width_of_$name$, length_of_$name$, forward_insidePlane_of_$name$, linesWidth_of_$name$, text_of_$name$, subSegments_signFlipsInterpretation_of_$name$, pointer_as_textAttachStyle_of_$name$, anchorVisualizationSize_of_$name$, drawPlumbLine_fromExtentionPosition_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Plane</ToolTip>
+					<Default>plane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRhombusAroundCenter</Title>
+			<Shortcut>drawRhombusAroundCenter</Shortcut>
+			<Description>Draw a RhombusAroundCenter in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					Vector3 firstEdge_of_$name$ = ;
+					Vector3 secondEdge_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int subSegments_of_$name$ = 10;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.RhombusAroundCenter(centerPosition_of_$name$, firstEdge_of_$name$, secondEdge_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, subSegments_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RhombusAroundCenter</ToolTip>
+					<Default>rhombusAroundCenter</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRhombus</Title>
+			<Shortcut>drawRhombus</Shortcut>
+			<Description>Draw a Rhombus in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 startCornerPosition_of_$name$ = $end$;
+					Vector3 firstEdge_of_$name$ = ;
+					Vector3 secondEdge_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int subSegments_of_$name$ = 10;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Rhombus(startCornerPosition_of_$name$, firstEdge_of_$name$, secondEdge_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, subSegments_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Rhombus</ToolTip>
+					<Default>rhombus</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCube_tr</Title>
+			<Shortcut>drawCube_tr</Shortcut>
+			<Description>Draw a Cube in the Unity Editor. (defined via transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cube(transform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cube</ToolTip>
+					<Default>cube</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCube_vecQuat</Title>
+			<Shortcut>drawCube_vecQuat</Shortcut>
+			<Description>Draw a Cube in the Unity Editor. pos defined via vector, rot defined via quaternion</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cube(position_of_$name$, scale_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cube</ToolTip>
+					<Default>cube</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCube_vecVec</Title>
+			<Shortcut>drawCube_vecVec</Shortcut>
+			<Description>Draw a Cube in the Unity Editor. both pos and rot defined via vectors</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cube(position_of_$name$, scale_of_$name$, color_of_$name$, up_of_$name$, forward_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cube</ToolTip>
+					<Default>cube</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_tr_alpha</Title>
+			<Shortcut>drawCubeFilled_tr_alpha</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos/size/rot from transform) (fill color same as strut color except lower alpha)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float alphaFactor_forInnerLines_of_$name$ = 0.3f;
+					float linesWidthOfEdges_of_$name$ = 0.0f;
+					int segmentsPerSide_of_$name$ = 6;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(transform_of_$name$, color_of_$name$, alphaFactor_forInnerLines_of_$name$, linesWidthOfEdges_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_vecQuat_alpha</Title>
+			<Shortcut>drawCubeFilled_vecQuat_alpha</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos from vector, rot from quaternion) (fill color same as strut color except lower alpha)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float alphaFactor_forInnerLines_of_$name$ = 0.3f;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidthOfEdges_of_$name$ = 0.0f;
+					int segmentsPerSide_of_$name$ = 6;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(position_of_$name$, scale_of_$name$, color_of_$name$, alphaFactor_forInnerLines_of_$name$, rotation_of_$name$, linesWidthOfEdges_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_vecVec_alpha</Title>
+			<Shortcut>drawCubeFilled_vecVec_alpha</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos/size/rot from vectors) (fill color same as strut color except lower alpha)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = ;
+					float alphaFactor_forInnerLines_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidthOfEdges_of_$name$ = 0.0f;
+					int segmentsPerSide_of_$name$ = 6;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(position_of_$name$, scale_of_$name$, color_of_$name$, alphaFactor_forInnerLines_of_$name$, up_of_$name$, forward_of_$name$, linesWidthOfEdges_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_tr_2col</Title>
+			<Shortcut>drawCubeFilled_tr_2col</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos/size/rot from transform) (fill color is different from strut color)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = ;
+					float linesWidth_of_$name$ = ;
+					int segmentsPerSide_of_$name$ = ;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					Color colorOfEdges_of_$name$ = default(Color);
+					float linesWidthOfEdges_of_$name$ = 0.01f;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool useEdgesColorAsTextColor_ifAvailable_of_$name$ = true;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(transform_of_$name$, color_of_$name$, linesWidth_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, colorOfEdges_of_$name$, linesWidthOfEdges_of_$name$, stylePatternScaleFactor_of_$name$, useEdgesColorAsTextColor_ifAvailable_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_vecQuat_2col</Title>
+			<Shortcut>drawCubeFilled_vecQuat_2col</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos from vector, rot from quaternion) (fill color is different from strut color)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Quaternion rotation_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					int segmentsPerSide_of_$name$ = 6;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					Color colorOfEdges_of_$name$ = default(Color);
+					float linesWidthOfEdges_of_$name$ = 0.01f;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool useEdgesColorAsTextColor_ifAvailable_of_$name$ = true;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(position_of_$name$, scale_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, colorOfEdges_of_$name$, linesWidthOfEdges_of_$name$, stylePatternScaleFactor_of_$name$, useEdgesColorAsTextColor_ifAvailable_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCubeFilled_vecVec_2col</Title>
+			<Shortcut>drawCubeFilled_vecVec_2col</Shortcut>
+			<Description>Draw a CubeFilled in the Unity Editor. (pos/size/rot from vectors) (fill color is different from strut color)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					int segmentsPerSide_of_$name$ = 6;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					Color colorOfEdges_of_$name$ = default(Color);
+					float linesWidthOfEdges_of_$name$ = 0.01f;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool useEdgesColorAsTextColor_ifAvailable_of_$name$ = true;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.CubeFilled(position_of_$name$, scale_of_$name$, color_of_$name$, up_of_$name$, forward_of_$name$, linesWidth_of_$name$, segmentsPerSide_of_$name$, text_of_$name$, lineStyle_of_$name$, colorOfEdges_of_$name$, linesWidthOfEdges_of_$name$, stylePatternScaleFactor_of_$name$, useEdgesColorAsTextColor_ifAvailable_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CubeFilled</ToolTip>
+					<Default>cubeFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphere_tr</Title>
+			<Shortcut>drawSphere_tr</Shortcut>
+			<Description>Draw a Sphere in the Unity Editor. (pos/size/rot from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Sphere(transform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Sphere</ToolTip>
+					<Default>sphere</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphere_vecQuat</Title>
+			<Shortcut>drawSphere_vecQuat</Shortcut>
+			<Description>Draw a Sphere in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Sphere(position_of_$name$, radius_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Sphere</ToolTip>
+					<Default>sphere</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphere_vecVec</Title>
+			<Shortcut>drawSphere_vecVec</Shortcut>
+			<Description>Draw a Sphere in the Unity Editor. (pos/size/rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Sphere(position_of_$name$, radius_of_$name$, color_of_$name$, up_of_$name$, forward_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Sphere</ToolTip>
+					<Default>sphere</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipsoid_tr</Title>
+			<Shortcut>drawEllipsoid_tr</Shortcut>
+			<Description>Draw an Ellipsoid in the Unity Editor. (pos/size/rot from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Ellipsoid(transform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ellipsoid</ToolTip>
+					<Default>ellipsoid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipsoid_vecQuat</Title>
+			<Shortcut>drawEllipsoid_vecQuat</Shortcut>
+			<Description>Draw an Ellipsoid in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 radius_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Ellipsoid(position_of_$name$, radius_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ellipsoid</ToolTip>
+					<Default>ellipsoid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipsoid_vecVec</Title>
+			<Shortcut>drawEllipsoid_vecVec</Shortcut>
+			<Description>Draw an Ellipsoid in the Unity Editor. (pos/size/rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 radius_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalf_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Ellipsoid(position_of_$name$, radius_of_$name$, color_of_$name$, up_of_$name$, forward_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalf_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ellipsoid</ToolTip>
+					<Default>ellipsoid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipsoidNonUniform_vecQuat</Title>
+			<Shortcut>drawEllipsoidNonUniform_vecQuat</Shortcut>
+			<Description>Draw an EllipsoidNonUniform in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_x_of_$name$ = ;
+					float radius_y_upward_of_$name$ = ;
+					float radius_y_downward_of_$name$ = ;
+					float radius_z_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.EllipsoidNonUniform(position_of_$name$, radius_x_of_$name$, radius_y_upward_of_$name$, radius_y_downward_of_$name$, radius_z_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EllipsoidNonUniform</ToolTip>
+					<Default>ellipsoidNonUniform</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEllipsoidNonUniform_vecVec</Title>
+			<Shortcut>drawEllipsoidNonUniform_vecVec</Shortcut>
+			<Description>Draw an EllipsoidNonUniform in the Unity Editor. (pos/rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_x_of_$name$ = ;
+					float radius_y_upward_of_$name$ = ;
+					float radius_y_downward_of_$name$ = ;
+					float radius_z_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_of_$name$ = ;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool skipDrawingEquator_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.EllipsoidNonUniform(position_of_$name$, radius_x_of_$name$, radius_y_upward_of_$name$, radius_y_downward_of_$name$, radius_z_of_$name$, color_of_$name$, up_of_$name$, forward_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, skipDrawingEquator_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EllipsoidNonUniform</ToolTip>
+					<Default>ellipsoidNonUniform</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_vecC1C2Pos</Title>
+			<Shortcut>drawCapsule_vecC1C2Pos</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (defined via position of circle1 and circle2)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 posOfCapsuleSphere1_of_$name$ = $end$;
+					Vector3 posOfCapsuleSphere2_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Vector3 forward_insideCrosssectionPlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(posOfCapsuleSphere1_of_$name$, posOfCapsuleSphere2_of_$name$, radius_of_$name$, color_of_$name$, forward_insideCrosssectionPlane_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_tr</Title>
+			<Shortcut>drawCapsule_tr</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (defined via transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform transform_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(transform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_vecVecQuat</Title>
+			<Shortcut>drawCapsule_vecVecQuat</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (pos from vector, size from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(position_of_$name$, scale_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_vecVecVec</Title>
+			<Shortcut>drawCapsule_vecVecVec</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (pos/size/rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					Vector3 scale_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_insideCrosssectionPlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(position_of_$name$, scale_of_$name$, color_of_$name$, up_of_$name$, forward_insideCrosssectionPlane_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_vecRadQuat</Title>
+			<Shortcut>drawCapsule_vecRadQuat</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (pos from vector, radius from float, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = 0.5f;
+					float height_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(position_of_$name$, radius_of_$name$, height_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule_vecRadVec</Title>
+			<Shortcut>drawCapsule_vecRadVec</Shortcut>
+			<Description>Draw a Capsule in the Unity Editor. (pos from vector, radius from float, rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					float height_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 up_of_$name$ = ;
+					Vector3 forward_insideCrosssectionPlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					int struts_of_$name$ = 2;
+					bool onlyUpperHalfSphere_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule(position_of_$name$, radius_of_$name$, height_of_$name$, color_of_$name$, up_of_$name$, forward_insideCrosssectionPlane_of_$name$, linesWidth_of_$name$, text_of_$name$, struts_of_$name$, onlyUpperHalfSphere_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule</ToolTip>
+					<Default>capsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_apexAnglesQuat</Title>
+			<Shortcut>drawPyramid_apexAnglesQuat</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (defined via apex pos and angles from there, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(apexPosition_of_$name$, height_of_$name$, rotation_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_apexAnglesVec</Title>
+			<Shortcut>drawPyramid_apexAnglesVec</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (defined via apex pos and angles from there, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Vector3 forward_fromApexTowardsBase_of_$name$ = ;
+					Vector3 up_insideBasePlane_of_$name$ = default(Vector3);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(apexPosition_of_$name$, height_of_$name$, forward_fromApexTowardsBase_of_$name$, up_insideBasePlane_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_baseRectQuat</Title>
+			<Shortcut>drawPyramid_baseRectQuat</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect baseRect_of_$name$ = $end$;
+					float zPos_ofBaseRectCenter_of_$name$ = ;
+					float height_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(baseRect_of_$name$, zPos_ofBaseRectCenter_of_$name$, height_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_baseRectVec</Title>
+			<Shortcut>drawPyramid_baseRectVec</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect baseRect_of_$name$ = $end$;
+					float zPos_ofBaseRectCenter_of_$name$ = ;
+					float height_of_$name$ = ;
+					Vector3 normal_ofBaseTowardsApex_of_$name$ = ;
+					Vector3 up_insideBaseRectPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(baseRect_of_$name$, zPos_ofBaseRectCenter_of_$name$, height_of_$name$, normal_ofBaseTowardsApex_of_$name$, up_insideBaseRectPlane_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_vecVecQuat</Title>
+			<Shortcut>drawPyramid_vecVecQuat</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (pos+size via vectors, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofPyramidHullVolume_of_$name$ = $end$;
+					Vector3 scale_ofPyramidHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(center_ofPyramidHullVolume_of_$name$, scale_ofPyramidHullVolume_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_vecFloatQuat</Title>
+			<Shortcut>drawPyramid_vecFloatQuat</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (pos via vector, size via floats, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBasePlane_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(center_ofBasePlane_of_$name$, height_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, rotation_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPyramid_vecFloatVec</Title>
+			<Shortcut>drawPyramid_vecFloatVec</Shortcut>
+			<Description>Draw a Pyramid in the Unity Editor. (pos via vector, size via floats, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBasePlane_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_ofBaseTowardsApex_of_$name$ = ;
+					Vector3 up_insideBasePlane_of_$name$ = default(Vector3);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Pyramid(center_ofBasePlane_of_$name$, height_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, normal_ofBaseTowardsApex_of_$name$, up_insideBasePlane_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Pyramid</ToolTip>
+					<Default>pyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCone_apexAnglesQuat</Title>
+			<Shortcut>drawCone_apexAnglesQuat</Shortcut>
+			<Description>Draw a Cone in the Unity Editor. (defined via apex pos and angles from there, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cone(apexPosition_of_$name$, height_of_$name$, rotation_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cone</ToolTip>
+					<Default>cone</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCone_apexAnglesVec</Title>
+			<Shortcut>drawCone_apexAnglesVec</Shortcut>
+			<Description>Draw a Cone in the Unity Editor. (defined via apex pos and angles from there, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Vector3 forward_fromApexTowardsBase_of_$name$ = ;
+					Vector3 up_insideBaseCircle_of_$name$ = default(Vector3);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cone(apexPosition_of_$name$, height_of_$name$, forward_fromApexTowardsBase_of_$name$, up_insideBaseCircle_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cone</ToolTip>
+					<Default>cone</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCone_vecVecQuat</Title>
+			<Shortcut>drawCone_vecVecQuat</Shortcut>
+			<Description>Draw a Cone in the Unity Editor. (pos+size via vectors, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofConeHullVolume_of_$name$ = $end$;
+					Vector3 scale_ofConeHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cone(center_ofConeHullVolume_of_$name$, scale_ofConeHullVolume_of_$name$, rotation_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cone</ToolTip>
+					<Default>cone</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCone_vecFloatQuat</Title>
+			<Shortcut>drawCone_vecFloatQuat</Shortcut>
+			<Description>Draw a Cone in the Unity Editor. (pos via vector, size via floats, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBaseCircle_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBaseCircle_of_$name$ = ;
+					float length_ofBaseCircle_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cone(center_ofBaseCircle_of_$name$, height_of_$name$, width_ofBaseCircle_of_$name$, length_ofBaseCircle_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cone</ToolTip>
+					<Default>cone</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCone_vecFloatVec</Title>
+			<Shortcut>drawCone_vecFloatVec</Shortcut>
+			<Description>Draw a Cone in the Unity Editor. (pos via vector, size via floats, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBaseCircle_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBaseCircle_of_$name$ = ;
+					float length_ofBaseCircle_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_ofBaseCircleTowardsApex_of_$name$ = ;
+					Vector3 up_insideBaseCircle_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cone(center_ofBaseCircle_of_$name$, height_of_$name$, width_ofBaseCircle_of_$name$, length_ofBaseCircle_of_$name$, color_of_$name$, normal_ofBaseCircleTowardsApex_of_$name$, up_insideBaseCircle_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cone</ToolTip>
+					<Default>cone</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawConeFilled_apexAnglesQuat</Title>
+			<Shortcut>drawConeFilled_apexAnglesQuat</Shortcut>
+			<Description>Draw a ConeFilled in the Unity Editor. (defined via apex pos and angles from there, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.ConeFilled(apexPosition_of_$name$, height_of_$name$, rotation_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ConeFilled</ToolTip>
+					<Default>coneFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawConeFilled_apexAnglesVec</Title>
+			<Shortcut>drawConeFilled_apexAnglesVec</Shortcut>
+			<Description>Draw a ConeFilled in the Unity Editor. (defined via apex pos and angles from there, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 apexPosition_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					Vector3 forward_fromApexTowardsBase_of_$name$ = ;
+					Vector3 up_insideBaseCircle_of_$name$ = default(Vector3);
+					float angleDeg_inVertDir_of_$name$ = 90.0f;
+					float angleDeg_inHorizDir_of_$name$ = 90.0f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.ConeFilled(apexPosition_of_$name$, height_of_$name$, forward_fromApexTowardsBase_of_$name$, up_insideBaseCircle_of_$name$, angleDeg_inVertDir_of_$name$, angleDeg_inHorizDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ConeFilled</ToolTip>
+					<Default>coneFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawConeFilled_vecVecQuat</Title>
+			<Shortcut>drawConeFilled_vecVecQuat</Shortcut>
+			<Description>Draw a ConeFilled in the Unity Editor. (pos+size via vectors, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofConeHullVolume_of_$name$ = $end$;
+					Vector3 scale_ofConeHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.ConeFilled(center_ofConeHullVolume_of_$name$, scale_ofConeHullVolume_of_$name$, rotation_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ConeFilled</ToolTip>
+					<Default>coneFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawConeFilled_vecFloatQuat</Title>
+			<Shortcut>drawConeFilled_vecFloatQuat</Shortcut>
+			<Description>Draw a ConeFilled in the Unity Editor. (pos via vector, size via floats, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBaseCircle_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBaseCircle_of_$name$ = ;
+					float length_ofBaseCircle_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.ConeFilled(center_ofBaseCircle_of_$name$, height_of_$name$, width_ofBaseCircle_of_$name$, length_ofBaseCircle_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ConeFilled</ToolTip>
+					<Default>coneFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawConeFilled_vecFloatVec</Title>
+			<Shortcut>drawConeFilled_vecFloatVec</Shortcut>
+			<Description>Draw a ConeFilled in the Unity Editor. (pos via vector, size via floats, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBaseCircle_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBaseCircle_of_$name$ = ;
+					float length_ofBaseCircle_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_ofBaseCircleTowardsApex_of_$name$ = ;
+					Vector3 up_insideBaseCircle_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.ConeFilled(center_ofBaseCircle_of_$name$, height_of_$name$, width_ofBaseCircle_of_$name$, length_ofBaseCircle_of_$name$, color_of_$name$, normal_ofBaseCircleTowardsApex_of_$name$, up_insideBaseCircle_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ConeFilled</ToolTip>
+					<Default>coneFilled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBipyramid_baseRectQuat</Title>
+			<Shortcut>drawBipyramid_baseRectQuat</Shortcut>
+			<Description>Draw a Bipyramid in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect baseRect_of_$name$ = $end$;
+					float zPos_ofBaseRectCenter_of_$name$ = ;
+					float heightUp_of_$name$ = ;
+					float heightDown_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Bipyramid(baseRect_of_$name$, zPos_ofBaseRectCenter_of_$name$, heightUp_of_$name$, heightDown_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bipyramid</ToolTip>
+					<Default>bipyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBipyramid_baseRectVec</Title>
+			<Shortcut>drawBipyramid_baseRectVec</Shortcut>
+			<Description>Draw a Bipyramid in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect baseRect_of_$name$ = $end$;
+					float zPos_ofBaseRectCenter_of_$name$ = ;
+					float heightUp_of_$name$ = ;
+					float heightDown_of_$name$ = ;
+					Vector3 normal_ofBaseTowardsUpperApex_of_$name$ = ;
+					Vector3 up_insideBaseRectPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Bipyramid(baseRect_of_$name$, zPos_ofBaseRectCenter_of_$name$, heightUp_of_$name$, heightDown_of_$name$, normal_ofBaseTowardsUpperApex_of_$name$, up_insideBaseRectPlane_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bipyramid</ToolTip>
+					<Default>bipyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBipyramid_vecVecQuat</Title>
+			<Shortcut>drawBipyramid_vecVecQuat</Shortcut>
+			<Description>Draw a Bipyramid in the Unity Editor. (pos+size via vectors, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBasePlane_of_$name$ = $end$;
+					Vector3 scale_ofBipyramidHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Bipyramid(center_ofBasePlane_of_$name$, scale_ofBipyramidHullVolume_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bipyramid</ToolTip>
+					<Default>bipyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBipyramid_vecFloatQuat</Title>
+			<Shortcut>drawBipyramid_vecFloatQuat</Shortcut>
+			<Description>Draw a Bipyramid in the Unity Editor. (pos via vector, size via floats, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBasePlane_of_$name$ = $end$;
+					float heightUp_of_$name$ = ;
+					float heightDown_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Bipyramid(center_ofBasePlane_of_$name$, heightUp_of_$name$, heightDown_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, rotation_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bipyramid</ToolTip>
+					<Default>bipyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBipyramid_vecFloatVec</Title>
+			<Shortcut>drawBipyramid_vecFloatVec</Shortcut>
+			<Description>Draw a Bipyramid in the Unity Editor. (pos via vector, size via floats, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBasePlane_of_$name$ = $end$;
+					float heightUp_of_$name$ = ;
+					float heightDown_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_ofBaseTowardsUpperApex_of_$name$ = ;
+					Vector3 up_insideBasePlane_of_$name$ = default(Vector3);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Bipyramid(center_ofBasePlane_of_$name$, heightUp_of_$name$, heightDown_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, normal_ofBaseTowardsUpperApex_of_$name$, up_insideBasePlane_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bipyramid</ToolTip>
+					<Default>bipyramid</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCylinder_baseRectQuat</Title>
+			<Shortcut>drawCylinder_baseRectQuat</Shortcut>
+			<Description>Draw a Cylinder in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect crossSectionHullRect_of_$name$ = $end$;
+					float zPos_ofHullRectCenter_of_$name$ = ;
+					float height_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.circle4struts;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cylinder(crossSectionHullRect_of_$name$, zPos_ofHullRectCenter_of_$name$, height_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cylinder</ToolTip>
+					<Default>cylinder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCylinder_baseRectVec</Title>
+			<Shortcut>drawCylinder_baseRectVec</Shortcut>
+			<Description>Draw a Cylinder in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect crossSectionHullRect_of_$name$ = $end$;
+					float zPos_ofHullRectCenter_of_$name$ = ;
+					float height_of_$name$ = ;
+					Vector3 extrusionDirection_of_$name$ = ;
+					Vector3 up_insideCrossSectionPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.circle4struts;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cylinder(crossSectionHullRect_of_$name$, zPos_ofHullRectCenter_of_$name$, height_of_$name$, extrusionDirection_of_$name$, up_insideCrossSectionPlane_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cylinder</ToolTip>
+					<Default>cylinder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCylinder_vecVecQuat</Title>
+			<Shortcut>drawCylinder_vecVecQuat</Shortcut>
+			<Description>Draw a Cylinder in the Unity Editor. (pos+size via vectors, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofCylinderHullVolume_of_$name$ = $end$;
+					Vector3 scale_ofCylinderHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.circle4struts;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cylinder(center_ofCylinderHullVolume_of_$name$, scale_ofCylinderHullVolume_of_$name$, rotation_of_$name$, color_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cylinder</ToolTip>
+					<Default>cylinder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCylinder_vecFloatQuat</Title>
+			<Shortcut>drawCylinder_vecFloatQuat</Shortcut>
+			<Description>Draw a Cylinder in the Unity Editor. (pos via vector, size via floats, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofCylinderHullVolume_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.circle4struts;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cylinder(center_ofCylinderHullVolume_of_$name$, height_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, rotation_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cylinder</ToolTip>
+					<Default>cylinder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCylinder_vecFloatVec</Title>
+			<Shortcut>drawCylinder_vecFloatVec</Shortcut>
+			<Description>Draw a Cylinder in the Unity Editor. (pos via vector, size via floats, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofCylinderHullVolume_of_$name$ = $end$;
+					float height_of_$name$ = ;
+					float width_ofBase_of_$name$ = ;
+					float length_ofBase_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 extrusionDirection_of_$name$ = ;
+					Vector3 up_insideCrossSectionPlane_of_$name$ = default(Vector3);
+					DrawShapes.Shape2DType baseShape_of_$name$ = DrawShapes.Shape2DType.circle4struts;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Cylinder(center_ofCylinderHullVolume_of_$name$, height_of_$name$, width_ofBase_of_$name$, length_ofBase_of_$name$, color_of_$name$, extrusionDirection_of_$name$, up_insideCrossSectionPlane_of_$name$, baseShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Cylinder</ToolTip>
+					<Default>cylinder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawExtrusion_baseRectQuat</Title>
+			<Shortcut>drawExtrusion_baseRectQuat</Shortcut>
+			<Description>Draw an Extrusion in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_ofExtrudedCrosssection_of_$name$ = $end$;
+					float zPos_ofExtrudedRect_of_$name$ = ;
+					float extrusionDistanceForward_of_$name$ = ;
+					float extrusionDistanceBackward_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType extrusionShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Extrusion(hullRect_ofExtrudedCrosssection_of_$name$, zPos_ofExtrudedRect_of_$name$, extrusionDistanceForward_of_$name$, extrusionDistanceBackward_of_$name$, rotation_of_$name$, color_of_$name$, extrusionShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Extrusion</ToolTip>
+					<Default>extrusion</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawExtrusion_baseRectVec</Title>
+			<Shortcut>drawExtrusion_baseRectVec</Shortcut>
+			<Description>Draw an Extrusion in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_ofExtrudedCrosssection_of_$name$ = $end$;
+					float zPos_ofExtrudedRect_of_$name$ = ;
+					float extrusionDistanceForward_of_$name$ = ;
+					float extrusionDistanceBackward_of_$name$ = ;
+					Vector3 extrusionDirection_of_$name$ = ;
+					Vector3 up_insideCrosssectionPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType extrusionShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Extrusion(hullRect_ofExtrudedCrosssection_of_$name$, zPos_ofExtrudedRect_of_$name$, extrusionDistanceForward_of_$name$, extrusionDistanceBackward_of_$name$, extrusionDirection_of_$name$, up_insideCrosssectionPlane_of_$name$, color_of_$name$, extrusionShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Extrusion</ToolTip>
+					<Default>extrusion</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawExtrusion_vecQuat</Title>
+			<Shortcut>drawExtrusion_vecQuat</Shortcut>
+			<Description>Draw an Extrusion in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPos_ofExtrusionBase_of_$name$ = $end$;
+					float extrusionHeightUp_of_$name$ = ;
+					float extrusionHeightDown_of_$name$ = ;
+					float width_ofExtrudedCrosssection_of_$name$ = ;
+					float length_ofExtrudedCrosssection_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					DrawShapes.Shape2DType extrusionShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Extrusion(centerPos_ofExtrusionBase_of_$name$, extrusionHeightUp_of_$name$, extrusionHeightDown_of_$name$, width_ofExtrudedCrosssection_of_$name$, length_ofExtrudedCrosssection_of_$name$, color_of_$name$, rotation_of_$name$, extrusionShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Extrusion</ToolTip>
+					<Default>extrusion</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawExtrusion_vecVec</Title>
+			<Shortcut>drawExtrusion_vecVec</Shortcut>
+			<Description>Draw an Extrusion in the Unity Editor. (pos + rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPos_ofExtrusionBase_of_$name$ = $end$;
+					float extrusionHeightUp_of_$name$ = ;
+					float extrusionHeightDown_of_$name$ = ;
+					float width_ofExtrudedCrosssection_of_$name$ = ;
+					float length_ofExtrudedCrosssection_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 extrusionDirection_of_$name$ = ;
+					Vector3 up_insideCrossSectionPlane_of_$name$ = default(Vector3);
+					DrawShapes.Shape2DType extrusionShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Extrusion(centerPos_ofExtrusionBase_of_$name$, extrusionHeightUp_of_$name$, extrusionHeightDown_of_$name$, width_ofExtrudedCrosssection_of_$name$, length_ofExtrudedCrosssection_of_$name$, color_of_$name$, extrusionDirection_of_$name$, up_insideCrossSectionPlane_of_$name$, extrusionShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Extrusion</ToolTip>
+					<Default>extrusion</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_cam</Title>
+			<Shortcut>drawFrustum_cam</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (specified via a camera component)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera camera_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(camera_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_apexAndAngles_rotViaQuat</Title>
+			<Shortcut>drawFrustum_apexAndAngles_rotViaQuat</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via apex pos and angles from there, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 cameraPosition_frustumApex_of_$name$ = $end$;
+					Quaternion cameraRotation_of_$name$ = ;
+					float angleDeg_verticalFieldOfView_of_$name$ = 60.0f;
+					float aspectRatio_of_$name$ = (16.0f / 9.0f);
+					float distanceApexToNearPlane_of_$name$ = 0.5f;
+					float distanceApexToFarPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(cameraPosition_frustumApex_of_$name$, cameraRotation_of_$name$, angleDeg_verticalFieldOfView_of_$name$, aspectRatio_of_$name$, distanceApexToNearPlane_of_$name$, distanceApexToFarPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_apexAndAngles_rotViaVec</Title>
+			<Shortcut>drawFrustum_apexAndAngles_rotViaVec</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via apex pos and angles from there, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 cameraPosition_frustumApex_of_$name$ = $end$;
+					Vector3 cameraForward_of_$name$ = ;
+					Vector3 cameraUp_of_$name$ = ;
+					float angleDeg_verticalFieldOfView_of_$name$ = 60.0f;
+					float aspectRatio_of_$name$ = (16.0f / 9.0f);
+					float distanceApexToNearPlane_of_$name$ = 0.5f;
+					float distanceApexToFarPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(cameraPosition_frustumApex_of_$name$, cameraForward_of_$name$, cameraUp_of_$name$, angleDeg_verticalFieldOfView_of_$name$, aspectRatio_of_$name$, distanceApexToNearPlane_of_$name$, distanceApexToFarPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlaneRect_rotViaQuat</Title>
+			<Shortcut>drawFrustum_bigClipPlaneRect_rotViaQuat</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via rect struct as big clip plane, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect bigClipPlaneRect_of_$name$ = $end$;
+					float zPos_ofBigClipPlaneCenter_of_$name$ = ;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					float scalingFactor_forSmallClipPlane_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(bigClipPlaneRect_of_$name$, zPos_ofBigClipPlaneCenter_of_$name$, distanceBetweenClipPlanes_of_$name$, scalingFactor_forSmallClipPlane_of_$name$, rotation_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlaneRect_rotViaVec</Title>
+			<Shortcut>drawFrustum_bigClipPlaneRect_rotViaVec</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via rect struct as big clip plane, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect bigClipPlaneRect_of_$name$ = $end$;
+					float zPos_ofBigClipPlaneCenter_of_$name$ = ;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					float scalingFactor_forSmallClipPlane_of_$name$ = ;
+					Vector3 normal_ofClipPlaneRects_towardsApex_of_$name$ = ;
+					Vector3 up_insideClippedRects_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(bigClipPlaneRect_of_$name$, zPos_ofBigClipPlaneCenter_of_$name$, distanceBetweenClipPlanes_of_$name$, scalingFactor_forSmallClipPlane_of_$name$, normal_ofClipPlaneRects_towardsApex_of_$name$, up_insideClippedRects_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_hull</Title>
+			<Shortcut>drawFrustum_hull</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via pos/size/rot of a hull box)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofFrustumHullVolume_of_$name$ = $end$;
+					Vector3 scale_ofFrustumHullVolume_of_$name$ = ;
+					Quaternion rotation_of_$name$ = ;
+					float scalingFactor_forSmallClipPlane_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(center_ofFrustumHullVolume_of_$name$, scale_ofFrustumHullVolume_of_$name$, rotation_of_$name$, scalingFactor_forSmallClipPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlanePos_distanceToSmallAndApex_rotViaQuat</Title>
+			<Shortcut>drawFrustum_bigClipPlanePos_distanceToSmallAndApex_rotViaQuat</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via big clip plane center and distances to small clip plane and apex, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					float distance_bigClipPlaneToApex_of_$name$ = $end$;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					Vector3 center_ofBigClipPlane_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float width_ofBigClipPlane_of_$name$ = 1.0f;
+					float height_ofBigClipPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(distance_bigClipPlaneToApex_of_$name$, distanceBetweenClipPlanes_of_$name$, center_ofBigClipPlane_of_$name$, rotation_of_$name$, width_ofBigClipPlane_of_$name$, height_ofBigClipPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlanePos_distanceToSmallAndApex_rotViaVec</Title>
+			<Shortcut>drawFrustum_bigClipPlanePos_distanceToSmallAndApex_rotViaVec</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via big clip plane center and distances to small clip plane and apex, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					float distance_bigClipPlaneToApex_of_$name$ = $end$;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					Vector3 center_ofBigClipPlane_of_$name$ = ;
+					Vector3 normal_ofClipPlanes_towardsApex_of_$name$ = ;
+					Vector3 up_insideClippedPlanes_of_$name$ = default(Vector3);
+					float width_ofBigClipPlane_of_$name$ = 1.0f;
+					float height_ofBigClipPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(distance_bigClipPlaneToApex_of_$name$, distanceBetweenClipPlanes_of_$name$, center_ofBigClipPlane_of_$name$, normal_ofClipPlanes_towardsApex_of_$name$, up_insideClippedPlanes_of_$name$, width_ofBigClipPlane_of_$name$, height_ofBigClipPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlanePos_sizeFactorToSmall_rotViaQuat</Title>
+			<Shortcut>drawFrustum_bigClipPlanePos_sizeFactorToSmall_rotViaQuat</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via big clip plane center and size scale factor for small clip plane, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBigClipPlane_of_$name$ = $end$;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					float scalingFactor_forSmallClipPlane_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float width_ofBigClipPlane_of_$name$ = 1.0f;
+					float height_ofBigClipPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(center_ofBigClipPlane_of_$name$, distanceBetweenClipPlanes_of_$name$, scalingFactor_forSmallClipPlane_of_$name$, rotation_of_$name$, width_ofBigClipPlane_of_$name$, height_ofBigClipPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_bigClipPlanePos_sizeFactorToSmall_rotViaVec</Title>
+			<Shortcut>drawFrustum_bigClipPlanePos_sizeFactorToSmall_rotViaVec</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via big clip plane center and size scale factor for small clip plane, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBigClipPlane_of_$name$ = $end$;
+					float distanceBetweenClipPlanes_of_$name$ = ;
+					float scalingFactor_forSmallClipPlane_of_$name$ = ;
+					Vector3 normal_ofClipPlanes_towardsApex_of_$name$ = ;
+					Vector3 up_insideClippedPlanes_of_$name$ = default(Vector3);
+					float width_ofBigClipPlane_of_$name$ = 1.0f;
+					float height_ofBigClipPlane_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(center_ofBigClipPlane_of_$name$, distanceBetweenClipPlanes_of_$name$, scalingFactor_forSmallClipPlane_of_$name$, normal_ofClipPlanes_towardsApex_of_$name$, up_insideClippedPlanes_of_$name$, width_ofBigClipPlane_of_$name$, height_ofBigClipPlane_of_$name$, color_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFrustum_clipPlanesPos</Title>
+			<Shortcut>drawFrustum_clipPlanesPos</Shortcut>
+			<Description>Draw a Frustum in the Unity Editor. (defined via position of big and of small clip plane)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_ofBigClipPlane_of_$name$ = $end$;
+					Vector3 center_ofSmallClipPlane_of_$name$ = ;
+					float width_ofBigClipPlane_of_$name$ = ;
+					float height_ofBigClipPlane_of_$name$ = ;
+					float width_ofSmallClipPlane_of_$name$ = ;
+					float height_ofSmallClipPlane_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					Vector3 up_insideClippedPlanes_of_$name$ = default(Vector3);
+					Vector3 fallback_for_normalOfClipPlanesTowardsApex_of_$name$ = default(Vector3);
+					DrawShapes.Shape2DType clipPlanesShape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Frustum(center_ofBigClipPlane_of_$name$, center_ofSmallClipPlane_of_$name$, width_ofBigClipPlane_of_$name$, height_ofBigClipPlane_of_$name$, width_ofSmallClipPlane_of_$name$, height_ofSmallClipPlane_of_$name$, color_of_$name$, up_insideClippedPlanes_of_$name$, fallback_for_normalOfClipPlanesTowardsApex_of_$name$, clipPlanesShape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Frustum</ToolTip>
+					<Default>frustum</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatShape_baseRectQuat</Title>
+			<Shortcut>drawFlatShape_baseRectQuat</Shortcut>
+			<Description>Draw a FlatShape in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_of_$name$ = $end$;
+					DrawShapes.Shape2DType shapeType_of_$name$ = DrawShapes.Shape2DType.square;
+					float zPos_ofRectCenter_of_$name$ = 0.0f;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatShape(hullRect_of_$name$, shapeType_of_$name$, zPos_ofRectCenter_of_$name$, rotation_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatShape</ToolTip>
+					<Default>flatShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatShape_baseRectVec</Title>
+			<Shortcut>drawFlatShape_baseRectVec</Shortcut>
+			<Description>Draw a FlatShape in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_of_$name$ = $end$;
+					DrawShapes.Shape2DType shapeType_of_$name$ = DrawShapes.Shape2DType. ;
+					float zPos_ofRectCenter_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideShapePlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatShape(hullRect_of_$name$, shapeType_of_$name$, zPos_ofRectCenter_of_$name$, normal_of_$name$, up_insideShapePlane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatShape</ToolTip>
+					<Default>flatShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatShape_vecQuat</Title>
+			<Shortcut>drawFlatShape_vecQuat</Shortcut>
+			<Description>Draw a FlatShape in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					DrawShapes.Shape2DType shapeType_of_$name$ = DrawShapes.Shape2DType.square;
+					float width_of_$name$ = 1.0f;
+					float height_of_$name$ = 1.0f;
+					Color color_of_$name$ = default(Color);
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatShape(centerPosition_of_$name$, shapeType_of_$name$, width_of_$name$, height_of_$name$, color_of_$name$, rotation_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatShape</ToolTip>
+					<Default>flatShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawFlatShape_vecVec</Title>
+			<Shortcut>drawFlatShape_vecVec</Shortcut>
+			<Description>Draw a FlatShape in the Unity Editor. (pos + rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					DrawShapes.Shape2DType shapeType_of_$name$ = DrawShapes.Shape2DType. ;
+					float width_of_$name$ = ;
+					float height_of_$name$ = ;
+					Color color_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideShapePlane_of_$name$ = default(Vector3);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.FlatShape(centerPosition_of_$name$, shapeType_of_$name$, width_of_$name$, height_of_$name$, color_of_$name$, normal_of_$name$, up_insideShapePlane_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn FlatShape</ToolTip>
+					<Default>flatShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRectangle_baseRectQuat</Title>
+			<Shortcut>drawRectangle_baseRectQuat</Shortcut>
+			<Description>Draw a Rectangle in the Unity Editor. (defined via rect struct as base, rotation via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					float zPos_ofRectCenter_of_$name$ = 0.0f;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Rectangle(rect_of_$name$, zPos_ofRectCenter_of_$name$, rotation_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Rectangle</ToolTip>
+					<Default>rectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRectangle_baseRectVec</Title>
+			<Shortcut>drawRectangle_baseRectVec</Shortcut>
+			<Description>Draw a Rectangle in the Unity Editor. (defined via rect struct as base, rotation via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					float zPos_ofRectCenter_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideRectPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Rectangle(rect_of_$name$, zPos_ofRectCenter_of_$name$, normal_of_$name$, up_insideRectPlane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Rectangle</ToolTip>
+					<Default>rectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRectangle_vecQuat</Title>
+			<Shortcut>drawRectangle_vecQuat</Shortcut>
+			<Description>Draw a Rectangle in the Unity Editor. (pos from vector, rot from quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					Quaternion rotation_of_$name$ = default(Quaternion);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Rectangle(centerPosition_of_$name$, size_of_$name$, rotation_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Rectangle</ToolTip>
+					<Default>rectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRectangle_vecVec</Title>
+			<Shortcut>drawRectangle_vecVec</Shortcut>
+			<Description>Draw a Rectangle in the Unity Editor. (pos + rot from vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					Vector3 normal_of_$name$ = ;
+					Vector3 up_insideBoxPlane_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					bool flattenRoundLines_intoShapePlane_of_$name$ = true;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Rectangle(centerPosition_of_$name$, size_of_$name$, normal_of_$name$, up_insideBoxPlane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, flattenRoundLines_intoShapePlane_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Rectangle</ToolTip>
+					<Default>rectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBox2D_rect</Title>
+			<Shortcut>drawBox2D_rect</Shortcut>
+			<Description>Draw a Box2D in the Unity Editor. (defined via rect struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect boxRect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					float angleDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Box2D(boxRect_of_$name$, color_of_$name$, zPos_of_$name$, angleDegCC_of_$name$, shape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Box2D</ToolTip>
+					<Default>box2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBox2D_vec</Title>
+			<Shortcut>drawBox2D_vec</Shortcut>
+			<Description>Draw a Box2D in the Unity Editor. (defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					float angleDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Box2D(centerPosition_of_$name$, size_of_$name$, color_of_$name$, zPos_of_$name$, angleDegCC_of_$name$, shape_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Box2D</ToolTip>
+					<Default>box2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircle2D_rect</Title>
+			<Shortcut>drawCircle2D_rect</Shortcut>
+			<Description>Draw a Circle2D in the Unity Editor. (defined via rect struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Circle2D(hullRect_of_$name$, color_of_$name$, zPos_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Circle2D</ToolTip>
+					<Default>circle2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircle2D_vecRad</Title>
+			<Shortcut>drawCircle2D_vecRad</Shortcut>
+			<Description>Draw a Circle2D in the Unity Editor. (defined via vector and float as radius)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_of_$name$ = $end$;
+					float radius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Circle2D(centerPosition_of_$name$, radius_of_$name$, color_of_$name$, zPos_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Circle2D</ToolTip>
+					<Default>circle2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule2D_vecC1C2Pos</Title>
+			<Shortcut>drawCapsule2D_vecC1C2Pos</Shortcut>
+			<Description>Draw a Capsule2D in the Unity Editor. (defined via position of circle1 and circle2)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 posOfCircle1_of_$name$ = $end$;
+					Vector2 posOfCircle2_of_$name$ = ;
+					float radius_of_$name$ = 0.5f;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule2D(posOfCircle1_of_$name$, posOfCircle2_of_$name$, radius_of_$name$, color_of_$name$, zPos_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule2D</ToolTip>
+					<Default>capsule2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule2D_rect</Title>
+			<Shortcut>drawCapsule2D_rect</Shortcut>
+			<Description>Draw a Capsule2D in the Unity Editor. (defined via rect struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect hullRect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float angleDegCC_of_$name$ = 0.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule2D(hullRect_of_$name$, color_of_$name$, zPos_of_$name$, capsuleDirection_of_$name$, angleDegCC_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule2D</ToolTip>
+					<Default>capsule2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsule2D_vecPosSize</Title>
+			<Shortcut>drawCapsule2D_vecPosSize</Shortcut>
+			<Description>Draw a Capsule2D in the Unity Editor. (defined via center position and size from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zPos_of_$name$ = 0.0f;
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float angleDegCC_of_$name$ = 0.0f;
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool filledWithSpokes_of_$name$ = false;
+					bool textBlockAboveLine_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawShapes.Capsule2D(centerPosition_of_$name$, size_of_$name$, color_of_$name$, zPos_of_$name$, capsuleDirection_of_$name$, angleDegCC_of_$name$, linesWidth_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, filledWithSpokes_of_$name$, textBlockAboveLine_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Capsule2D</ToolTip>
+					<Default>capsule2D</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

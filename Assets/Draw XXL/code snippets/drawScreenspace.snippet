@@ -1,0 +1,4335 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLine</Title>
+			<Shortcut>drawScreenLine</Shortcut>
+			<Description>Draw a ScreenLine in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Line(start_of_$name$, end_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLine</ToolTip>
+					<Default>screenLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLine_cam</Title>
+			<Shortcut>drawScreenLine_cam</Shortcut>
+			<Description>Draw a ScreenLine in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Line(targetCamera_of_$name$, start_of_$name$, end_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLine</ToolTip>
+					<Default>screenLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRay</Title>
+			<Shortcut>drawScreenRay</Shortcut>
+			<Description>Draw a ScreenRay in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Ray(start_of_$name$, direction_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRay</ToolTip>
+					<Default>screenRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRay_cam</Title>
+			<Shortcut>drawScreenRay_cam</Shortcut>
+			<Description>Draw a ScreenRay in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Ray(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRay</ToolTip>
+					<Default>screenRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineFrom</Title>
+			<Shortcut>drawScreenLineFrom</Shortcut>
+			<Description>Draw a ScreenLineFrom in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineFrom(start_of_$name$, direction_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineFrom</ToolTip>
+					<Default>screenLineFrom</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineFrom_cam</Title>
+			<Shortcut>drawScreenLineFrom_cam</Shortcut>
+			<Description>Draw a ScreenLineFrom in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineFrom(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineFrom</ToolTip>
+					<Default>screenLineFrom</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineTo</Title>
+			<Shortcut>drawScreenLineTo</Shortcut>
+			<Description>Draw a ScreenLineTo in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 direction_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineTo(direction_of_$name$, end_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineTo</ToolTip>
+					<Default>screenLineTo</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineTo_cam</Title>
+			<Shortcut>drawScreenLineTo_cam</Shortcut>
+			<Description>Draw a ScreenLineTo in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineTo(targetCamera_of_$name$, direction_of_$name$, end_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineTo</ToolTip>
+					<Default>screenLineTo</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineColFade</Title>
+			<Shortcut>drawScreenLineColFade</Shortcut>
+			<Description>Draw a ScreenLineColFade in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineColorFade(start_of_$name$, end_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineColFade</ToolTip>
+					<Default>screenLineColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineColFade_cam</Title>
+			<Shortcut>drawScreenLineColFade_cam</Shortcut>
+			<Description>Draw a ScreenLineColFade in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineColorFade(targetCamera_of_$name$, start_of_$name$, end_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineColFade</ToolTip>
+					<Default>screenLineColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayColFade</Title>
+			<Shortcut>drawScreenRayColFade</Shortcut>
+			<Description>Draw a ScreenRayColFade in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayColorFade(start_of_$name$, direction_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayColFade</ToolTip>
+					<Default>screenRayColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayColFade_cam</Title>
+			<Shortcut>drawScreenRayColFade_cam</Shortcut>
+			<Description>Draw a ScreenRayColFade in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayColorFade(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayColFade</ToolTip>
+					<Default>screenRayColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineFromColFade</Title>
+			<Shortcut>drawScreenLineFromColFade</Shortcut>
+			<Description>Draw a ScreenLineFromColFade in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineFrom_withColorFade(start_of_$name$, direction_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineFromColFade</ToolTip>
+					<Default>screenLineFromColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineFromColFade_cam</Title>
+			<Shortcut>drawScreenLineFromColFade_cam</Shortcut>
+			<Description>Draw a ScreenLineFromColFade in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineFrom_withColorFade(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineFromColFade</ToolTip>
+					<Default>screenLineFromColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineToColFade</Title>
+			<Shortcut>drawScreenLineToColFade</Shortcut>
+			<Description>Draw a ScreenLineToColFade in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 direction_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineTo_withColorFade(direction_of_$name$, end_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineToColFade</ToolTip>
+					<Default>screenLineToColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineToColFade_cam</Title>
+			<Shortcut>drawScreenLineToColFade_cam</Shortcut>
+			<Description>Draw a ScreenLineToColFade in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineTo_withColorFade(targetCamera_of_$name$, direction_of_$name$, end_of_$name$, startColor_of_$name$, endColor_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineToColFade</ToolTip>
+					<Default>screenLineToColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineCircled_angleToAngle</Title>
+			<Shortcut>drawScreenLineCircled_angleToAngle</Shortcut>
+			<Description>Draw a ScreenLineCircled in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 circleCenter_of_$name$ = $end$;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineCircled(circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineCircled</ToolTip>
+					<Default>screenLineCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineCircled_angleToAngle_cam</Title>
+			<Shortcut>drawScreenLineCircled_angleToAngle_cam</Shortcut>
+			<Description>Draw a ScreenLineCircled in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineCircled(targetCamera_of_$name$, circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineCircled</ToolTip>
+					<Default>screenLineCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineCircled_angleFromStartPos</Title>
+			<Shortcut>drawScreenLineCircled_angleFromStartPos</Shortcut>
+			<Description>Draw a ScreenLineCircled in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 startPos_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineCircled(startPos_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineCircled</ToolTip>
+					<Default>screenLineCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineCircled_angleFromStartPos_cam</Title>
+			<Shortcut>drawScreenLineCircled_angleFromStartPos_cam</Shortcut>
+			<Description>Draw a ScreenLineCircled in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 startPos_of_$name$ = ;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineCircled(targetCamera_of_$name$, startPos_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineCircled</ToolTip>
+					<Default>screenLineCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircleSegment_angleToAngle</Title>
+			<Shortcut>drawScreenCircleSegment_angleToAngle</Shortcut>
+			<Description>Draw a ScreenCircleSegment in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 circleCenter_of_$name$ = $end$;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float radiusPortionWhereDrawFillStarts_of_$name$ = 0.0f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float fillDensity_of_$name$ = 1.0f;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.CircleSegment(circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, radiusPortionWhereDrawFillStarts_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, fillDensity_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircleSegment</ToolTip>
+					<Default>screenCircleSegment</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircleSegment_angleToAngle_cam</Title>
+			<Shortcut>drawScreenCircleSegment_angleToAngle_cam</Shortcut>
+			<Description>Draw a ScreenCircleSegment in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float radiusPortionWhereDrawFillStarts_of_$name$ = 0.0f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float fillDensity_of_$name$ = 1.0f;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.CircleSegment(targetCamera_of_$name$, circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, radiusPortionWhereDrawFillStarts_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, fillDensity_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircleSegment</ToolTip>
+					<Default>screenCircleSegment</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircleSegment_angleFromStartPos</Title>
+			<Shortcut>drawScreenCircleSegment_angleFromStartPos</Shortcut>
+			<Description>Draw a ScreenCircleSegment in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 startPosOnPerimeter_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float radiusPortionWhereDrawFillStarts_of_$name$ = 0.0f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float fillDensity_of_$name$ = 1.0f;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.CircleSegment(startPosOnPerimeter_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, text_of_$name$, radiusPortionWhereDrawFillStarts_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, fillDensity_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircleSegment</ToolTip>
+					<Default>screenCircleSegment</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircleSegment_angleFromStartPos_cam</Title>
+			<Shortcut>drawScreenCircleSegment_angleFromStartPos_cam</Shortcut>
+			<Description>Draw a ScreenCircleSegment in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 startPosOnPerimeter_of_$name$ = ;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float radiusPortionWhereDrawFillStarts_of_$name$ = 0.0f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					float fillDensity_of_$name$ = 1.0f;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.CircleSegment(targetCamera_of_$name$, startPosOnPerimeter_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, text_of_$name$, radiusPortionWhereDrawFillStarts_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, fillDensity_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircleSegment</ToolTip>
+					<Default>screenCircleSegment</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineString_array</Title>
+			<Shortcut>drawScreenLineString_array</Shortcut>
+			<Description>Draw a ScreenLineString in the Unity Editor. (points defined via array) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2[] points_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineString(points_of_$name$, color_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineString</ToolTip>
+					<Default>screenLineString</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineString_array_cam</Title>
+			<Shortcut>drawScreenLineString_array_cam</Shortcut>
+			<Description>Draw a ScreenLineString in the Unity Editor. (points defined via array) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2[] points_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineString(targetCamera_of_$name$, points_of_$name$, color_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineString</ToolTip>
+					<Default>screenLineString</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineString_list</Title>
+			<Shortcut>drawScreenLineString_list</Shortcut>
+			<Description>Draw a ScreenLineString in the Unity Editor. (points defined via list) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					List<Vector2> points_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineString(points_of_$name$, color_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineString</ToolTip>
+					<Default>screenLineString</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineString_list_cam</Title>
+			<Shortcut>drawScreenLineString_list_cam</Shortcut>
+			<Description>Draw a ScreenLineString in the Unity Editor. (points defined via list) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					List<Vector2> points_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineString(targetCamera_of_$name$, points_of_$name$, color_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineString</ToolTip>
+					<Default>screenLineString</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineStringColFade_array</Title>
+			<Shortcut>drawScreenLineStringColFade_array</Shortcut>
+			<Description>Draw a ScreenLineStringColFade in the Unity Editor. (points defined via array) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2[] points_of_$name$ = $end$;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineStringColorFade(points_of_$name$, startColor_of_$name$, endColor_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineStringColFade</ToolTip>
+					<Default>screenLineStringColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineStringColFade_array_cam</Title>
+			<Shortcut>drawScreenLineStringColFade_array_cam</Shortcut>
+			<Description>Draw a ScreenLineStringColFade in the Unity Editor. (points defined via array) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2[] points_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineStringColorFade(targetCamera_of_$name$, points_of_$name$, startColor_of_$name$, endColor_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineStringColFade</ToolTip>
+					<Default>screenLineStringColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineStringColFade_list</Title>
+			<Shortcut>drawScreenLineStringColFade_list</Shortcut>
+			<Description>Draw a ScreenLineStringColFade in the Unity Editor. (points defined via list) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					List<Vector2> points_of_$name$ = $end$;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineStringColorFade(points_of_$name$, startColor_of_$name$, endColor_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineStringColFade</ToolTip>
+					<Default>screenLineStringColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineStringColFade_list_cam</Title>
+			<Shortcut>drawScreenLineStringColFade_list_cam</Shortcut>
+			<Description>Draw a ScreenLineStringColFade in the Unity Editor. (points defined via list) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					List<Vector2> points_of_$name$ = ;
+					Color startColor_of_$name$ = ;
+					Color endColor_of_$name$ = ;
+					bool closeGapBetweenLastAndFirstPoint_of_$name$ = false;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineStringColorFade(targetCamera_of_$name$, points_of_$name$, startColor_of_$name$, endColor_of_$name$, closeGapBetweenLastAndFirstPoint_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, style_of_$name$, stylePatternScaleFactor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineStringColFade</ToolTip>
+					<Default>screenLineStringColFade</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenShape_3Dpos</Title>
+			<Shortcut>drawScreenShape_3Dpos</Shortcut>
+			<Description>Draw a ScreenShape in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = $end$;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.1f;
+					float height_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Shape(centerPosition_in3DWorldspace_of_$name$, shape_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, height_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenShape</ToolTip>
+					<Default>screenShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenShape_3Dpos_cam</Title>
+			<Shortcut>drawScreenShape_3Dpos_cam</Shortcut>
+			<Description>Draw a ScreenShape in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = ;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.1f;
+					float height_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Shape(targetCamera_of_$name$, centerPosition_in3DWorldspace_of_$name$, shape_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, height_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenShape</ToolTip>
+					<Default>screenShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenShape_2Dpos</Title>
+			<Shortcut>drawScreenShape_2Dpos</Shortcut>
+			<Description>Draw a ScreenShape in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = $end$;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.1f;
+					float height_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Shape(centerPosition_in2DViewportSpace_of_$name$, shape_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, height_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenShape</ToolTip>
+					<Default>screenShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenShape_2Dpos_cam</Title>
+			<Shortcut>drawScreenShape_2Dpos_cam</Shortcut>
+			<Description>Draw a ScreenShape in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = ;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					Color color_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.1f;
+					float height_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Shape(targetCamera_of_$name$, centerPosition_in2DViewportSpace_of_$name$, shape_of_$name$, color_of_$name$, width_relToViewportHeight_of_$name$, height_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenShape</ToolTip>
+					<Default>screenShape</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRectangle_rect</Title>
+			<Shortcut>drawScreenRectangle_rect</Shortcut>
+			<Description>Draw a ScreenRectangle in the Unity Editor. (defined via rect struct) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relTScreenHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Rectangle(rect_of_$name$, color_of_$name$, shape_of_$name$, linesWidth_relTScreenHeight_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRectangle</ToolTip>
+					<Default>screenRectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRectangle_rect_cam</Title>
+			<Shortcut>drawScreenRectangle_rect_cam</Shortcut>
+			<Description>Draw a ScreenRectangle in the Unity Editor. (defined via rect struct) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Rect rect_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToScreenHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Rectangle(targetCamera_of_$name$, rect_of_$name$, color_of_$name$, shape_of_$name$, linesWidth_relToScreenHeight_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRectangle</ToolTip>
+					<Default>screenRectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRectangle_vecFloat</Title>
+			<Shortcut>drawScreenRectangle_vecFloat</Shortcut>
+			<Description>Draw a ScreenRectangle in the Unity Editor. (defined via vector and floats) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 lowLeftCorner_of_$name$ = $end$;
+					float width_relToScreenWidth_of_$name$ = ;
+					float height_relToScreenHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToScreenHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Rectangle(lowLeftCorner_of_$name$, width_relToScreenWidth_of_$name$, height_relToScreenHeight_of_$name$, color_of_$name$, shape_of_$name$, linesWidth_relToScreenHeight_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRectangle</ToolTip>
+					<Default>screenRectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRectangle_vecFloat_cam</Title>
+			<Shortcut>drawScreenRectangle_vecFloat_cam</Shortcut>
+			<Description>Draw a ScreenRectangle in the Unity Editor. (defined via vector and floats) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 lowLeftCorner_of_$name$ = ;
+					float width_relToScreenWidth_of_$name$ = ;
+					float height_relToScreenHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToScreenHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Rectangle(targetCamera_of_$name$, lowLeftCorner_of_$name$, width_relToScreenWidth_of_$name$, height_relToScreenHeight_of_$name$, color_of_$name$, shape_of_$name$, linesWidth_relToScreenHeight_of_$name$, text_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRectangle</ToolTip>
+					<Default>screenRectangle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_rect</Title>
+			<Shortcut>drawScreenBox_rect</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (defined via rect struct) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(rect_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_rect_cam</Title>
+			<Shortcut>drawScreenBox_rect_cam</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (defined via rect struct) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Rect rect_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(targetCamera_of_$name$, rect_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_3Dpos_vec</Title>
+			<Shortcut>drawScreenBox_3Dpos_vec</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (position defined in 3D worldspace) (defined via vectors) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = $end$;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(centerPosition_in3DWorldspace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_3Dpos_vec_cam</Title>
+			<Shortcut>drawScreenBox_3Dpos_vec_cam</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (position defined in 3D worldspace) (defined via vectors) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = ;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(targetCamera_of_$name$, centerPosition_in3DWorldspace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_2Dpos_vec</Title>
+			<Shortcut>drawScreenBox_2Dpos_vec</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (position defined in 2D screenspace) (defined via vectors) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = $end$;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(centerPosition_in2DViewportSpace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBox_2Dpos_vec_cam</Title>
+			<Shortcut>drawScreenBox_2Dpos_vec_cam</Shortcut>
+			<Description>Draw a ScreenBox in the Unity Editor. (position defined in 2D screenspace) (defined via vectors) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = ;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float zRotationDegCC_of_$name$ = 0.0f;
+					DrawShapes.Shape2DType shape_of_$name$ = DrawShapes.Shape2DType.square;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Box(targetCamera_of_$name$, centerPosition_in2DViewportSpace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, zRotationDegCC_of_$name$, shape_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBox</ToolTip>
+					<Default>screenBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_rect</Title>
+			<Shortcut>drawScreenCircle_rect</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (defined via rect struct) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(rect_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_rect_cam</Title>
+			<Shortcut>drawScreenCircle_rect_cam</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (defined via rect struct) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Rect rect_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(targetCamera_of_$name$, rect_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_3Dpos_vecRad</Title>
+			<Shortcut>drawScreenCircle_3Dpos_vecRad</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (position defined in 3D worldspace) (defined via vector and float as radius) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = $end$;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(centerPosition_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_3Dpos_vecRad_cam</Title>
+			<Shortcut>drawScreenCircle_3Dpos_vecRad_cam</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (position defined in 3D worldspace) (defined via vector and float as radius) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(targetCamera_of_$name$, centerPosition_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_2Dpos_vecRad</Title>
+			<Shortcut>drawScreenCircle_2Dpos_vecRad</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (position defined in 2D screenspace) (defined via vector and float as radius) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = $end$;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(centerPosition_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCircle_2Dpos_vecRad_cam</Title>
+			<Shortcut>drawScreenCircle_2Dpos_vecRad_cam</Shortcut>
+			<Description>Draw a ScreenCircle in the Unity Editor. (position defined in 2D screenspace) (defined via vector and float as radius) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Circle(targetCamera_of_$name$, centerPosition_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCircle</ToolTip>
+					<Default>screenCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_3Dpos_vecC1C2Pos</Title>
+			<Shortcut>drawScreenCapsule_3Dpos_vecC1C2Pos</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 3D worldspace) (defined via position of circle1 and circle2) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 posOfCircle1_in3DWorldspace_of_$name$ = $end$;
+					Vector3 posOfCircle2_in3DWorldspace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(posOfCircle1_in3DWorldspace_of_$name$, posOfCircle2_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_3Dpos_vecC1C2Pos_cam</Title>
+			<Shortcut>drawScreenCapsule_3Dpos_vecC1C2Pos_cam</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 3D worldspace) (defined via position of circle1 and circle2) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 posOfCircle1_in3DWorldspace_of_$name$ = ;
+					Vector3 posOfCircle2_in3DWorldspace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(targetCamera_of_$name$, posOfCircle1_in3DWorldspace_of_$name$, posOfCircle2_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_2Dpos_vecC1C2Pos</Title>
+			<Shortcut>drawScreenCapsule_2Dpos_vecC1C2Pos</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 2D screenspace) (defined via position of circle1 and circle2) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 posOfCircle1_in2DViewportSpace_of_$name$ = $end$;
+					Vector2 posOfCircle2_in2DViewportSpace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(posOfCircle1_in2DViewportSpace_of_$name$, posOfCircle2_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_2Dpos_vecC1C2Pos_cam</Title>
+			<Shortcut>drawScreenCapsule_2Dpos_vecC1C2Pos_cam</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 2D screenspace) (defined via position of circle1 and circle2) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 posOfCircle1_in2DViewportSpace_of_$name$ = ;
+					Vector2 posOfCircle2_in2DViewportSpace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(targetCamera_of_$name$, posOfCircle1_in2DViewportSpace_of_$name$, posOfCircle2_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_rect</Title>
+			<Shortcut>drawScreenCapsule_rect</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (defined via rect struct) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Rect rect_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(rect_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_rect_cam</Title>
+			<Shortcut>drawScreenCapsule_rect_cam</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (defined via rect struct) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Rect rect_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(targetCamera_of_$name$, rect_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_3Dpos_vecPosSize</Title>
+			<Shortcut>drawScreenCapsule_3Dpos_vecPosSize</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 3D worldspace) (defined via center position and size from vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = $end$;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(centerPosition_in3DWorldspace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_3Dpos_vecPosSize_cam</Title>
+			<Shortcut>drawScreenCapsule_3Dpos_vecPosSize_cam</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 3D worldspace) (defined via center position and size from vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 centerPosition_in3DWorldspace_of_$name$ = ;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(targetCamera_of_$name$, centerPosition_in3DWorldspace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_2Dpos_vecPosSize</Title>
+			<Shortcut>drawScreenCapsule_2Dpos_vecPosSize</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 2D screenspace) (defined via center position and size from vector) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = $end$;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(centerPosition_in2DViewportSpace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenCapsule_2Dpos_vecPosSize_cam</Title>
+			<Shortcut>drawScreenCapsule_2Dpos_vecPosSize_cam</Shortcut>
+			<Description>Draw a ScreenCapsule in the Unity Editor. (position defined in 2D screenspace) (defined via center position and size from vector) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 centerPosition_in2DViewportSpace_of_$name$ = ;
+					Vector2 size_relToViewportHeight_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					CapsuleDirection2D capsuleDirection_of_$name$ = CapsuleDirection2D.Vertical;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					DrawBasics.LineStyle lineStyle_of_$name$ = DrawBasics.LineStyle.solid;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					DrawBasics.LineStyle fillStyle_of_$name$ = DrawBasics.LineStyle.invisible;
+					bool forceSizeInterpretationToWarpedViewportSpace_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Capsule(targetCamera_of_$name$, centerPosition_in2DViewportSpace_of_$name$, size_relToViewportHeight_of_$name$, color_of_$name$, capsuleDirection_of_$name$, zRotationDegCC_of_$name$, linesWidth_relToViewportHeight_of_$name$, text_of_$name$, drawPointerIfOffscreen_of_$name$, lineStyle_of_$name$, stylePatternScaleFactor_of_$name$, fillStyle_of_$name$, forceSizeInterpretationToWarpedViewportSpace_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenCapsule</ToolTip>
+					<Default>screenCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointArray</Title>
+			<Shortcut>drawScreenPointArray</Shortcut>
+			<Description>Draw a ScreenPointArray in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2[] points_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawCoordsAsText_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.PointArray(points_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawCoordsAsText_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointArray</ToolTip>
+					<Default>screenPointArray</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointArray_cam</Title>
+			<Shortcut>drawScreenPointArray_cam</Shortcut>
+			<Description>Draw a ScreenPointArray in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2[] points_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawCoordsAsText_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.PointArray(targetCamera_of_$name$, points_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawCoordsAsText_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointArray</ToolTip>
+					<Default>screenPointArray</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointList</Title>
+			<Shortcut>drawScreenPointList</Shortcut>
+			<Description>Draw a ScreenPointList in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					List<Vector2> points_of_$name$ = $end$;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawCoordsAsText_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.PointList(points_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawCoordsAsText_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointList</ToolTip>
+					<Default>screenPointList</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointList_cam</Title>
+			<Shortcut>drawScreenPointList_cam</Shortcut>
+			<Description>Draw a ScreenPointList in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					List<Vector2> points_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawCoordsAsText_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.PointList(targetCamera_of_$name$, points_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawCoordsAsText_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointList</ToolTip>
+					<Default>screenPointList</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPoint</Title>
+			<Shortcut>drawScreenPoint</Shortcut>
+			<Description>Draw a ScreenPoint in the Unity Editor. (pointMarking has raised priority) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 position_of_$name$ = $end$;
+					Color color_of_$name$ = ;
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					string text_of_$name$ = null;
+					bool pointer_as_textAttachStyle_of_$name$ = true;
+					bool drawCoordsAsText_of_$name$ = true;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Point(position_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawPointerIfOffscreen_of_$name$, text_of_$name$, pointer_as_textAttachStyle_of_$name$, drawCoordsAsText_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPoint</ToolTip>
+					<Default>screenPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPoint_cam</Title>
+			<Shortcut>drawScreenPoint_cam</Shortcut>
+			<Description>Draw a ScreenPoint in the Unity Editor. (pointMarking has raised priority) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 position_of_$name$ = ;
+					Color color_of_$name$ = ;
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					string text_of_$name$ = null;
+					bool pointer_as_textAttachStyle_of_$name$ = true;
+					bool drawCoordsAsText_of_$name$ = true;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Point(targetCamera_of_$name$, position_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, drawPointerIfOffscreen_of_$name$, text_of_$name$, pointer_as_textAttachStyle_of_$name$, drawCoordsAsText_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPoint</ToolTip>
+					<Default>screenPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPoint_prioText</Title>
+			<Shortcut>drawScreenPoint_prioText</Shortcut>
+			<Description>Draw a ScreenPoint in the Unity Editor. (text parameter has raised priority) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 position_of_$name$ = $end$;
+					string text_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					bool pointer_as_textAttachStyle_of_$name$ = true;
+					bool drawCoordsAsText_of_$name$ = true;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Point(position_of_$name$, text_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, drawPointerIfOffscreen_of_$name$, pointer_as_textAttachStyle_of_$name$, drawCoordsAsText_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPoint</ToolTip>
+					<Default>screenPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPoint_prioText_cam</Title>
+			<Shortcut>drawScreenPoint_prioText_cam</Shortcut>
+			<Description>Draw a ScreenPoint in the Unity Editor. (text parameter has raised priority) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 position_of_$name$ = ;
+					string text_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					float sizeOfMarkingCross_relToViewportHeight_of_$name$ = 0.1f;
+					float markingCrossLinesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					bool drawPointerIfOffscreen_of_$name$ = false;
+					bool pointer_as_textAttachStyle_of_$name$ = true;
+					bool drawCoordsAsText_of_$name$ = true;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Point(targetCamera_of_$name$, position_of_$name$, text_of_$name$, color_of_$name$, sizeOfMarkingCross_relToViewportHeight_of_$name$, markingCrossLinesWidth_relToViewportHeight_of_$name$, zRotationDegCC_of_$name$, drawPointerIfOffscreen_of_$name$, pointer_as_textAttachStyle_of_$name$, drawCoordsAsText_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPoint</ToolTip>
+					<Default>screenPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointTag_3Dpos</Title>
+			<Shortcut>drawScreenPointTag_3Dpos</Shortcut>
+			<Description>Draw a ScreenPointTag in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_in3DWorldspace_of_$name$ = $end$;
+					string text_of_$name$ = null;
+					string titleText_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float size_asTextOffsetDistance_relToViewportHeight_of_$name$ = 0.2f;
+					Vector2 textOffsetDirection_of_$name$ = default(Vector2);
+					float textSizeScaleFactor_of_$name$ = 1.0f;
+					bool skipConeDrawing_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					Vector2 customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$ = default(Vector2);
+					DrawScreenspace.PointTag(position_in3DWorldspace_of_$name$, text_of_$name$, titleText_of_$name$, color_of_$name$, drawPointerIfOffscreen_of_$name$, linesWidth_relToViewportHeight_of_$name$, size_asTextOffsetDistance_relToViewportHeight_of_$name$, textOffsetDirection_of_$name$, textSizeScaleFactor_of_$name$, skipConeDrawing_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$, customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointTag</ToolTip>
+					<Default>screenPointTag</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointTag_3Dpos_cam</Title>
+			<Shortcut>drawScreenPointTag_3Dpos_cam</Shortcut>
+			<Description>Draw a ScreenPointTag in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 position_in3DWorldspace_of_$name$ = ;
+					string text_of_$name$ = null;
+					string titleText_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float size_asTextOffsetDistance_relToViewportHeight_of_$name$ = 0.2f;
+					Vector2 textOffsetDirection_of_$name$ = default(Vector2);
+					float textSizeScaleFactor_of_$name$ = 1.0f;
+					bool skipConeDrawing_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					Vector2 customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$ = default(Vector2);
+					DrawScreenspace.PointTag(targetCamera_of_$name$, position_in3DWorldspace_of_$name$, text_of_$name$, titleText_of_$name$, color_of_$name$, drawPointerIfOffscreen_of_$name$, linesWidth_relToViewportHeight_of_$name$, size_asTextOffsetDistance_relToViewportHeight_of_$name$, textOffsetDirection_of_$name$, textSizeScaleFactor_of_$name$, skipConeDrawing_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$, customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointTag</ToolTip>
+					<Default>screenPointTag</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointTag_2Dpos</Title>
+			<Shortcut>drawScreenPointTag_2Dpos</Shortcut>
+			<Description>Draw a ScreenPointTag in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 position_in2DViewportSpace_of_$name$ = $end$;
+					string text_of_$name$ = null;
+					string titleText_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float size_asTextOffsetDistance_relToViewportHeight_of_$name$ = 0.2f;
+					Vector2 textOffsetDirection_of_$name$ = default(Vector2);
+					float textSizeScaleFactor_of_$name$ = 1.0f;
+					bool skipConeDrawing_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					Vector2 customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$ = default(Vector2);
+					DrawScreenspace.PointTag(position_in2DViewportSpace_of_$name$, text_of_$name$, titleText_of_$name$, color_of_$name$, drawPointerIfOffscreen_of_$name$, linesWidth_relToViewportHeight_of_$name$, size_asTextOffsetDistance_relToViewportHeight_of_$name$, textOffsetDirection_of_$name$, textSizeScaleFactor_of_$name$, skipConeDrawing_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$, customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointTag</ToolTip>
+					<Default>screenPointTag</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenPointTag_2Dpos_cam</Title>
+			<Shortcut>drawScreenPointTag_2Dpos_cam</Shortcut>
+			<Description>Draw a ScreenPointTag in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 position_in2DViewportSpace_of_$name$ = ;
+					string text_of_$name$ = null;
+					string titleText_of_$name$ = null;
+					Color color_of_$name$ = default(Color);
+					bool drawPointerIfOffscreen_of_$name$ = true;
+					float linesWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float size_asTextOffsetDistance_relToViewportHeight_of_$name$ = 0.2f;
+					Vector2 textOffsetDirection_of_$name$ = default(Vector2);
+					float textSizeScaleFactor_of_$name$ = 1.0f;
+					bool skipConeDrawing_of_$name$ = false;
+					bool addTextForOutsideDistance_toOffscreenPointer_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					Vector2 customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$ = default(Vector2);
+					DrawScreenspace.PointTag(targetCamera_of_$name$, position_in2DViewportSpace_of_$name$, text_of_$name$, titleText_of_$name$, color_of_$name$, drawPointerIfOffscreen_of_$name$, linesWidth_relToViewportHeight_of_$name$, size_asTextOffsetDistance_relToViewportHeight_of_$name$, textOffsetDirection_of_$name$, textSizeScaleFactor_of_$name$, skipConeDrawing_of_$name$, addTextForOutsideDistance_toOffscreenPointer_of_$name$, durationInSec_of_$name$, customTowardsPoint_ofDefaultTextOffsetDirection_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenPointTag</ToolTip>
+					<Default>screenPointTag</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVector</Title>
+			<Shortcut>drawScreenVector</Shortcut>
+			<Description>Draw a ScreenVector in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 vectorStartPos_of_$name$ = $end$;
+					Vector2 vectorEndPos_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Vector(vectorStartPos_of_$name$, vectorEndPos_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVector</ToolTip>
+					<Default>screenVector</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVector_cam</Title>
+			<Shortcut>drawScreenVector_cam</Shortcut>
+			<Description>Draw a ScreenVector in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 vectorStartPos_of_$name$ = ;
+					Vector2 vectorEndPos_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Vector(targetCamera_of_$name$, vectorStartPos_of_$name$, vectorEndPos_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVector</ToolTip>
+					<Default>screenVector</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorFrom</Title>
+			<Shortcut>drawScreenVectorFrom</Shortcut>
+			<Description>Draw a ScreenVectorFrom in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 vectorStartPos_of_$name$ = $end$;
+					Vector2 vector_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretVectorAsUnwarped_of_$name$ = false;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorFrom(vectorStartPos_of_$name$, vector_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, interpretVectorAsUnwarped_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorFrom</ToolTip>
+					<Default>screenVectorFrom</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorFrom_cam</Title>
+			<Shortcut>drawScreenVectorFrom_cam</Shortcut>
+			<Description>Draw a ScreenVectorFrom in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 vectorStartPos_of_$name$ = ;
+					Vector2 vector_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretVectorAsUnwarped_of_$name$ = false;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorFrom(targetCamera_of_$name$, vectorStartPos_of_$name$, vector_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, interpretVectorAsUnwarped_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorFrom</ToolTip>
+					<Default>screenVectorFrom</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorTo</Title>
+			<Shortcut>drawScreenVectorTo</Shortcut>
+			<Description>Draw a ScreenVectorTo in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 vector_of_$name$ = $end$;
+					Vector2 vectorEndPos_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretVectorAsUnwarped_of_$name$ = false;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorTo(vector_of_$name$, vectorEndPos_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, interpretVectorAsUnwarped_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorTo</ToolTip>
+					<Default>screenVectorTo</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorTo_cam</Title>
+			<Shortcut>drawScreenVectorTo_cam</Shortcut>
+			<Description>Draw a ScreenVectorTo in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 vector_of_$name$ = ;
+					Vector2 vectorEndPos_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretVectorAsUnwarped_of_$name$ = false;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool pointerAtBothSides_of_$name$ = false;
+					bool writeComponentValuesAsText_of_$name$ = false;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorTo(targetCamera_of_$name$, vector_of_$name$, vectorEndPos_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, interpretVectorAsUnwarped_of_$name$, coneLength_relToViewportHeight_of_$name$, pointerAtBothSides_of_$name$, writeComponentValuesAsText_of_$name$, endPlates_size_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorTo</ToolTip>
+					<Default>screenVectorTo</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorCircled_angleToAngle</Title>
+			<Shortcut>drawScreenVectorCircled_angleToAngle</Shortcut>
+			<Description>Draw a ScreenVectorCircled in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 circleCenter_of_$name$ = $end$;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					bool pointerAtBothSides_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorCircled(circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, pointerAtBothSides_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorCircled</ToolTip>
+					<Default>screenVectorCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorCircled_angleToAngle_cam</Title>
+			<Shortcut>drawScreenVectorCircled_angleToAngle_cam</Shortcut>
+			<Description>Draw a ScreenVectorCircled in the Unity Editor. (turnCenter defined as position, angles relative to screens upwardDir) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float startAngleDegCC_relativeToUp_of_$name$ = ;
+					float endAngleDegCC_relativeToUp_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					bool pointerAtBothSides_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorCircled(targetCamera_of_$name$, circleCenter_of_$name$, startAngleDegCC_relativeToUp_of_$name$, endAngleDegCC_relativeToUp_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, pointerAtBothSides_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorCircled</ToolTip>
+					<Default>screenVectorCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorCircled_angleFromStartPos</Title>
+			<Shortcut>drawScreenVectorCircled_angleFromStartPos</Shortcut>
+			<Description>Draw a ScreenVectorCircled in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 startPos_of_$name$ = $end$;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					bool pointerAtBothSides_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorCircled(startPos_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, pointerAtBothSides_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorCircled</ToolTip>
+					<Default>screenVectorCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenVectorCircled_angleFromStartPos_cam</Title>
+			<Shortcut>drawScreenVectorCircled_angleFromStartPos_cam</Shortcut>
+			<Description>Draw a ScreenVectorCircled in the Unity Editor. (turnCenter and startPosition defined as positions, angle as float) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 startPos_of_$name$ = ;
+					Vector2 circleCenter_of_$name$ = ;
+					float turnAngleDegCC_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_relToViewportHeight_of_$name$ = 0.05f;
+					bool skipFallbackDisplayOfZeroAngles_of_$name$ = false;
+					bool pointerAtBothSides_of_$name$ = false;
+					float minAngleDeg_withoutTextLineBreak_of_$name$ = 45.0f;
+					DrawText.TextAnchorCircledDXXL textAnchor_of_$name$ = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.VectorCircled(targetCamera_of_$name$, startPos_of_$name$, circleCenter_of_$name$, turnAngleDegCC_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, text_of_$name$, coneLength_relToViewportHeight_of_$name$, skipFallbackDisplayOfZeroAngles_of_$name$, pointerAtBothSides_of_$name$, minAngleDeg_withoutTextLineBreak_of_$name$, textAnchor_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenVectorCircled</ToolTip>
+					<Default>screenVectorCircled</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenIcon_3Dpos</Title>
+			<Shortcut>drawScreenIcon_3Dpos</Shortcut>
+			<Description>Draw a ScreenIcon in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_in3DWorldspace_of_$name$ = $end$;
+					DrawBasics.IconType icon_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float size_relToViewportHeight_of_$name$ = 0.1f;
+					string text_of_$name$ = null;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float strokeWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					bool mirrorHorizontally_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Icon(position_in3DWorldspace_of_$name$, icon_of_$name$, color_of_$name$, size_relToViewportHeight_of_$name$, text_of_$name$, zRotationDegCC_of_$name$, strokeWidth_relToViewportHeight_of_$name$, displayPointerIfOffscreen_of_$name$, mirrorHorizontally_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenIcon</ToolTip>
+					<Default>screenIcon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenIcon_3Dpos_cam</Title>
+			<Shortcut>drawScreenIcon_3Dpos_cam</Shortcut>
+			<Description>Draw a ScreenIcon in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 position_in3DWorldspace_of_$name$ = ;
+					DrawBasics.IconType icon_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float size_relToViewportHeight_of_$name$ = 0.1f;
+					string text_of_$name$ = null;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float strokeWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					bool mirrorHorizontally_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Icon(targetCamera_of_$name$, position_in3DWorldspace_of_$name$, icon_of_$name$, color_of_$name$, size_relToViewportHeight_of_$name$, text_of_$name$, zRotationDegCC_of_$name$, strokeWidth_relToViewportHeight_of_$name$, displayPointerIfOffscreen_of_$name$, mirrorHorizontally_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenIcon</ToolTip>
+					<Default>screenIcon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenIcon_2Dpos</Title>
+			<Shortcut>drawScreenIcon_2Dpos</Shortcut>
+			<Description>Draw a ScreenIcon in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 position_in2DViewportSpace_of_$name$ = $end$;
+					DrawBasics.IconType icon_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float size_relToViewportHeight_of_$name$ = 0.1f;
+					string text_of_$name$ = null;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float strokeWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					bool mirrorHorizontally_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Icon(position_in2DViewportSpace_of_$name$, icon_of_$name$, color_of_$name$, size_relToViewportHeight_of_$name$, text_of_$name$, zRotationDegCC_of_$name$, strokeWidth_relToViewportHeight_of_$name$, displayPointerIfOffscreen_of_$name$, mirrorHorizontally_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenIcon</ToolTip>
+					<Default>screenIcon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenIcon_2Dpos_cam</Title>
+			<Shortcut>drawScreenIcon_2Dpos_cam</Shortcut>
+			<Description>Draw a ScreenIcon in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 position_in2DViewportSpace_of_$name$ = ;
+					DrawBasics.IconType icon_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float size_relToViewportHeight_of_$name$ = 0.1f;
+					string text_of_$name$ = null;
+					float zRotationDegCC_of_$name$ = 0.0f;
+					float strokeWidth_relToViewportHeight_of_$name$ = 0.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					bool mirrorHorizontally_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Icon(targetCamera_of_$name$, position_in2DViewportSpace_of_$name$, icon_of_$name$, color_of_$name$, size_relToViewportHeight_of_$name$, text_of_$name$, zRotationDegCC_of_$name$, strokeWidth_relToViewportHeight_of_$name$, displayPointerIfOffscreen_of_$name$, mirrorHorizontally_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenIcon</ToolTip>
+					<Default>screenIcon</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenDot_3Dpos</Title>
+			<Shortcut>drawScreenDot_3Dpos</Shortcut>
+			<Description>Draw a ScreenDot in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_in3DWorldspace_of_$name$ = $end$;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float density_of_$name$ = 1.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Dot(position_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, density_of_$name$, displayPointerIfOffscreen_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenDot</ToolTip>
+					<Default>screenDot</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenDot_3Dpos_cam</Title>
+			<Shortcut>drawScreenDot_3Dpos_cam</Shortcut>
+			<Description>Draw a ScreenDot in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector3 position_in3DWorldspace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float density_of_$name$ = 1.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Dot(targetCamera_of_$name$, position_in3DWorldspace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, density_of_$name$, displayPointerIfOffscreen_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenDot</ToolTip>
+					<Default>screenDot</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenDot_2Dpos</Title>
+			<Shortcut>drawScreenDot_2Dpos</Shortcut>
+			<Description>Draw a ScreenDot in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 position_in2DViewportSpace_of_$name$ = $end$;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float density_of_$name$ = 1.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Dot(position_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, density_of_$name$, displayPointerIfOffscreen_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenDot</ToolTip>
+					<Default>screenDot</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenDot_2Dpos_cam</Title>
+			<Shortcut>drawScreenDot_2Dpos_cam</Shortcut>
+			<Description>Draw a ScreenDot in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 position_in2DViewportSpace_of_$name$ = ;
+					float radius_relToViewportHeight_of_$name$ = 0.05f;
+					Color color_of_$name$ = default(Color);
+					string text_of_$name$ = null;
+					float density_of_$name$ = 1.0f;
+					bool displayPointerIfOffscreen_of_$name$ = false;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.Dot(targetCamera_of_$name$, position_in2DViewportSpace_of_$name$, radius_relToViewportHeight_of_$name$, color_of_$name$, text_of_$name$, density_of_$name$, displayPointerIfOffscreen_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenDot</ToolTip>
+					<Default>screenDot</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenMovingArrowsRay</Title>
+			<Shortcut>drawScreenMovingArrowsRay</Shortcut>
+			<Description>Draw a ScreenMovingArrowsRay in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.016f;
+					float distanceBetweenArrows_relToViewportHeight_of_$name$ = 0.11f;
+					float lengthOfArrows_relToViewportHeight_of_$name$ = 0.05f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.5f;
+					bool backwardAnimationFlipsArrowDirection_of_$name$ = true;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.MovingArrowsRay(start_of_$name$, direction_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, distanceBetweenArrows_relToViewportHeight_of_$name$, lengthOfArrows_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, backwardAnimationFlipsArrowDirection_of_$name$, interpretDirectionAsUnwarped_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenMovingArrowsRay</ToolTip>
+					<Default>screenMovingArrowsRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenMovingArrowsRay_cam</Title>
+			<Shortcut>drawScreenMovingArrowsRay_cam</Shortcut>
+			<Description>Draw a ScreenMovingArrowsRay in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.016f;
+					float distanceBetweenArrows_relToViewportHeight_of_$name$ = 0.11f;
+					float lengthOfArrows_relToViewportHeight_of_$name$ = 0.05f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.5f;
+					bool backwardAnimationFlipsArrowDirection_of_$name$ = true;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.MovingArrowsRay(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, distanceBetweenArrows_relToViewportHeight_of_$name$, lengthOfArrows_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, backwardAnimationFlipsArrowDirection_of_$name$, interpretDirectionAsUnwarped_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenMovingArrowsRay</ToolTip>
+					<Default>screenMovingArrowsRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenMovingArrowsLine</Title>
+			<Shortcut>drawScreenMovingArrowsLine</Shortcut>
+			<Description>Draw a ScreenMovingArrowsLine in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.016f;
+					float distanceBetweenArrows_relToViewportHeight_of_$name$ = 0.11f;
+					float lengthOfArrows_relToViewportHeight_of_$name$ = 0.05f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.5f;
+					bool backwardAnimationFlipsArrowDirection_of_$name$ = true;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.MovingArrowsLine(start_of_$name$, end_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, distanceBetweenArrows_relToViewportHeight_of_$name$, lengthOfArrows_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, backwardAnimationFlipsArrowDirection_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenMovingArrowsLine</ToolTip>
+					<Default>screenMovingArrowsLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenMovingArrowsLine_cam</Title>
+			<Shortcut>drawScreenMovingArrowsLine_cam</Shortcut>
+			<Description>Draw a ScreenMovingArrowsLine in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.016f;
+					float distanceBetweenArrows_relToViewportHeight_of_$name$ = 0.11f;
+					float lengthOfArrows_relToViewportHeight_of_$name$ = 0.05f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.5f;
+					bool backwardAnimationFlipsArrowDirection_of_$name$ = true;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.MovingArrowsLine(targetCamera_of_$name$, start_of_$name$, end_of_$name$, color_of_$name$, lineWidth_relToViewportHeight_of_$name$, distanceBetweenArrows_relToViewportHeight_of_$name$, lengthOfArrows_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, backwardAnimationFlipsArrowDirection_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenMovingArrowsLine</ToolTip>
+					<Default>screenMovingArrowsLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayWithAlternatingColors</Title>
+			<Shortcut>drawScreenRayWithAlternatingColors</Shortcut>
+			<Description>Draw a ScreenRayWithAlternatingColors in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color color1_of_$name$ = default(Color);
+					Color color2_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float lengthOfStripes_relToViewportHeight_of_$name$ = 0.03f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayWithAlternatingColors(start_of_$name$, direction_of_$name$, color1_of_$name$, color2_of_$name$, lineWidth_relToViewportHeight_of_$name$, lengthOfStripes_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayWithAlternatingColors</ToolTip>
+					<Default>screenRayWithAlternatingColors</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayWithAlternatingColors_cam</Title>
+			<Shortcut>drawScreenRayWithAlternatingColors_cam</Shortcut>
+			<Description>Draw a ScreenRayWithAlternatingColors in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color color1_of_$name$ = default(Color);
+					Color color2_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float lengthOfStripes_relToViewportHeight_of_$name$ = 0.03f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayWithAlternatingColors(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, color1_of_$name$, color2_of_$name$, lineWidth_relToViewportHeight_of_$name$, lengthOfStripes_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayWithAlternatingColors</ToolTip>
+					<Default>screenRayWithAlternatingColors</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineWithAlternatingColors</Title>
+			<Shortcut>drawScreenLineWithAlternatingColors</Shortcut>
+			<Description>Draw a ScreenLineWithAlternatingColors in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color color1_of_$name$ = default(Color);
+					Color color2_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float lengthOfStripes_relToViewportHeight_of_$name$ = 0.03f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineWithAlternatingColors(start_of_$name$, end_of_$name$, color1_of_$name$, color2_of_$name$, lineWidth_relToViewportHeight_of_$name$, lengthOfStripes_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineWithAlternatingColors</ToolTip>
+					<Default>screenLineWithAlternatingColors</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineWithAlternatingColors_cam</Title>
+			<Shortcut>drawScreenLineWithAlternatingColors_cam</Shortcut>
+			<Description>Draw a ScreenLineWithAlternatingColors in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color color1_of_$name$ = default(Color);
+					Color color2_of_$name$ = default(Color);
+					float lineWidth_relToViewportHeight_of_$name$ = 0.0f;
+					float lengthOfStripes_relToViewportHeight_of_$name$ = 0.03f;
+					string text_of_$name$ = null;
+					float animationSpeed_of_$name$ = 0.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineWithAlternatingColors(targetCamera_of_$name$, start_of_$name$, end_of_$name$, color1_of_$name$, color2_of_$name$, lineWidth_relToViewportHeight_of_$name$, lengthOfStripes_relToViewportHeight_of_$name$, text_of_$name$, animationSpeed_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineWithAlternatingColors</ToolTip>
+					<Default>screenLineWithAlternatingColors</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBlinkingRay</Title>
+			<Shortcut>drawScreenBlinkingRay</Shortcut>
+			<Description>Draw a ScreenBlinkingRay in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					Color primaryColor_of_$name$ = default(Color);
+					float blinkDurationInSec_of_$name$ = 0.5f;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					Color blinkColor_of_$name$ = default(Color);
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.BlinkingRay(start_of_$name$, direction_of_$name$, primaryColor_of_$name$, blinkDurationInSec_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, blinkColor_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBlinkingRay</ToolTip>
+					<Default>screenBlinkingRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBlinkingRay_cam</Title>
+			<Shortcut>drawScreenBlinkingRay_cam</Shortcut>
+			<Description>Draw a ScreenBlinkingRay in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					Color primaryColor_of_$name$ = default(Color);
+					float blinkDurationInSec_of_$name$ = 0.5f;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					Color blinkColor_of_$name$ = default(Color);
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.BlinkingRay(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, primaryColor_of_$name$, blinkDurationInSec_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, interpretDirectionAsUnwarped_of_$name$, style_of_$name$, blinkColor_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBlinkingRay</ToolTip>
+					<Default>screenBlinkingRay</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBlinkingLine</Title>
+			<Shortcut>drawScreenBlinkingLine</Shortcut>
+			<Description>Draw a ScreenBlinkingLine in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					Color primaryColor_of_$name$ = default(Color);
+					float blinkDurationInSec_of_$name$ = 0.5f;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					Color blinkColor_of_$name$ = default(Color);
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.BlinkingLine(start_of_$name$, end_of_$name$, primaryColor_of_$name$, blinkDurationInSec_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, blinkColor_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBlinkingLine</ToolTip>
+					<Default>screenBlinkingLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenBlinkingLine_cam</Title>
+			<Shortcut>drawScreenBlinkingLine_cam</Shortcut>
+			<Description>Draw a ScreenBlinkingLine in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					Color primaryColor_of_$name$ = default(Color);
+					float blinkDurationInSec_of_$name$ = 0.5f;
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.solid;
+					Color blinkColor_of_$name$ = default(Color);
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float alphaFadeOutLength_0to1_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.BlinkingLine(targetCamera_of_$name$, start_of_$name$, end_of_$name$, primaryColor_of_$name$, blinkDurationInSec_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, style_of_$name$, blinkColor_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, alphaFadeOutLength_0to1_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenBlinkingLine</ToolTip>
+					<Default>screenBlinkingLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayUnderTension</Title>
+			<Shortcut>drawScreenRayUnderTension</Shortcut>
+			<Description>Draw a ScreenRayUnderTension in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					float relaxedLength_relToViewportHeight_of_$name$ = 0.4f;
+					Color relaxedColor_of_$name$ = default(Color);
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.sine;
+					float stretchFactor_forStretchedTensionColor_of_$name$ = 2.0f;
+					Color color_forStretchedTension_of_$name$ = default(Color);
+					float stretchFactor_forSqueezedTensionColor_of_$name$ = 0.0f;
+					Color color_forSqueezedTension_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float alphaOfReferenceLengthDisplay_of_$name$ = 0.1f;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayUnderTension(start_of_$name$, direction_of_$name$, relaxedLength_relToViewportHeight_of_$name$, relaxedColor_of_$name$, style_of_$name$, stretchFactor_forStretchedTensionColor_of_$name$, color_forStretchedTension_of_$name$, stretchFactor_forSqueezedTensionColor_of_$name$, color_forSqueezedTension_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, alphaOfReferenceLengthDisplay_of_$name$, interpretDirectionAsUnwarped_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayUnderTension</ToolTip>
+					<Default>screenRayUnderTension</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenRayUnder_cam</Title>
+			<Shortcut>drawScreenRayUnder_cam</Shortcut>
+			<Description>Draw a ScreenRayUnder in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float relaxedLength_relToViewportHeight_of_$name$ = 0.4f;
+					Color relaxedColor_of_$name$ = default(Color);
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.sine;
+					float stretchFactor_forStretchedTensionColor_of_$name$ = 2.0f;
+					Color color_forStretchedTension_of_$name$ = default(Color);
+					float stretchFactor_forSqueezedTensionColor_of_$name$ = 0.0f;
+					Color color_forSqueezedTension_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float alphaOfReferenceLengthDisplay_of_$name$ = 0.1f;
+					bool interpretDirectionAsUnwarped_of_$name$ = false;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.RayUnderTension(targetCamera_of_$name$, start_of_$name$, direction_of_$name$, relaxedLength_relToViewportHeight_of_$name$, relaxedColor_of_$name$, style_of_$name$, stretchFactor_forStretchedTensionColor_of_$name$, color_forStretchedTension_of_$name$, stretchFactor_forSqueezedTensionColor_of_$name$, color_forSqueezedTension_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, alphaOfReferenceLengthDisplay_of_$name$, interpretDirectionAsUnwarped_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenRayUnder</ToolTip>
+					<Default>screenRayUnder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineUnder</Title>
+			<Shortcut>drawScreenLineUnder</Shortcut>
+			<Description>Draw a ScreenLineUnder in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					float relaxedLength_relToViewportHeight_of_$name$ = 0.4f;
+					Color relaxedColor_of_$name$ = default(Color);
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.sine;
+					float stretchFactor_forStretchedTensionColor_of_$name$ = 2.0f;
+					Color color_forStretchedTension_of_$name$ = default(Color);
+					float stretchFactor_forSqueezedTensionColor_of_$name$ = 0.0f;
+					Color color_forSqueezedTension_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float alphaOfReferenceLengthDisplay_of_$name$ = 0.1f;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineUnderTension(start_of_$name$, end_of_$name$, relaxedLength_relToViewportHeight_of_$name$, relaxedColor_of_$name$, style_of_$name$, stretchFactor_forStretchedTensionColor_of_$name$, color_forStretchedTension_of_$name$, stretchFactor_forSqueezedTensionColor_of_$name$, color_forSqueezedTension_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, alphaOfReferenceLengthDisplay_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineUnder</ToolTip>
+					<Default>screenLineUnder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScreenLineUnder_cam</Title>
+			<Shortcut>drawScreenLineUnder_cam</Shortcut>
+			<Description>Draw a ScreenLineUnder in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Camera targetCamera_of_$name$ = $end$;
+					Vector2 start_of_$name$ = ;
+					Vector2 end_of_$name$ = ;
+					float relaxedLength_relToViewportHeight_of_$name$ = 0.4f;
+					Color relaxedColor_of_$name$ = default(Color);
+					DrawBasics.LineStyle style_of_$name$ = DrawBasics.LineStyle.sine;
+					float stretchFactor_forStretchedTensionColor_of_$name$ = 2.0f;
+					Color color_forStretchedTension_of_$name$ = default(Color);
+					float stretchFactor_forSqueezedTensionColor_of_$name$ = 0.0f;
+					Color color_forSqueezedTension_of_$name$ = default(Color);
+					float width_relToViewportHeight_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float alphaOfReferenceLengthDisplay_of_$name$ = 0.1f;
+					float stylePatternScaleFactor_of_$name$ = 1.0f;
+					float endPlatesSize_relToViewportHeight_of_$name$ = 0.0f;
+					float enlargeSmallTextToThisMinRelTextSize_of_$name$ = 0.01f;
+					float durationInSec_of_$name$ = 0.0f;
+					DrawScreenspace.LineUnderTension(targetCamera_of_$name$, start_of_$name$, end_of_$name$, relaxedLength_relToViewportHeight_of_$name$, relaxedColor_of_$name$, style_of_$name$, stretchFactor_forStretchedTensionColor_of_$name$, color_forStretchedTension_of_$name$, stretchFactor_forSqueezedTensionColor_of_$name$, color_forSqueezedTension_of_$name$, width_relToViewportHeight_of_$name$, text_of_$name$, alphaOfReferenceLengthDisplay_of_$name$, stylePatternScaleFactor_of_$name$, endPlatesSize_relToViewportHeight_of_$name$, enlargeSmallTextToThisMinRelTextSize_of_$name$, durationInSec_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ScreenLineUnder</ToolTip>
+					<Default>screenLineUnder</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

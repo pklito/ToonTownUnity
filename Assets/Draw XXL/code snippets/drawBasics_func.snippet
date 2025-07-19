@@ -1,0 +1,3100 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLine_func</Title>
+			<Shortcut>drawLine_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Line in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLine$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.Line(start, end, color, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Line</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRay_func</Title>
+			<Shortcut>drawRay_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Ray in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRay$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.Ray(start, direction, color, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Ray</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineFrom_func</Title>
+			<Shortcut>drawLineFrom_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineFrom in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineFrom$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineFrom(start, direction, color, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineFrom</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineTo_func</Title>
+			<Shortcut>drawLineTo_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineTo in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineTo$name$()
+					{
+						Vector3 direction = $end$;
+						Vector3 end = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineTo(direction, end, color, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineTo</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineColFade_func</Title>
+			<Shortcut>drawLineColFade_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineColFade in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineColFade$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						Color startColor = ;
+						Color endColor = ;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineColorFade(start, end, startColor, endColor, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayColFade_func</Title>
+			<Shortcut>drawRayColFade_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayColFade in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayColFade$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color startColor = ;
+						Color endColor = ;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.RayColorFade(start, direction, startColor, endColor, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineFromColFade_func</Title>
+			<Shortcut>drawLineFromColFade_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineFromColFade in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineFromColFade$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color startColor = ;
+						Color endColor = ;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineFrom_withColorFade(start, direction, startColor, endColor, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineFromColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineToColFade_func</Title>
+			<Shortcut>drawLineToColFade_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineToColFade in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineToColFade$name$()
+					{
+						Vector3 direction = $end$;
+						Vector3 end = ;
+						Color startColor = ;
+						Color endColor = ;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineTo_withColorFade(direction, end, startColor, endColor, width, text, style, stylePatternScaleFactor, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineToColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineCircled_vecToVec_func</Title>
+			<Shortcut>drawLineCircled_vecToVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineCircled in the Unity Editor. (via toStartVector and toEndVector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineCircled$name$()
+					{
+						Vector3 circleCenter = $end$;
+						Vector3 circleCenter_to_start = ;
+						Vector3 circleCenter_to_end = ;
+						Color color = default(Color);
+						float forceRadius = 0.0f;
+						float width = 0.0f;
+						string text = null;
+						bool useReflexAngleOver180deg = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineCircled(circleCenter, circleCenter_to_start, circleCenter_to_end, color, forceRadius, width, text, useReflexAngleOver180deg, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineCircled_fromQuatUp_func</Title>
+			<Shortcut>drawLineCircled_fromQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineCircled in the Unity Editor. (quaternion-forward defines turnAxis, line starts at quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineCircled$name$()
+					{
+						Vector3 circleCenterPos = $end$;
+						Quaternion orientation = ;
+						float turnAngleDegCC_startingFromUp = ;
+						float radius = ;
+						Color color = ;
+						float width = 0.0f;
+						string text = null;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineCircled(circleCenterPos, orientation, turnAngleDegCC_startingFromUp, radius, color, width, text, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineCircled_relToQuatUp_func</Title>
+			<Shortcut>drawLineCircled_relToQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineCircled in the Unity Editor. (quaternion-forward defines turnAxis, start and end angles measured relative to quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineCircled$name$()
+					{
+						Vector3 circleCenterPos = $end$;
+						Quaternion orientation = ;
+						float startAngleDegCC_relativeToUp = ;
+						float endAngleDegCC_relativeToUp = ;
+						float radius = 1.0f;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineCircled(circleCenterPos, orientation, startAngleDegCC_relativeToUp, endAngleDegCC_relativeToUp, radius, color, width, text, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineCircled_aroundRayAxis_func</Title>
+			<Shortcut>drawLineCircled_aroundRayAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineCircled in the Unity Editor. (via ray as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineCircled$name$()
+					{
+						Vector3 startPos = $end$;
+						Ray turnAxis = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineCircled(startPos, turnAxis, turnAngleDegCC, color, width, text, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineCircled_aroundVecAxis_func</Title>
+			<Shortcut>drawLineCircled_aroundVecAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineCircled in the Unity Editor. (via vector as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineCircled$name$()
+					{
+						Vector3 startPos = $end$;
+						Vector3 turnAxis_origin = ;
+						Vector3 turnAxis_direction = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineCircled(startPos, turnAxis_origin, turnAxis_direction, turnAngleDegCC, color, width, text, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleSegment_vecToVec_func</Title>
+			<Shortcut>drawCircleSegment_vecToVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CircleSegment in the Unity Editor. (via toStartVector and toEndVector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCircleSegment$name$()
+					{
+						Vector3 centerOfCircle = $end$;
+						Vector3 circleCenter_to_startPosOnPerimeter = ;
+						Vector3 circleCenter_to_endPosOnPerimeter = ;
+						Color color = default(Color);
+						float forceRadius = 0.0f;
+						string text = null;
+						bool useReflexAngleOver180deg = false;
+						float radiusPortionWhereDrawFillStarts = 0.0f;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						float fillDensity = 1.0f;
+						float minAngleDeg_withoutTextLineBreak = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.CircleSegment(centerOfCircle, circleCenter_to_startPosOnPerimeter, circleCenter_to_endPosOnPerimeter, color, forceRadius, text, useReflexAngleOver180deg, radiusPortionWhereDrawFillStarts, skipFallbackDisplayOfZeroAngles, fillDensity, minAngleDeg_withoutTextLineBreak, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleSegment</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleSegment_fromQuatUp_func</Title>
+			<Shortcut>drawCircleSegment_fromQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CircleSegment in the Unity Editor. (quaternion-forward defines turnAxis, segment starts at quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCircleSegment$name$()
+					{
+						Vector3 centerOfCircle = $end$;
+						Quaternion orientation = ;
+						float turnAngleDegCC_startingFromUp = ;
+						float radius = ;
+						Color color = ;
+						string text = null;
+						float radiusPortionWhereDrawFillStarts = 0.0f;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						float fillDensity = 1.0f;
+						float minAngleDeg_withoutTextLineBreak = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.CircleSegment(centerOfCircle, orientation, turnAngleDegCC_startingFromUp, radius, color, text, radiusPortionWhereDrawFillStarts, skipFallbackDisplayOfZeroAngles, fillDensity, minAngleDeg_withoutTextLineBreak, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleSegment</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleSegment_relToQuatUp_func</Title>
+			<Shortcut>drawCircleSegment_relToQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CircleSegment in the Unity Editor. (quaternion-forward defines turnAxis, start and end angles measured relative to quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCircleSegment$name$()
+					{
+						Vector3 centerOfCircle = $end$;
+						Quaternion orientation = ;
+						float startAngleDegCC_relativeToUp = ;
+						float endAngleDegCC_relativeToUp = ;
+						float radius = 1.0f;
+						Color color = default(Color);
+						string text = null;
+						float radiusPortionWhereDrawFillStarts = 0.0f;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						float fillDensity = 1.0f;
+						float minAngleDeg_withoutTextLineBreak = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.CircleSegment(centerOfCircle, orientation, startAngleDegCC_relativeToUp, endAngleDegCC_relativeToUp, radius, color, text, radiusPortionWhereDrawFillStarts, skipFallbackDisplayOfZeroAngles, fillDensity, minAngleDeg_withoutTextLineBreak, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleSegment</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleSegment_aroundRayAxis_func</Title>
+			<Shortcut>drawCircleSegment_aroundRayAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CircleSegment in the Unity Editor. (via ray as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCircleSegment$name$()
+					{
+						Vector3 startPos = $end$;
+						Ray turnAxis = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						string text = null;
+						float radiusPortionWhereDrawFillStarts = 0.0f;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						float fillDensity = 1.0f;
+						float minAngleDeg_withoutTextLineBreak = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.CircleSegment(startPos, turnAxis, turnAngleDegCC, color, text, radiusPortionWhereDrawFillStarts, skipFallbackDisplayOfZeroAngles, fillDensity, minAngleDeg_withoutTextLineBreak, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleSegment</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleSegment_aroundVecAxis_func</Title>
+			<Shortcut>drawCircleSegment_aroundVecAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CircleSegment in the Unity Editor. (via vector as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCircleSegment$name$()
+					{
+						Vector3 startPosOnPerimeter = $end$;
+						Vector3 centerOfCircle = ;
+						Vector3 normalOfCircle = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						string text = null;
+						float radiusPortionWhereDrawFillStarts = 0.0f;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						float fillDensity = 1.0f;
+						float minAngleDeg_withoutTextLineBreak = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.CircleSegment(startPosOnPerimeter, centerOfCircle, normalOfCircle, turnAngleDegCC, color, text, radiusPortionWhereDrawFillStarts, skipFallbackDisplayOfZeroAngles, fillDensity, minAngleDeg_withoutTextLineBreak, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleSegment</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineString_array_func</Title>
+			<Shortcut>drawLineString_array_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineString in the Unity Editor. (via points from array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineString$name$()
+					{
+						Vector3[] points = $end$;
+						Color color = default(Color);
+						bool closeGapBetweenLastAndFirstPoint = false;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineString(points, color, closeGapBetweenLastAndFirstPoint, width, text, style, stylePatternScaleFactor, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineString_list_func</Title>
+			<Shortcut>drawLineString_list_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineString in the Unity Editor. (via points from list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineString$name$()
+					{
+						List<Vector3> points = $end$;
+						Color color = default(Color);
+						bool closeGapBetweenLastAndFirstPoint = false;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineString(points, color, closeGapBetweenLastAndFirstPoint, width, text, style, stylePatternScaleFactor, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineString</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineStringColFade_array_func</Title>
+			<Shortcut>drawLineStringColFade_array_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineStringColFade in the Unity Editor. (via points from array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineStringColFade$name$()
+					{
+						Vector3[] points = $end$;
+						Color startColor = ;
+						Color endColor = ;
+						bool closeGapBetweenLastAndFirstPoint = false;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineStringColorFade(points, startColor, endColor, closeGapBetweenLastAndFirstPoint, width, text, style, stylePatternScaleFactor, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineStringColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineStringColFade_list_func</Title>
+			<Shortcut>drawLineStringColFade_list_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineStringColFade in the Unity Editor. (via points from list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineStringColFade$name$()
+					{
+						List<Vector3> points = $end$;
+						Color startColor = ;
+						Color endColor = ;
+						bool closeGapBetweenLastAndFirstPoint = false;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						float stylePatternScaleFactor = 1.0f;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.LineStringColorFade(points, startColor, endColor, closeGapBetweenLastAndFirstPoint, width, text, style, stylePatternScaleFactor, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineStringColFade</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointArray_func</Title>
+			<Shortcut>drawPointArray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointArray in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointArray$name$()
+					{
+						Vector3[] points = $end$;
+						Color color = default(Color);
+						float sizeOfMarkingCross = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointArray(points, color, sizeOfMarkingCross, markingCrossLinesWidth, drawCoordsAsText, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointArray</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointList_func</Title>
+			<Shortcut>drawPointList_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointList in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointList$name$()
+					{
+						List<Vector3> points = $end$;
+						Color color = default(Color);
+						float sizeOfMarkingCross = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointList(points, color, sizeOfMarkingCross, markingCrossLinesWidth, drawCoordsAsText, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointList</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPoint_func</Title>
+			<Shortcut>drawPoint_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Point in the Unity Editor. (pointMarking has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPoint$name$()
+					{
+						Vector3 position = $end$;
+						Color markingCrossColor = ;
+						float sizeOfMarkingCross = 1.0f;
+						Quaternion rotation = default(Quaternion);
+						float markingCrossLinesWidth = 0.0f;
+						string text = null;
+						Color textColor = default(Color);
+						bool pointer_as_textAttachStyle = false;
+						bool drawCoordsAsText = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Point(position, markingCrossColor, sizeOfMarkingCross, rotation, markingCrossLinesWidth, text, textColor, pointer_as_textAttachStyle, drawCoordsAsText, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Point</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPoint_prioText_func</Title>
+			<Shortcut>drawPoint_prioText_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Point in the Unity Editor. (text parameter has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPoint$name$()
+					{
+						Vector3 position = $end$;
+						string text = null;
+						Color textColor = default(Color);
+						float sizeOfMarkingCross = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						Color overwrite_markingCrossColor = default(Color);
+						Quaternion rotation = default(Quaternion);
+						bool pointer_as_textAttachStyle = true;
+						bool drawCoordsAsText = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Point(position, text, textColor, sizeOfMarkingCross, markingCrossLinesWidth, overwrite_markingCrossColor, rotation, pointer_as_textAttachStyle, drawCoordsAsText, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Point</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocalArray_transformAsParent_func</Title>
+			<Shortcut>drawPointLocalArray_transformAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocalArray in the Unity Editor. (local space is defined by transform as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocalArray$name$()
+					{
+						Vector3[] localPoints = $end$;
+						Transform parentTransform = ;
+						Color color = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocalArray(localPoints, parentTransform, color, sizeOfMarkingCross_global, markingCrossLinesWidth, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocalArray</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocalList_transformAsParent_func</Title>
+			<Shortcut>drawPointLocalList_transformAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocalList in the Unity Editor. (local space is defined by transform as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocalList$name$()
+					{
+						List<Vector3> localPoints = $end$;
+						Transform parentTransform = ;
+						Color color = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocalList(localPoints, parentTransform, color, sizeOfMarkingCross_global, markingCrossLinesWidth, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocalList</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocalArray_vecAsParent_func</Title>
+			<Shortcut>drawPointLocalArray_vecAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocalArray in the Unity Editor. (local space is defined by vectors as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocalArray$name$()
+					{
+						Vector3[] localPoints = $end$;
+						Vector3 parentPositionGlobal = ;
+						Quaternion parentRotationGlobal = ;
+						Vector3 parentScaleGlobal = ;
+						Color color = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocalArray(localPoints, parentPositionGlobal, parentRotationGlobal, parentScaleGlobal, color, sizeOfMarkingCross_global, markingCrossLinesWidth, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocalArray</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocalList_vecAsParent_func</Title>
+			<Shortcut>drawPointLocalList_vecAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocalList in the Unity Editor. (local space is defined by vectors as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocalList$name$()
+					{
+						List<Vector3> localPoints = $end$;
+						Vector3 parentPositionGlobal = ;
+						Quaternion parentRotationGlobal = ;
+						Vector3 parentScaleGlobal = ;
+						Color color = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocalList(localPoints, parentPositionGlobal, parentRotationGlobal, parentScaleGlobal, color, sizeOfMarkingCross_global, markingCrossLinesWidth, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocalList</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocal_transformAsParent_func</Title>
+			<Shortcut>drawPointLocal_transformAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocal in the Unity Editor. (local space is defined by transform as parent) (pointMarking has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocal$name$()
+					{
+						Vector3 localPosition = $end$;
+						Transform parentTransform = ;
+						Color markingCrossColor = ;
+						float sizeOfMarkingCross_global = 1.0f;
+						Quaternion localRotation = default(Quaternion);
+						float markingCrossLinesWidth = 0.0f;
+						string text = null;
+						Color textColor = default(Color);
+						bool pointer_as_textAttachStyle = false;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocal(localPosition, parentTransform, markingCrossColor, sizeOfMarkingCross_global, localRotation, markingCrossLinesWidth, text, textColor, pointer_as_textAttachStyle, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocal_transformAsParent_prioText_func</Title>
+			<Shortcut>drawPointLocal_transformAsParent_prioText_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocal in the Unity Editor. (local space is defined by transform as parent) (text parameter has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocal$name$()
+					{
+						Vector3 localPosition = $end$;
+						Transform parentTransform = ;
+						string text = null;
+						Color textColor = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						Color overwrite_markingCrossColor = default(Color);
+						Quaternion localRotation = default(Quaternion);
+						bool pointer_as_textAttachStyle = true;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = true;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocal(localPosition, parentTransform, text, textColor, sizeOfMarkingCross_global, markingCrossLinesWidth, overwrite_markingCrossColor, localRotation, pointer_as_textAttachStyle, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocal_vecAsParent_func</Title>
+			<Shortcut>drawPointLocal_vecAsParent_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocal in the Unity Editor. (local space is defined by vectors as parent) (pointMarking has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocal$name$()
+					{
+						Vector3 localPosition = $end$;
+						Vector3 parentPositionGlobal = ;
+						Quaternion parentRotationGlobal = ;
+						Vector3 parentScaleGlobal = ;
+						Color markingCrossColor = ;
+						float sizeOfMarkingCross_global = 1.0f;
+						Quaternion localRotation = default(Quaternion);
+						float markingCrossLinesWidth = 0.0f;
+						string text = null;
+						Color textColor = default(Color);
+						bool pointer_as_textAttachStyle = false;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = false;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocal(localPosition, parentPositionGlobal, parentRotationGlobal, parentScaleGlobal, markingCrossColor, sizeOfMarkingCross_global, localRotation, markingCrossLinesWidth, text, textColor, pointer_as_textAttachStyle, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointLocal_vecAsParent_prioText_func</Title>
+			<Shortcut>drawPointLocal_vecAsParent_prioText_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointLocal in the Unity Editor. (local space is defined by vectors as parent) (text parameter has raised priority)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointLocal$name$()
+					{
+						Vector3 localPosition = $end$;
+						Vector3 parentPositionGlobal = ;
+						Quaternion parentRotationGlobal = ;
+						Vector3 parentScaleGlobal = ;
+						string text = null;
+						Color textColor = default(Color);
+						float sizeOfMarkingCross_global = 1.0f;
+						float markingCrossLinesWidth = 0.0f;
+						Color overwrite_markingCrossColor = default(Color);
+						Quaternion localRotation = default(Quaternion);
+						bool pointer_as_textAttachStyle = true;
+						bool drawCoordsAsText = true;
+						bool additionallyDrawGlobalCoords = true;
+						bool drawLocalOrigin = true;
+						bool hideZDir = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointLocal(localPosition, parentPositionGlobal, parentRotationGlobal, parentScaleGlobal, text, textColor, sizeOfMarkingCross_global, markingCrossLinesWidth, overwrite_markingCrossColor, localRotation, pointer_as_textAttachStyle, drawCoordsAsText, additionallyDrawGlobalCoords, drawLocalOrigin, hideZDir, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPointTag_func</Title>
+			<Shortcut>drawPointTag_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PointTag in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPointTag$name$()
+					{
+						Vector3 position = $end$;
+						string text = null;
+						Color color = default(Color);
+						float linesWidth = 0.0f;
+						float size_asTextOffsetDistance = 1.0f;
+						Vector3 textOffsetDirection = default(Vector3);
+						float textSizeScaleFactor = 1.0f;
+						bool skipConeDrawing = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.PointTag(position, text, color, linesWidth, size_asTextOffsetDistance, textOffsetDirection, textSizeScaleFactor, skipConeDrawing, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PointTag</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVector_func</Title>
+			<Shortcut>drawVector_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Vector in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVector$name$()
+					{
+						Vector3 vectorStartPos = $end$;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool addNormalizedMarkingText = false;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						bool writeComponentValuesAsText = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Vector(vectorStartPos, vectorEndPos, color, lineWidth, text, coneLength, pointerAtBothSides, flattenThickRoundLineIntoAmplitudePlane, customAmplitudeAndTextDir, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, writeComponentValuesAsText, endPlates_size, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Vector</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorFrom_func</Title>
+			<Shortcut>drawVectorFrom_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorFrom in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorFrom$name$()
+					{
+						Vector3 vectorStartPos = $end$;
+						Vector3 vector = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool addNormalizedMarkingText = false;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						bool writeComponentValuesAsText = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorFrom(vectorStartPos, vector, color, lineWidth, text, coneLength, pointerAtBothSides, flattenThickRoundLineIntoAmplitudePlane, customAmplitudeAndTextDir, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, writeComponentValuesAsText, endPlates_size, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorFrom</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorTo_func</Title>
+			<Shortcut>drawVectorTo_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorTo in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorTo$name$()
+					{
+						Vector3 vector = $end$;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool addNormalizedMarkingText = false;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						bool writeComponentValuesAsText = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorTo(vector, vectorEndPos, color, lineWidth, text, coneLength, pointerAtBothSides, flattenThickRoundLineIntoAmplitudePlane, customAmplitudeAndTextDir, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, writeComponentValuesAsText, endPlates_size, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorTo</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorCircled_vecToVec_func</Title>
+			<Shortcut>drawVectorCircled_vecToVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorCircled in the Unity Editor. (via toStartVector and toEndVector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorCircled$name$()
+					{
+						Vector3 circleCenter = $end$;
+						Vector3 circleCenter_to_start = ;
+						Vector3 circleCenter_to_end = ;
+						Color color = default(Color);
+						float forceRadius = 0.0f;
+						float lineWidth = 0.0f;
+						string text = null;
+						bool useReflexAngleOver180deg = false;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorCircled(circleCenter, circleCenter_to_start, circleCenter_to_end, color, forceRadius, lineWidth, text, useReflexAngleOver180deg, coneLength, pointerAtBothSides, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorCircled_fromQuatUp_func</Title>
+			<Shortcut>drawVectorCircled_fromQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorCircled in the Unity Editor. (quaternion-forward defines turnAxis, vector starts at quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorCircled$name$()
+					{
+						Vector3 circleCenterPos = $end$;
+						Quaternion orientation = ;
+						float turnAngleDegCC_startingFromUp = ;
+						float radius = ;
+						Color color = ;
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorCircled(circleCenterPos, orientation, turnAngleDegCC_startingFromUp, radius, color, lineWidth, text, coneLength, pointerAtBothSides, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorCircled_relToQuatUp_func</Title>
+			<Shortcut>drawVectorCircled_relToQuatUp_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorCircled in the Unity Editor. (quaternion-forward defines turnAxis, start and end angles measured relative to quaternion-up)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorCircled$name$()
+					{
+						Vector3 circleCenterPos = $end$;
+						Quaternion orientation = ;
+						float startAngleDegCC_relativeToUp = ;
+						float endAngleDegCC_relativeToUp = ;
+						float radius = 1.0f;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorCircled(circleCenterPos, orientation, startAngleDegCC_relativeToUp, endAngleDegCC_relativeToUp, radius, color, lineWidth, text, coneLength, pointerAtBothSides, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorCircled_aroundRayAxis_func</Title>
+			<Shortcut>drawVectorCircled_aroundRayAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorCircled in the Unity Editor. (via Ray as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorCircled$name$()
+					{
+						Vector3 startPos = $end$;
+						Ray turnAxis = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorCircled(startPos, turnAxis, turnAngleDegCC, color, lineWidth, text, coneLength, pointerAtBothSides, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorCircled_aroundVecAxis_func</Title>
+			<Shortcut>drawVectorCircled_aroundVecAxis_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorCircled in the Unity Editor. (via Vector as turnAxis)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorCircled$name$()
+					{
+						Vector3 startPos = $end$;
+						Vector3 turnAxis_origin = ;
+						Vector3 turnAxis_direction = ;
+						float turnAngleDegCC = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float coneLength = 0.17f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+						bool pointerAtBothSides = false;
+						bool skipFallbackDisplayOfZeroAngles = false;
+						bool flattenThickRoundLineIntoCirclePlane = true;
+						float minAngleDeg_withoutTextLineBreak = 45.0f;
+						DrawText.TextAnchorCircledDXXL textAnchor = DrawText.TextAnchorCircledDXXL.LowerLeftOfFirstLine;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.VectorCircled(startPos, turnAxis_origin, turnAxis_direction, turnAngleDegCC, color, lineWidth, text, coneLength, pointerAtBothSides, skipFallbackDisplayOfZeroAngles, flattenThickRoundLineIntoCirclePlane, minAngleDeg_withoutTextLineBreak, textAnchor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorCircled</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawIcon_rotViaVec_func</Title>
+			<Shortcut>drawIcon_rotViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Icon in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawIcon$name$()
+					{
+						Vector3 position = $end$;
+						DrawBasics.IconType icon = DrawBasics.IconType. ;
+						Color color = ;
+						float size = ;
+						string text = ;
+						Vector3 normal = ;
+						Vector3 up_insideIconPlane = default(Vector3);
+						int strokeWidth_asPPMofSize = 0;
+						bool mirrorHorizontally = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Icon(position, icon, color, size, text, normal, up_insideIconPlane, strokeWidth_asPPMofSize, mirrorHorizontally, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Icon</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawIcon_rotViaQuat_func</Title>
+			<Shortcut>drawIcon_rotViaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Icon in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawIcon$name$()
+					{
+						Vector3 position = $end$;
+						DrawBasics.IconType icon = DrawBasics.IconType. ;
+						Color color = default(Color);
+						float size = 1.0f;
+						string text = null;
+						Quaternion rotation = default(Quaternion);
+						int strokeWidth_asPPMofSize = 0;
+						bool mirrorHorizontally = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Icon(position, icon, color, size, text, rotation, strokeWidth_asPPMofSize, mirrorHorizontally, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Icon</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDot_func</Title>
+			<Shortcut>drawDot_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Dot in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawDot$name$()
+					{
+						Vector3 position = $end$;
+						float radius = 0.5f;
+						Vector3 normal = default(Vector3);
+						Color color = default(Color);
+						string text = null;
+						float density = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.Dot(position, radius, normal, color, text, density, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Dot</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawMovingArrowsRay_func</Title>
+			<Shortcut>drawMovingArrowsRay_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a MovingArrowsRay in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawMovingArrowsRay$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color color = default(Color);
+						float lineWidth = 0.05f;
+						float distanceBetweenArrows = 0.5f;
+						float lengthOfArrows = 0.15f;
+						string text = null;
+						float animationSpeed = 0.5f;
+						bool backwardAnimationFlipsArrowDirection = true;
+						bool flattenThickRoundLineIntoAmplitudePlane = true;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.MovingArrowsRay(start, direction, color, lineWidth, distanceBetweenArrows, lengthOfArrows, text, animationSpeed, backwardAnimationFlipsArrowDirection, flattenThickRoundLineIntoAmplitudePlane, customAmplitudeAndTextDir, endPlates_size, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn MovingArrowsRay</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawMovingArrowsLine_func</Title>
+			<Shortcut>drawMovingArrowsLine_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a MovingArrowsLine in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawMovingArrowsLine$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						Color color = default(Color);
+						float lineWidth = 0.05f;
+						float distanceBetweenArrows = 0.5f;
+						float lengthOfArrows = 0.15f;
+						string text = null;
+						float animationSpeed = 0.5f;
+						bool backwardAnimationFlipsArrowDirection = true;
+						bool flattenThickRoundLineIntoAmplitudePlane = true;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.MovingArrowsLine(start, end, color, lineWidth, distanceBetweenArrows, lengthOfArrows, text, animationSpeed, backwardAnimationFlipsArrowDirection, flattenThickRoundLineIntoAmplitudePlane, customAmplitudeAndTextDir, endPlates_size, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn MovingArrowsLine</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayWithAlternatingColors_func</Title>
+			<Shortcut>drawRayWithAlternatingColors_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayWithAlternatingColors in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayWithAlternatingColors$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color color1 = default(Color);
+						Color color2 = default(Color);
+						float width = 0.0f;
+						float lengthOfStripes = 0.04f;
+						string text = null;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.RayWithAlternatingColors(start, direction, color1, color2, width, lengthOfStripes, text, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayWithAlternatingColors</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineWithAlternatingColors_func</Title>
+			<Shortcut>drawLineWithAlternatingColors_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineWithAlternatingColors in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineWithAlternatingColors$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						Color color1 = default(Color);
+						Color color2 = default(Color);
+						float width = 0.0f;
+						float lengthOfStripes = 0.04f;
+						string text = null;
+						float animationSpeed = 0.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineWithAlternatingColors(start, end, color1, color2, width, lengthOfStripes, text, animationSpeed, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineWithAlternatingColors</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBlinkingRay_func</Title>
+			<Shortcut>drawBlinkingRay_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BlinkingRay in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBlinkingRay$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						Color primaryColor = default(Color);
+						float blinkDurationInSec = 0.5f;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						Color blinkColor = default(Color);
+						float stylePatternScaleFactor = 1.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.BlinkingRay(start, direction, primaryColor, blinkDurationInSec, width, text, style, blinkColor, stylePatternScaleFactor, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BlinkingRay</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBlinkingLine_func</Title>
+			<Shortcut>drawBlinkingLine_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BlinkingLine in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBlinkingLine$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						Color primaryColor = default(Color);
+						float blinkDurationInSec = 0.5f;
+						float width = 0.0f;
+						string text = null;
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.solid;
+						Color blinkColor = default(Color);
+						float stylePatternScaleFactor = 1.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float alphaFadeOutLength_0to1 = 0.0f;
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.BlinkingLine(start, end, primaryColor, blinkDurationInSec, width, text, style, blinkColor, stylePatternScaleFactor, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, alphaFadeOutLength_0to1, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BlinkingLine</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayUnderTension_func</Title>
+			<Shortcut>drawRayUnderTension_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayUnderTension in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayUnderTension$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 direction = ;
+						float relaxedLength = 1.0f;
+						Color relaxedColor = default(Color);
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.spiral;
+						float stretchFactor_forStretchedTensionColor = 2.0f;
+						Color color_forStretchedTension = default(Color);
+						float stretchFactor_forSqueezedTensionColor = 0.0f;
+						Color color_forSqueezedTension = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float alphaOfReferenceLengthDisplay = 0.15f;
+						float stylePatternScaleFactor = 1.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.RayUnderTension(start, direction, relaxedLength, relaxedColor, style, stretchFactor_forStretchedTensionColor, color_forStretchedTension, stretchFactor_forSqueezedTensionColor, color_forSqueezedTension, width, text, alphaOfReferenceLengthDisplay, stylePatternScaleFactor, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayUnderTension</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLineUnderTension_func</Title>
+			<Shortcut>drawLineUnderTension_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LineUnderTension in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLineUnderTension$name$()
+					{
+						Vector3 start = $end$;
+						Vector3 end = ;
+						float relaxedLength = 1.0f;
+						Color relaxedColor = default(Color);
+						DrawBasics.LineStyle style = DrawBasics.LineStyle.spiral;
+						float stretchFactor_forStretchedTensionColor = 2.0f;
+						Color color_forStretchedTension = default(Color);
+						float stretchFactor_forSqueezedTensionColor = 0.0f;
+						Color color_forSqueezedTension = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float alphaOfReferenceLengthDisplay = 0.15f;
+						float stylePatternScaleFactor = 1.0f;
+						Vector3 customAmplitudeAndTextDir = default(Vector3);
+						bool flattenThickRoundLineIntoAmplitudePlane = false;
+						float endPlates_size = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+						float enlargeSmallTextToThisMinTextSize = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						bool skipPatternEnlargementForLongLines = false;
+						bool skipPatternEnlargementForShortLines = false;
+						DrawBasics.LineUnderTension(start, end, relaxedLength, relaxedColor, style, stretchFactor_forStretchedTensionColor, color_forStretchedTension, stretchFactor_forSqueezedTensionColor, color_forSqueezedTension, width, text, alphaOfReferenceLengthDisplay, stylePatternScaleFactor, customAmplitudeAndTextDir, flattenThickRoundLineIntoAmplitudePlane, endPlates_size, enlargeSmallTextToThisMinTextSize, durationInSec, hiddenByNearerObjects, skipPatternEnlargementForLongLines, skipPatternEnlargementForShortLines);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LineUnderTension</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentQuadratic_go_go_func</Title>
+			<Shortcut>drawBezierSegmentQuadratic_go_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentQuadratic in the Unity Editor. (defined by 2 gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentQuadratic$name$()
+					{
+						GameObject startPositionAndDirection = $end$;
+						GameObject endPosition = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentQuadratic(startPositionAndDirection, endPosition, color, text, width, straightSubDivisions, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentQuadratic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentQuadratic_tr_tr_func</Title>
+			<Shortcut>drawBezierSegmentQuadratic_tr_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentQuadratic in the Unity Editor. (defined by 2 transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentQuadratic$name$()
+					{
+						Transform startPositionAndDirection = $end$;
+						Transform endPosition = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentQuadratic(startPositionAndDirection, endPosition, color, text, width, straightSubDivisions, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentQuadratic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentQuadratic_go_go_go_func</Title>
+			<Shortcut>drawBezierSegmentQuadratic_go_go_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentQuadratic in the Unity Editor. (defined by 3 gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentQuadratic$name$()
+					{
+						GameObject startPosition = $end$;
+						GameObject endPosition = ;
+						GameObject controlPosInBetween = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentQuadratic(startPosition, endPosition, controlPosInBetween, color, text, width, straightSubDivisions, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentQuadratic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentQuadratic_tr_tr_tr_func</Title>
+			<Shortcut>drawBezierSegmentQuadratic_tr_tr_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentQuadratic in the Unity Editor. (defined by 3 transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentQuadratic$name$()
+					{
+						Transform startPosition = $end$;
+						Transform endPosition = ;
+						Transform controlPosInBetween = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentQuadratic(startPosition, endPosition, controlPosInBetween, color, text, width, straightSubDivisions, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentQuadratic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentQuadratic_vec_func</Title>
+			<Shortcut>drawBezierSegmentQuadratic_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentQuadratic in the Unity Editor. (defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentQuadratic$name$()
+					{
+						Vector3 startPosition = $end$;
+						Vector3 endPosition = ;
+						Vector3 controlPosInBetween = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentQuadratic(startPosition, endPosition, controlPosInBetween, color, text, width, straightSubDivisions, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentQuadratic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentCubic_go_go_func</Title>
+			<Shortcut>drawBezierSegmentCubic_go_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentCubic in the Unity Editor. (defined by 2 gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentCubic$name$()
+					{
+						GameObject startPositionAndDirection = $end$;
+						GameObject endPositionAndDirection = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						bool closeGapFromEndToStart = false;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentCubic(startPositionAndDirection, endPositionAndDirection, color, text, width, straightSubDivisions, closeGapFromEndToStart, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentCubic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentCubic_tr_tr_func</Title>
+			<Shortcut>drawBezierSegmentCubic_tr_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentCubic in the Unity Editor. (defined by 2 transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentCubic$name$()
+					{
+						Transform startPositionAndDirection = $end$;
+						Transform endPositionAndDirection = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						bool closeGapFromEndToStart = false;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentCubic(startPositionAndDirection, endPositionAndDirection, color, text, width, straightSubDivisions, closeGapFromEndToStart, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentCubic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentCubic_go_go_go_func</Title>
+			<Shortcut>drawBezierSegmentCubic_go_go_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentCubic in the Unity Editor. (defined by 3 gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentCubic$name$()
+					{
+						GameObject startPosition = $end$;
+						GameObject endPosition = ;
+						GameObject controlPosOfStartDirection = ;
+						GameObject controlPosOfEndDirection = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						bool closeGapFromEndToStart = false;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentCubic(startPosition, endPosition, controlPosOfStartDirection, controlPosOfEndDirection, color, text, width, straightSubDivisions, closeGapFromEndToStart, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentCubic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentCubic_tr_tr_tr_func</Title>
+			<Shortcut>drawBezierSegmentCubic_tr_tr_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentCubic in the Unity Editor. (defined by 3 transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentCubic$name$()
+					{
+						Transform startPosition = $end$;
+						Transform endPosition = ;
+						Transform controlPosOfStartDirection = ;
+						Transform controlPosOfEndDirection = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						bool closeGapFromEndToStart = false;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentCubic(startPosition, endPosition, controlPosOfStartDirection, controlPosOfEndDirection, color, text, width, straightSubDivisions, closeGapFromEndToStart, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentCubic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSegmentCubic_vec_func</Title>
+			<Shortcut>drawBezierSegmentCubic_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSegmentCubic in the Unity Editor. (defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSegmentCubic$name$()
+					{
+						Vector3 startPosition = $end$;
+						Vector3 endPosition = ;
+						Vector3 controlPosOfStartDirection = ;
+						Vector3 controlPosOfEndDirection = ;
+						Color color = default(Color);
+						string text = null;
+						float width = 0.0f;
+						int straightSubDivisions = 50;
+						bool closeGapFromEndToStart = false;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSegmentCubic(startPosition, endPosition, controlPosOfStartDirection, controlPosOfEndDirection, color, text, width, straightSubDivisions, closeGapFromEndToStart, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSegmentCubic</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_goArray_func</Title>
+			<Shortcut>drawBezierSpline_goArray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from array of gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						GameObject[] points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfArray = DrawBasics.BezierPosInterpretation.onlySegmentStartPoints_backwardForwardIsAligned;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfArray, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_goList_func</Title>
+			<Shortcut>drawBezierSpline_goList_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from list of gameobjects)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						List<GameObject> points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfList = DrawBasics.BezierPosInterpretation.onlySegmentStartPoints_backwardForwardIsAligned;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfList, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_trArray_func</Title>
+			<Shortcut>drawBezierSpline_trArray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from array of transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						Transform[] points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfArray = DrawBasics.BezierPosInterpretation.onlySegmentStartPoints_backwardForwardIsAligned;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfArray, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_trList_func</Title>
+			<Shortcut>drawBezierSpline_trList_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from list of transforms)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						List<Transform> points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfList = DrawBasics.BezierPosInterpretation.onlySegmentStartPoints_backwardForwardIsAligned;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfList, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_vecArray_func</Title>
+			<Shortcut>drawBezierSpline_vecArray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from array of vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						Vector3[] points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfArray = DrawBasics.BezierPosInterpretation.start_control1_control2_endIsNextStart;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfArray, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBezierSpline_vecList_func</Title>
+			<Shortcut>drawBezierSpline_vecList_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BezierSpline in the Unity Editor. (control points from list of vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBezierSpline$name$()
+					{
+						List<Vector3> points = $end$;
+						Color color = default(Color);
+						DrawBasics.BezierPosInterpretation interpretationOfList = DrawBasics.BezierPosInterpretation.start_control1_control2_endIsNextStart;
+						string text = null;
+						float width = 0.0f;
+						bool closeGapFromEndToStart = false;
+						int straightSubDivisionsPerSegment = 50;
+						float textSize = 0.1f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawBasics.BezierSpline(points, color, interpretationOfList, text, width, closeGapFromEndToStart, straightSubDivisionsPerSegment, textSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BezierSpline</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

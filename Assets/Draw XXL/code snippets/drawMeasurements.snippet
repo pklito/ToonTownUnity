@@ -1,0 +1,940 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistance</Title>
+			<Shortcut>drawDistance</Shortcut>
+			<Description>Draw a Distance in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 from_of_$name$ = $end$;
+					Vector3 to_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.Distance(from_of_$name$, to_of_$name$, color_of_$name$, lineWidth_of_$name$, text_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Distance</ToolTip>
+					<Default>distance</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngle</Title>
+			<Shortcut>drawAngle</Shortcut>
+			<Description>Draw an Angle in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 from_of_$name$ = $end$;
+					Vector3 to_of_$name$ = ;
+					Vector3 turnCenter_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float forceRadius_of_$name$ = 0.0f;
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool useReflexAngleOver180deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool drawBoundaryLines_of_$name$ = true;
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.Angle(from_of_$name$, to_of_$name$, turnCenter_of_$name$, color_of_$name$, forceRadius_of_$name$, lineWidth_of_$name$, text_of_$name$, useReflexAngleOver180deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, drawBoundaryLines_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Angle</ToolTip>
+					<Default>angle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleSpan</Title>
+			<Shortcut>drawAngleSpan</Shortcut>
+			<Description>Draw an AngleSpan in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 from_of_$name$ = $end$;
+					Vector3 to_of_$name$ = ;
+					Vector3 turnCenter_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float forceRadius_of_$name$ = 0.0f;
+					float lineWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					bool useReflexAngleOver180deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool drawBoundaryLines_of_$name$ = true;
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleSpan(from_of_$name$, to_of_$name$, turnCenter_of_$name$, color_of_$name$, forceRadius_of_$name$, lineWidth_of_$name$, text_of_$name$, useReflexAngleOver180deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, drawBoundaryLines_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleSpan</ToolTip>
+					<Default>angleSpan</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePointToLine_ray</Title>
+			<Shortcut>drawDistancePointToLine_ray</Shortcut>
+			<Description>Draw a DistancePointToLine in the Unity Editor. (line defined by ray)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point_of_$name$ = $end$;
+					Ray line_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePointToLine(point_of_$name$, line_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePointToLine</ToolTip>
+					<Default>distancePointToLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePointToLine_vec</Title>
+			<Shortcut>drawDistancePointToLine_vec</Shortcut>
+			<Description>Draw a DistancePointToLine in the Unity Editor. (line defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point_of_$name$ = $end$;
+					Vector3 lineOrigin_of_$name$ = ;
+					Vector3 lineDirection_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePointToLine(point_of_$name$, lineOrigin_of_$name$, lineDirection_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePointToLine</ToolTip>
+					<Default>distancePointToLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistanceLineToLine_ray</Title>
+			<Shortcut>drawDistanceLineToLine_ray</Shortcut>
+			<Description>Draw a DistanceLineToLine in the Unity Editor. (lines defined by rays)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray line1_of_$name$ = $end$;
+					Ray line2_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string line1Name_of_$name$ = null;
+					string line2Name_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistanceLineToLine(line1_of_$name$, line2_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, line1Name_of_$name$, line2Name_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistanceLineToLine</ToolTip>
+					<Default>distanceLineToLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistanceLineToLine_vec</Title>
+			<Shortcut>drawDistanceLineToLine_vec</Shortcut>
+			<Description>Draw a DistanceLineToLine in the Unity Editor. (lines defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 line1Origin_of_$name$ = $end$;
+					Vector3 line1Direction_of_$name$ = ;
+					Vector3 line2Origin_of_$name$ = ;
+					Vector3 line2Direction_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string line1Name_of_$name$ = null;
+					string line2Name_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistanceLineToLine(line1Origin_of_$name$, line1Direction_of_$name$, line2Origin_of_$name$, line2Direction_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, line1Name_of_$name$, line2Name_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistanceLineToLine</ToolTip>
+					<Default>distanceLineToLine</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePerpToOrthoViewDir</Title>
+			<Shortcut>drawDistancePerpToOrthoViewDir</Shortcut>
+			<Description>Draw a DistancePerpToOrthoViewDir in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 from_of_$name$ = $end$;
+					Vector3 to_of_$name$ = ;
+					Vector3 orthoViewDir_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePerpToOrthoViewDir(from_of_$name$, to_of_$name$, orthoViewDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePerpToOrthoViewDir</ToolTip>
+					<Default>distancePerpToOrthoViewDir</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistanceAlongOrthoViewDir</Title>
+			<Shortcut>drawDistanceAlongOrthoViewDir</Shortcut>
+			<Description>Draw a DistanceAlongOrthoViewDir in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 from_of_$name$ = $end$;
+					Vector3 to_of_$name$ = ;
+					Vector3 orthoViewDir_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistanceAlongOrthoViewDir(from_of_$name$, to_of_$name$, orthoViewDir_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistanceAlongOrthoViewDir</ToolTip>
+					<Default>distanceAlongOrthoViewDir</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePointToPlane_tr</Title>
+			<Shortcut>drawDistancePointToPlane_tr</Shortcut>
+			<Description>Draw a DistancePointToPlane in the Unity Editor. (plane defined by transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point_of_$name$ = $end$;
+					Transform planeTransform_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePointToPlane(point_of_$name$, planeTransform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, planeName_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePointToPlane</ToolTip>
+					<Default>distancePointToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePointToPlane_pl</Title>
+			<Shortcut>drawDistancePointToPlane_pl</Shortcut>
+			<Description>Draw a DistancePointToPlane in the Unity Editor. (plane defined by plane struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point_of_$name$ = $end$;
+					Plane plane_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePointToPlane(point_of_$name$, plane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, planeName_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePointToPlane</ToolTip>
+					<Default>distancePointToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistancePointToPlane_vec</Title>
+			<Shortcut>drawDistancePointToPlane_vec</Shortcut>
+			<Description>Draw a DistancePointToPlane in the Unity Editor. (plane defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point_of_$name$ = $end$;
+					Vector3 planeOrigin_of_$name$ = ;
+					Vector3 planeNormal_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					float coneLength_of_$name$ = 0.10f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistancePointToPlane(point_of_$name$, planeOrigin_of_$name$, planeNormal_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, planeName_of_$name$, coneLength_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistancePointToPlane</ToolTip>
+					<Default>distancePointToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_ray_tr</Title>
+			<Shortcut>drawAngleLineToPlane_ray_tr</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by ray, plane defined by transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray line_of_$name$ = $end$;
+					Transform planeTransform_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(line_of_$name$, planeTransform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_ray_pl</Title>
+			<Shortcut>drawAngleLineToPlane_ray_pl</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by ray, plane defined by plane struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray line_of_$name$ = $end$;
+					Plane plane_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(line_of_$name$, plane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_ray_vec</Title>
+			<Shortcut>drawAngleLineToPlane_ray_vec</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by ray, plane defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray line_of_$name$ = $end$;
+					Vector3 planeOrigin_of_$name$ = ;
+					Vector3 planeNormal_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(line_of_$name$, planeOrigin_of_$name$, planeNormal_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_vec_tr</Title>
+			<Shortcut>drawAngleLineToPlane_vec_tr</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by vectors, plane defined by transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 lineOrigin_of_$name$ = $end$;
+					Vector3 lineDirection_of_$name$ = ;
+					Transform planeTransform_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(lineOrigin_of_$name$, lineDirection_of_$name$, planeTransform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_vec_pl</Title>
+			<Shortcut>drawAngleLineToPlane_vec_pl</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by vectors, plane defined by plane struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 lineOrigin_of_$name$ = $end$;
+					Vector3 lineDirection_of_$name$ = ;
+					Plane plane_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(lineOrigin_of_$name$, lineDirection_of_$name$, plane_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAngleLineToPlane_vec_vec</Title>
+			<Shortcut>drawAngleLineToPlane_vec_vec</Shortcut>
+			<Description>Draw an AngleLineToPlane in the Unity Editor. (line defined by vectors, plane defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 lineOrigin_of_$name$ = $end$;
+					Vector3 lineDirection_of_$name$ = ;
+					Vector3 planeOrigin_of_$name$ = ;
+					Vector3 planeNormal_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string lineName_of_$name$ = null;
+					string planeName_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AngleLineToPlane(lineOrigin_of_$name$, lineDirection_of_$name$, planeOrigin_of_$name$, planeNormal_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, lineName_of_$name$, planeName_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AngleLineToPlane</ToolTip>
+					<Default>angleLineToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAnglePlaneToPlane_tr</Title>
+			<Shortcut>drawAnglePlaneToPlane_tr</Shortcut>
+			<Description>Draw an AnglePlaneToPlane in the Unity Editor. (planes defined by transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Transform plane1Transform_of_$name$ = $end$;
+					Transform plane2Transform_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string plane1Name_of_$name$ = null;
+					string plane2Name_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AnglePlaneToPlane(plane1Transform_of_$name$, plane2Transform_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, plane1Name_of_$name$, plane2Name_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AnglePlaneToPlane</ToolTip>
+					<Default>anglePlaneToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAnglePlaneToPlane_pl</Title>
+			<Shortcut>drawAnglePlaneToPlane_pl</Shortcut>
+			<Description>Draw an AnglePlaneToPlane in the Unity Editor. (planes defined by plane structs)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Plane plane1_of_$name$ = $end$;
+					Plane plane2_of_$name$ = ;
+					Vector3 drawPositioinAsPlumb_of_$name$ = default(Vector3);
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string plane1Name_of_$name$ = null;
+					string plane2Name_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AnglePlaneToPlane(plane1_of_$name$, plane2_of_$name$, drawPositioinAsPlumb_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, plane1Name_of_$name$, plane2Name_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AnglePlaneToPlane</ToolTip>
+					<Default>anglePlaneToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawAnglePlaneToPlane_vec</Title>
+			<Shortcut>drawAnglePlaneToPlane_vec</Shortcut>
+			<Description>Draw an AnglePlaneToPlane in the Unity Editor. (planes defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 plane1Origin_of_$name$ = $end$;
+					Vector3 plane1Normal_of_$name$ = ;
+					Vector3 plane2Origin_of_$name$ = ;
+					Vector3 plane2Normal_of_$name$ = ;
+					Color color_of_$name$ = default(Color);
+					float linesWidth_of_$name$ = 0.0f;
+					string text_of_$name$ = null;
+					string plane1Name_of_$name$ = null;
+					string plane2Name_of_$name$ = null;
+					bool returnObtuseAngleOver90deg_of_$name$ = false;
+					bool displayAndReturn_radInsteadOfDeg_of_$name$ = false;
+					float coneLength_of_$name$ = 0.13f; //Specify the interpretation of this cone length as 'relative to vector length' or as 'absolute length' via the global setting 'DrawBasics.coneLength_interpretation'
+					bool addTextForAlternativeAngleUnit_of_$name$ = true;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.AnglePlaneToPlane(plane1Origin_of_$name$, plane1Normal_of_$name$, plane2Origin_of_$name$, plane2Normal_of_$name$, color_of_$name$, linesWidth_of_$name$, text_of_$name$, plane1Name_of_$name$, plane2Name_of_$name$, returnObtuseAngleOver90deg_of_$name$, displayAndReturn_radInsteadOfDeg_of_$name$, coneLength_of_$name$, addTextForAlternativeAngleUnit_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn AnglePlaneToPlane</ToolTip>
+					<Default>anglePlaneToPlane</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistanceThreshold</Title>
+			<Shortcut>drawDistanceThreshold</Shortcut>
+			<Description>Draw DistanceThreshold in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 startPos_of_$name$ = $end$;
+					Vector3 endPos_of_$name$ = ;
+					float thresholdDistance_of_$name$ = ;
+					string text_of_$name$ = null;
+					bool displayDistanceAlsoAsText_of_$name$ = false;
+					float lineWidth_of_$name$ = 0.0f;
+					bool exactlyThresholdLength_countsAsShorter_of_$name$ = true;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					DrawBasics.LineStyle overwriteStyle_forNear_of_$name$ = DrawBasics.LineStyle.electricNoise;
+					DrawBasics.LineStyle overwriteStyle_forFar_of_$name$ = DrawBasics.LineStyle.solid;
+					Color overwriteColor_forNear_of_$name$ = default(Color);
+					Color overwriteColor_forFar_of_$name$ = default(Color);
+					Vector3 customAmplitudeAndTextDir_of_$name$ = default(Vector3);
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistanceThreshold(startPos_of_$name$, endPos_of_$name$, thresholdDistance_of_$name$, text_of_$name$, displayDistanceAlsoAsText_of_$name$, lineWidth_of_$name$, exactlyThresholdLength_countsAsShorter_of_$name$, endPlates_size_of_$name$, overwriteStyle_forNear_of_$name$, overwriteStyle_forFar_of_$name$, overwriteColor_forNear_of_$name$, overwriteColor_forFar_of_$name$, customAmplitudeAndTextDir_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistanceThreshold</ToolTip>
+					<Default>distanceThreshold</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDistanceThresholds</Title>
+			<Shortcut>drawDistanceThresholds</Shortcut>
+			<Description>Draw DistanceThresholds in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 startPos_of_$name$ = $end$;
+					Vector3 endPos_of_$name$ = ;
+					float smallerThresholdDistance_of_$name$ = ;
+					float biggerThresholdDistance_of_$name$ = ;
+					string text_of_$name$ = null;
+					bool displayDistanceAlsoAsText_of_$name$ = false;
+					float lineWidth_of_$name$ = 0.0f;
+					bool exactlyThresholdLength_countsAsShorter_of_$name$ = true;
+					float endPlates_size_of_$name$ = 0.0f; //Specify the interpretation of this end plates size as 'relative to line length' or as 'absolute size' via the global setting 'DrawBasics.endPlates_sizeInterpretation'
+					DrawBasics.LineStyle overwriteStyle_forNear_of_$name$ = DrawBasics.LineStyle.electricNoise;
+					DrawBasics.LineStyle overwriteStyle_forMiddle_of_$name$ = DrawBasics.LineStyle.electricImpulses;
+					DrawBasics.LineStyle overwriteStyle_forFar_of_$name$ = DrawBasics.LineStyle.solid;
+					Color overwriteColor_forNear_of_$name$ = default(Color);
+					Color overwriteColor_forMiddle_of_$name$ = default(Color);
+					Color overwriteColor_forFar_of_$name$ = default(Color);
+					Vector3 customAmplitudeAndTextDir_of_$name$ = default(Vector3);
+					float enlargeSmallTextToThisMinTextSize_of_$name$ = 0.005f;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawMeasurements.DistanceThresholds(startPos_of_$name$, endPos_of_$name$, smallerThresholdDistance_of_$name$, biggerThresholdDistance_of_$name$, text_of_$name$, displayDistanceAlsoAsText_of_$name$, lineWidth_of_$name$, exactlyThresholdLength_countsAsShorter_of_$name$, endPlates_size_of_$name$, overwriteStyle_forNear_of_$name$, overwriteStyle_forMiddle_of_$name$, overwriteStyle_forFar_of_$name$, overwriteColor_forNear_of_$name$, overwriteColor_forMiddle_of_$name$, overwriteColor_forFar_of_$name$, customAmplitudeAndTextDir_of_$name$, enlargeSmallTextToThisMinTextSize_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DistanceThresholds</ToolTip>
+					<Default>distanceThresholds</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

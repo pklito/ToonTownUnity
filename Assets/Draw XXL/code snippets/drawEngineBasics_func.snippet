@@ -1,0 +1,4978 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorVisualization_func</Title>
+			<Shortcut>drawVectorVisualization_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorVisualization in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorVisualization$name$()
+					{
+						Vector3 vectorStartPos = $end$;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Vector(vectorStartPos, vectorEndPos, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorFromVisualization_func</Title>
+			<Shortcut>drawVectorFromVisualization_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorFromVisualization in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorFromVisualization$name$()
+					{
+						Vector3 vectorStartPos = $end$;
+						Vector3 vector = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.VectorFrom(vectorStartPos, vector, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorFromVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorToVisualization_func</Title>
+			<Shortcut>drawVectorToVisualization_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorToVisualization in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorToVisualization$name$()
+					{
+						Vector3 vector = $end$;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.VectorTo(vector, vectorEndPos, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorToVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualization_go_func</Title>
+			<Shortcut>drawPositionVisualization_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualization in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualization$name$()
+					{
+						GameObject gameObject = $end$;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Position(gameObject, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualization_tr_func</Title>
+			<Shortcut>drawPositionVisualization_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualization in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualization$name$()
+					{
+						Transform transform = $end$;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Position(transform, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualization_vec_func</Title>
+			<Shortcut>drawPositionVisualization_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualization in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualization$name$()
+					{
+						Vector3 position = $end$;
+						Color color = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Position(position, color, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualization</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorVisualizationLocal_func</Title>
+			<Shortcut>drawVectorVisualizationLocal_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorVisualizationLocal in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorVisualizationLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Vector3 vectorStartPos = ;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Vector_local(parentTransform_thatDefinesTheLocalSpace, vectorStartPos, vectorEndPos, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorFromVisualizationLocal_func</Title>
+			<Shortcut>drawVectorFromVisualizationLocal_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorFromVisualizationLocal in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorFromVisualizationLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Vector3 vectorStartPos = ;
+						Vector3 vector = ;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.VectorFrom_local(parentTransform_thatDefinesTheLocalSpace, vectorStartPos, vector, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorFromVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawVectorToVisualizationLocal_func</Title>
+			<Shortcut>drawVectorToVisualizationLocal_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a VectorToVisualizationLocal in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawVectorToVisualizationLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Vector3 vector = ;
+						Vector3 vectorEndPos = ;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.VectorTo_local(parentTransform_thatDefinesTheLocalSpace, vector, vectorEndPos, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn VectorToVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualizationLocal_go_func</Title>
+			<Shortcut>drawPositionVisualizationLocal_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualizationLocal in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualizationLocal$name$()
+					{
+						GameObject gameObject_insideLocalSpace = $end$;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Position_local(gameObject_insideLocalSpace, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualizationLocal_tr_func</Title>
+			<Shortcut>drawPositionVisualizationLocal_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualizationLocal in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualizationLocal$name$()
+					{
+						Transform transform_insideLocalSpace = $end$;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Position_local(transform_insideLocalSpace, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawPositionVisualizationLocal_vec_func</Title>
+			<Shortcut>drawPositionVisualizationLocal_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a PositionVisualizationLocal in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawPositionVisualizationLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Vector3 positionToDraw = ;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Position_local(parentTransform_thatDefinesTheLocalSpace, positionToDraw, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn PositionVisualizationLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScale_go_func</Title>
+			<Shortcut>drawScale_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Scale in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawScale$name$()
+					{
+						GameObject gameObject = $end$;
+						float lineWidth = 0.0035f;
+						string text = null;
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Scale(gameObject, lineWidth, text, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Scale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScale_tr_func</Title>
+			<Shortcut>drawScale_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Scale in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawScale$name$()
+					{
+						Transform transform = $end$;
+						float lineWidth = 0.0035f;
+						string text = null;
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Scale(transform, lineWidth, text, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Scale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawScale_vec_func</Title>
+			<Shortcut>drawScale_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Scale in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawScale$name$()
+					{
+						Vector3 centerPos = $end$;
+						Vector3 scale = ;
+						float lineWidth = 0.0035f;
+						string text = null;
+						Quaternion rotation = default(Quaternion);
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.Scale(centerPos, scale, lineWidth, text, rotation, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Scale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalScale_go_func</Title>
+			<Shortcut>drawLocalScale_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LocalScale in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalScale$name$()
+					{
+						GameObject gameObject_insideLocalSpace = $end$;
+						float lineWidth_inGlobalUnits = 0.0035f;
+						string text = null;
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.LocalScale(gameObject_insideLocalSpace, lineWidth_inGlobalUnits, text, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalScale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalScale_tr_func</Title>
+			<Shortcut>drawLocalScale_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LocalScale in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalScale$name$()
+					{
+						Transform transform_insideLocalSpace = $end$;
+						float lineWidth_inGlobalUnits = 0.0035f;
+						string text = null;
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.LocalScale(transform_insideLocalSpace, lineWidth_inGlobalUnits, text, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalScale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalScale_vec_func</Title>
+			<Shortcut>drawLocalScale_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a LocalScale in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalScale$name$()
+					{
+						Vector3 localPosition = $end$;
+						Vector3 localScale = ;
+						Transform parentTransform = ;
+						Quaternion localRotation = default(Quaternion);
+						float lineWidth_inGlobalUnits = 0.0035f;
+						string text = null;
+						bool drawXDim = true;
+						bool drawYDim = true;
+						bool drawZDim = true;
+						float relSizeOfPlanes = 0.5f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.LocalScale(localPosition, localScale, parentTransform, localRotation, lineWidth_inGlobalUnits, text, drawXDim, drawYDim, drawZDim, relSizeOfPlanes, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalScale</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternion_go_func</Title>
+			<Shortcut>drawQuaternion_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Quaternion in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternion$name$()
+					{
+						GameObject gameObject = $end$;
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation(gameObject, customVectorToRotate, length_ofUpAndForwardVectors, color_ofTurnAxis, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Quaternion</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternion_tr_func</Title>
+			<Shortcut>drawQuaternion_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Quaternion in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternion$name$()
+					{
+						Transform transform = $end$;
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation(transform, customVectorToRotate, length_ofUpAndForwardVectors, color_ofTurnAxis, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Quaternion</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternion_quat_func</Title>
+			<Shortcut>drawQuaternion_quat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Quaternion in the Unity Editor. (of quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternion$name$()
+					{
+						Quaternion quaternion = $end$;
+						Vector3 posWhereToDraw = default(Vector3);
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation(quaternion, posWhereToDraw, customVectorToRotate, length_ofUpAndForwardVectors, color_ofTurnAxis, lineWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Quaternion</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternionLocal_go_func</Title>
+			<Shortcut>drawQuaternionLocal_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a QuaternionLocal in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternionLocal$name$()
+					{
+						GameObject gameObject_insideLocalSpace = $end$;
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation_local(gameObject_insideLocalSpace, customVectorToRotate_local, length_ofUpAndForwardVectors_local, color_ofTurnAxis, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn QuaternionLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternionLocal_tr_func</Title>
+			<Shortcut>drawQuaternionLocal_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a QuaternionLocal in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternionLocal$name$()
+					{
+						Transform transform_insideLocalSpace = $end$;
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation_local(transform_insideLocalSpace, customVectorToRotate_local, length_ofUpAndForwardVectors_local, color_ofTurnAxis, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn QuaternionLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawQuaternionLocal_quat_func</Title>
+			<Shortcut>drawQuaternionLocal_quat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a QuaternionLocal in the Unity Editor. (of quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawQuaternionLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Quaternion quaternionToDraw_local = ;
+						Vector3 posWhereToDraw_global = default(Vector3);
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 1.0f;
+						Color color_ofTurnAxis = default(Color);
+						float lineWidth_inGlobalUnits = 0.0f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.QuaternionRotation_local(parentTransform_thatDefinesTheLocalSpace, quaternionToDraw_local, posWhereToDraw_global, customVectorToRotate_local, length_ofUpAndForwardVectors_local, color_ofTurnAxis, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn QuaternionLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEuler_go_func</Title>
+			<Shortcut>drawEuler_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Euler in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEuler$name$()
+					{
+						GameObject gameObject = $end$;
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						bool useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay = false;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation(gameObject, customVectorToRotate, length_ofUpAndForwardVectors, alpha_ofSquareSpannedByForwardAndUp, text, useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay, alpha_ofUnrotatedGimbalAxes, gimbalSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Euler</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEuler_tr_func</Title>
+			<Shortcut>drawEuler_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Euler in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEuler$name$()
+					{
+						Transform transform = $end$;
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						bool useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay = false;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation(transform, customVectorToRotate, length_ofUpAndForwardVectors, alpha_ofSquareSpannedByForwardAndUp, text, useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay, alpha_ofUnrotatedGimbalAxes, gimbalSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Euler</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEuler_vec_func</Title>
+			<Shortcut>drawEuler_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Euler in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEuler$name$()
+					{
+						Vector3 eulerAnglesToDraw = $end$;
+						Vector3 posWhereToDraw = default(Vector3);
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation(eulerAnglesToDraw, posWhereToDraw, customVectorToRotate, length_ofUpAndForwardVectors, alpha_ofSquareSpannedByForwardAndUp, text, alpha_ofUnrotatedGimbalAxes, gimbalSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Euler</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEuler_quat_func</Title>
+			<Shortcut>drawEuler_quat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an Euler in the Unity Editor. (of quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEuler$name$()
+					{
+						Quaternion quaternionToDrawAsEulerAngles = $end$;
+						Vector3 posWhereToDraw = default(Vector3);
+						Vector3 customVectorToRotate = default(Vector3);
+						float length_ofUpAndForwardVectors = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation(quaternionToDrawAsEulerAngles, posWhereToDraw, customVectorToRotate, length_ofUpAndForwardVectors, alpha_ofSquareSpannedByForwardAndUp, text, alpha_ofUnrotatedGimbalAxes, gimbalSize, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Euler</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEulerLocal_go_func</Title>
+			<Shortcut>drawEulerLocal_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an EulerLocal in the Unity Editor. (of gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEulerLocal$name$()
+					{
+						GameObject gameObject_insideLocalSpace = $end$;
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						bool useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay = false;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize_local = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation_local(gameObject_insideLocalSpace, customVectorToRotate_local, length_ofUpAndForwardVectors_local, alpha_ofSquareSpannedByForwardAndUp, text, useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay, alpha_ofUnrotatedGimbalAxes, gimbalSize_local, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EulerLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEulerLocal_tr_func</Title>
+			<Shortcut>drawEulerLocal_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an EulerLocal in the Unity Editor. (of transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEulerLocal$name$()
+					{
+						Transform transform_insideLocalSpace = $end$;
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						bool useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay = false;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize_local = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation_local(transform_insideLocalSpace, customVectorToRotate_local, length_ofUpAndForwardVectors_local, alpha_ofSquareSpannedByForwardAndUp, text, useAnglesFromQuaternion_notFromEditorsTransformInspectorDisplay, alpha_ofUnrotatedGimbalAxes, gimbalSize_local, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EulerLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEulerLocal_vec_func</Title>
+			<Shortcut>drawEulerLocal_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an EulerLocal in the Unity Editor. (of vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEulerLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Vector3 eulerAnglesToDraw_local = ;
+						Vector3 posWhereToDraw_global = default(Vector3);
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize_local = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation_local(parentTransform_thatDefinesTheLocalSpace, eulerAnglesToDraw_local, posWhereToDraw_global, customVectorToRotate_local, length_ofUpAndForwardVectors_local, alpha_ofSquareSpannedByForwardAndUp, text, alpha_ofUnrotatedGimbalAxes, gimbalSize_local, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EulerLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawEulerLocal_quat_func</Title>
+			<Shortcut>drawEulerLocal_quat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw an EulerLocal in the Unity Editor. (of quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawEulerLocal$name$()
+					{
+						Transform parentTransform_thatDefinesTheLocalSpace = $end$;
+						Quaternion quaternionToDrawAsEulerAngles_local = ;
+						Vector3 posWhereToDraw_global = default(Vector3);
+						Vector3 customVectorToRotate_local = default(Vector3);
+						float length_ofUpAndForwardVectors_local = 0.0f;
+						float alpha_ofSquareSpannedByForwardAndUp = 0.0f;
+						string text = null;
+						float alpha_ofUnrotatedGimbalAxes = 0.06f;
+						float gimbalSize_local = 1.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = false;
+						DrawEngineBasics.EulerRotation_local(parentTransform_thatDefinesTheLocalSpace, quaternionToDrawAsEulerAngles_local, posWhereToDraw_global, customVectorToRotate_local, length_ofUpAndForwardVectors_local, alpha_ofSquareSpannedByForwardAndUp, text, alpha_ofUnrotatedGimbalAxes, gimbalSize_local, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn EulerLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBounds_go_func</Title>
+			<Shortcut>drawBounds_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Bounds in the Unity Editor. (of mesh on gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBounds$name$()
+					{
+						GameObject gameObject = $end$;
+						Color color = default(Color);
+						bool alsoDrawLocalBounds = true;
+						bool showAlsoBoundsOfChildren = true;
+						float linesWidth = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Bounds(gameObject, color, alsoDrawLocalBounds, showAlsoBoundsOfChildren, linesWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalBounds_go_func</Title>
+			<Shortcut>drawLocalBounds_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LocalBounds in the Unity Editor. (of mesh on gameobject)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalBounds$name$()
+					{
+						GameObject gameObject = $end$;
+						Color color = default(Color);
+						bool showAlsoBoundsOfChildren = true;
+						float lineWidth_inGlobalUnits = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.LocalBounds(gameObject, color, showAlsoBoundsOfChildren, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalBounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBounds_tr_func</Title>
+			<Shortcut>drawBounds_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Bounds in the Unity Editor. (of mesh on transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBounds$name$()
+					{
+						Transform transform = $end$;
+						Color color = default(Color);
+						bool alsoDrawLocalBounds = true;
+						bool showAlsoBoundsOfChildren = true;
+						float linesWidth = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Bounds(transform, color, alsoDrawLocalBounds, showAlsoBoundsOfChildren, linesWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalBounds_tr_func</Title>
+			<Shortcut>drawLocalBounds_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LocalBounds in the Unity Editor. (of mesh on transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalBounds$name$()
+					{
+						Transform transform = $end$;
+						Color color = default(Color);
+						bool showAlsoBoundsOfChildren = true;
+						float lineWidth_inGlobalUnits = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.LocalBounds(transform, color, showAlsoBoundsOfChildren, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalBounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBounds_b_func</Title>
+			<Shortcut>drawBounds_b_func</Shortcut>
+			<Description>Encapsulated in a function: Draw Bounds in the Unity Editor. (of bounds struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBounds$name$()
+					{
+						Bounds bounds = $end$;
+						Color color = default(Color);
+						float linesWidth = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Bounds(bounds, color, linesWidth, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Bounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLocalBounds_b_func</Title>
+			<Shortcut>drawLocalBounds_b_func</Shortcut>
+			<Description>Encapsulated in a function: Draw LocalBounds in the Unity Editor. (of bounds struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawLocalBounds$name$()
+					{
+						Bounds localBounds = $end$;
+						Transform transformDefiningLocalSpace = ;
+						Color color = default(Color);
+						float lineWidth_inGlobalUnits = 0.01f;
+						string text = null;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.LocalBounds(localBounds, transformDefiningLocalSpace, color, lineWidth_inGlobalUnits, text, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LocalBounds</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawDotProduct_func</Title>
+			<Shortcut>drawDotProduct_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a DotProduct in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawDotProduct$name$()
+					{
+						Vector3 vector1_lhs = $end$;
+						Vector3 vector2_rhs = ;
+						Vector3 posWhereToDraw = default(Vector3);
+						float linesWidth = 0.0025f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.DotProduct(vector1_lhs, vector2_rhs, posWhereToDraw, linesWidth, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn DotProduct</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCrossProduct_func</Title>
+			<Shortcut>drawCrossProduct_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CrossProduct in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCrossProduct$name$()
+					{
+						Vector3 vector1_lhs_leftThumb = $end$;
+						Vector3 vector2_rhs_leftIndexFinger = ;
+						Vector3 posWhereToDraw = default(Vector3);
+						float linesWidth = 0.0025f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CrossProduct(vector1_lhs_leftThumb, vector2_rhs_leftIndexFinger, posWhereToDraw, linesWidth, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CrossProduct</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTagGameObject_func</Title>
+			<Shortcut>drawTagGameObject_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TagGameObject in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTagGameObject$name$()
+					{
+						GameObject gameObject = $end$;
+						string text = null;
+						Color colorForText = default(Color);
+						Color colorForTagBox = default(Color);
+						float forceTextSize = 0.0f;
+						float linesWidth = 0.0f;
+						bool encapsulateChildren = true;
+						bool textBlockAboveLine = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.TagGameObject(gameObject, text, colorForText, colorForTagBox, forceTextSize, linesWidth, encapsulateChildren, textBlockAboveLine, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TagGameObject</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTagGameObjectScreenspace_func</Title>
+			<Shortcut>drawTagGameObjectScreenspace_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TagGameObjectScreenspace in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTagGameObjectScreenspace$name$()
+					{
+						GameObject gameObject = $end$;
+						string text = null;
+						Color colorForText = default(Color);
+						Color colorForTagBox = default(Color);
+						float linesWidth_relToViewportHeight = 0.0f;
+						bool drawPointerIfOffscreen = true;
+						float relTextSizeScaling = 1.0f;
+						bool encapsulateChildren = true;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.TagGameObjectScreenspace(gameObject, text, colorForText, colorForTagBox, linesWidth_relToViewportHeight, drawPointerIfOffscreen, relTextSizeScaling, encapsulateChildren, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TagGameObjectScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawTagGameObjectScreenspace_cam_func</Title>
+			<Shortcut>drawTagGameObjectScreenspace_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw TagGameObjectScreenspace in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawTagGameObjectScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						GameObject gameObject = ;
+						string text = null;
+						Color colorForText = default(Color);
+						Color colorForTagBox = default(Color);
+						float linesWidth_relToViewportHeight = 0.0f;
+						bool drawPointerIfOffscreen = true;
+						float relTextSizeScaling = 1.0f;
+						bool encapsulateChildren = true;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.TagGameObjectScreenspace(screenCamera, gameObject, text, colorForText, colorForTagBox, linesWidth_relToViewportHeight, drawPointerIfOffscreen, relTextSizeScaling, encapsulateChildren, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn TagGameObjectScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamera_rotViaQuat_func</Title>
+			<Shortcut>drawCamera_rotViaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Camera in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamera$name$()
+					{
+						Vector3 position = $end$;
+						Quaternion rotation = default(Quaternion);
+						Color color = default(Color);
+						string text = null;
+						float linesWidth = 0.0f;
+						float nearClipPlaneDistance = 0.3f;
+						float fieldOfViewAngleDeg = 60.0f;
+						float aspectRatioOfScreen = 16.0f / 9.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Camera(position, rotation, color, text, linesWidth, nearClipPlaneDistance, fieldOfViewAngleDeg, aspectRatioOfScreen, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Camera</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamera_rotViaVec_func</Title>
+			<Shortcut>drawCamera_rotViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Camera in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamera$name$()
+					{
+						Vector3 position = $end$;
+						Vector3 forward = default(Vector3);
+						Vector3 up = default(Vector3);
+						Color color = default(Color);
+						string text = null;
+						float linesWidth = 0.0f;
+						float nearClipPlaneDistance = 0.3f;
+						float fieldOfViewAngleDeg = 60.0f;
+						float aspectRatioOfScreen = 16.0f / 9.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Camera(position, forward, up, color, text, linesWidth, nearClipPlaneDistance, fieldOfViewAngleDeg, aspectRatioOfScreen, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Camera</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamera_cam_func</Title>
+			<Shortcut>drawCamera_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a Camera in the Unity Editor. (explicitly defining the visualized camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamera$name$()
+					{
+						Camera camera = $end$;
+						Color color = default(Color);
+						string text = null;
+						float linesWidth = 0.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.Camera(camera, color, text, linesWidth, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Camera</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamFrustum_rotViaQuat_func</Title>
+			<Shortcut>drawCamFrustum_rotViaQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CamFrustum in the Unity Editor. (the rotation is defined via quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamFrustum$name$()
+					{
+						Vector3 position_ofCamera = $end$;
+						Quaternion rotation_ofCamera = default(Quaternion);
+						Color color = default(Color);
+						float nearClipPlaneDistance = 0.3f;
+						float farClipPlaneDistance = 1000.0f;
+						float fieldOfViewAngleDeg = 60.0f;
+						float aspectRatioOfScreen = 16.0f / 9.0f;
+						float alphaFactor_forBoundarySurfaceLines = 0.18f;
+						float linesWidth_ofEdges = 0.0f;
+						int linesPerBoundarySurface = 60;
+						string text = null;
+						bool forceTextOnNearPlaneUnmirroredTowardsCam = true;
+						Vector3 positionOnHighlightedPlane = default(Vector3);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CameraFrustum(position_ofCamera, rotation_ofCamera, color, nearClipPlaneDistance, farClipPlaneDistance, fieldOfViewAngleDeg, aspectRatioOfScreen, alphaFactor_forBoundarySurfaceLines, linesWidth_ofEdges, linesPerBoundarySurface, text, forceTextOnNearPlaneUnmirroredTowardsCam, positionOnHighlightedPlane, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CamFrustum</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamFrustum_rotViaVec_func</Title>
+			<Shortcut>drawCamFrustum_rotViaVec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CamFrustum in the Unity Editor. (the rotation is defined via vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamFrustum$name$()
+					{
+						Vector3 position_ofCamera = $end$;
+						Vector3 forward_ofCamera = default(Vector3);
+						Vector3 up_ofCamera = default(Vector3);
+						Color color = default(Color);
+						float nearClipPlaneDistance = 0.3f;
+						float farClipPlaneDistance = 1000.0f;
+						float fieldOfViewAngleDeg = 60.0f;
+						float aspectRatioOfScreen = 16.0f / 9.0f;
+						float alphaFactor_forBoundarySurfaceLines = 0.18f;
+						float linesWidth_ofEdges = 0.0f;
+						int linesPerBoundarySurface = 60;
+						string text = null;
+						bool forceTextOnNearPlaneUnmirroredTowardsCam = true;
+						Vector3 positionOnHighlightedPlane = default(Vector3);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CameraFrustum(position_ofCamera, forward_ofCamera, up_ofCamera, color, nearClipPlaneDistance, farClipPlaneDistance, fieldOfViewAngleDeg, aspectRatioOfScreen, alphaFactor_forBoundarySurfaceLines, linesWidth_ofEdges, linesPerBoundarySurface, text, forceTextOnNearPlaneUnmirroredTowardsCam, positionOnHighlightedPlane, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CamFrustum</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCamFrustum_cam_func</Title>
+			<Shortcut>drawCamFrustum_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CamFrustum in the Unity Editor. (explicitly defining the visualized camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCamFrustum$name$()
+					{
+						Camera camera = $end$;
+						Color color = default(Color);
+						float alphaFactor_forBoundarySurfaceLines = 0.18f;
+						float linesWidth_ofEdges = 0.0f;
+						int linesPerBoundarySurface = 60;
+						string text = null;
+						bool forceTextOnNearPlaneUnmirroredTowardsCam = true;
+						Vector3 positionOnHighlightedPlane = default(Vector3);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CameraFrustum(camera, color, alphaFactor_forBoundarySurfaceLines, linesWidth_ofEdges, linesPerBoundarySurface, text, forceTextOnNearPlaneUnmirroredTowardsCam, positionOnHighlightedPlane, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CamFrustum</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayer2D_func</Title>
+			<Shortcut>drawBoolDisplayer2D_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayer2D in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayer2D$name$()
+					{
+						bool boolValueToDisplay = $end$;
+						Vector2 position = default(Vector2);
+						string boolName = null;
+						float size = 1.0f;
+						float custom_zPos = float.PositiveInfinity;
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.BoolDisplayer2D(boolValueToDisplay, position, boolName, size, custom_zPos, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayer2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayer_func</Title>
+			<Shortcut>drawBoolDisplayer_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayer in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayer$name$()
+					{
+						bool boolValueToDisplay = $end$;
+						Vector3 position = default(Vector3);
+						string boolName = null;
+						float size = 1.0f;
+						Quaternion rotation = default(Quaternion);
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.BoolDisplayer(boolValueToDisplay, position, boolName, size, rotation, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayer</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayerScreenspace_3Dpos_func</Title>
+			<Shortcut>drawBoolDisplayerScreenspace_3Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayerScreenspace in the Unity Editor. (position defined in 3D worldspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayerScreenspace$name$()
+					{
+						bool boolValueToDisplay = $end$;
+						string boolName = ;
+						Vector3 position_in3DWorldspace = ;
+						float size_relToViewportHeight = 0.175f;
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						DrawEngineBasics.BoolDisplayerScreenspace(boolValueToDisplay, boolName, position_in3DWorldspace, size_relToViewportHeight, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayerScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayerScreenspace_3Dpos_cam_func</Title>
+			<Shortcut>drawBoolDisplayerScreenspace_3Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayerScreenspace in the Unity Editor. (position defined in 3D worldspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayerScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						bool boolValueToDisplay = ;
+						string boolName = ;
+						Vector3 position_in3DWorldspace = ;
+						float size_relToViewportHeight = 0.175f;
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						DrawEngineBasics.BoolDisplayerScreenspace(screenCamera, boolValueToDisplay, boolName, position_in3DWorldspace, size_relToViewportHeight, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayerScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayerScreenspace_2Dpos_func</Title>
+			<Shortcut>drawBoolDisplayerScreenspace_2Dpos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayerScreenspace in the Unity Editor. (position defined in 2D screenspace) (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayerScreenspace$name$()
+					{
+						bool boolValueToDisplay = $end$;
+						string boolName = null;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						float size_relToViewportHeight = 0.175f;
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						DrawEngineBasics.BoolDisplayerScreenspace(boolValueToDisplay, boolName, position_in2DViewportSpace, size_relToViewportHeight, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayerScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoolDisplayerScreenspace_2Dpos_cam_func</Title>
+			<Shortcut>drawBoolDisplayerScreenspace_2Dpos_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a BoolDisplayerScreenspace in the Unity Editor. (position defined in 2D screenspace) (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawBoolDisplayerScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						bool boolValueToDisplay = ;
+						string boolName = null;
+						Vector2 position_in2DViewportSpace = default(Vector2);
+						float size_relToViewportHeight = 0.175f;
+						Color color_forTextAndFrame = default(Color);
+						Color overwriteColor_forTrue = default(Color);
+						Color overwriteColor_forFalse = default(Color);
+						float durationInSec = 0.0f;
+						DrawEngineBasics.BoolDisplayerScreenspace(screenCamera, boolValueToDisplay, boolName, position_in2DViewportSpace, size_relToViewportHeight, color_forTextAndFrame, overwriteColor_forTrue, overwriteColor_forFalse, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoolDisplayerScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtended_ray_func</Title>
+			<Shortcut>drawRayLineExtended_ray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtended in the Unity Editor. (defined by ray)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtended$name$()
+					{
+						Ray ray = $end$;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float forceFixedConeLength = 0.0f;
+						bool addNormalizedMarkingText = true;
+						float enlargeSmallTextToThisMinTextSize = 0.005f;
+						float extentionLength = 1000.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.RayLineExtended(ray, color, width, text, forceFixedConeLength, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, extentionLength, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtended</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtended_vec_func</Title>
+			<Shortcut>drawRayLineExtended_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtended in the Unity Editor. (defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtended$name$()
+					{
+						Vector3 rayOrigin = $end$;
+						Vector3 rayDirection = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float forceFixedConeLength = 0.0f;
+						bool addNormalizedMarkingText = true;
+						float enlargeSmallTextToThisMinTextSize = 0.005f;
+						float extentionLength = 1000.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.RayLineExtended(rayOrigin, rayDirection, color, width, text, forceFixedConeLength, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, extentionLength, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtended</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtended2D_ray_func</Title>
+			<Shortcut>drawRayLineExtended2D_ray_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtended2D in the Unity Editor. (defined by ray)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtended2D$name$()
+					{
+						Ray2D ray = $end$;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float custom_zPos = float.PositiveInfinity;
+						float forceFixedConeLength = 0.0f;
+						bool addNormalizedMarkingText = true;
+						float enlargeSmallTextToThisMinTextSize = 0.005f;
+						float extentionLength = 1000.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.RayLineExtended2D(ray, color, width, text, custom_zPos, forceFixedConeLength, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, extentionLength, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtended2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtended2D_vec_func</Title>
+			<Shortcut>drawRayLineExtended2D_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtended2D in the Unity Editor. (defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtended2D$name$()
+					{
+						Vector2 rayOrigin = $end$;
+						Vector2 rayDirection = ;
+						Color color = default(Color);
+						float width = 0.0f;
+						string text = null;
+						float custom_zPos = float.PositiveInfinity;
+						float forceFixedConeLength = 0.0f;
+						bool addNormalizedMarkingText = true;
+						float enlargeSmallTextToThisMinTextSize = 0.005f;
+						float extentionLength = 1000.0f;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.RayLineExtended2D(rayOrigin, rayDirection, color, width, text, custom_zPos, forceFixedConeLength, addNormalizedMarkingText, enlargeSmallTextToThisMinTextSize, extentionLength, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtended2D</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtendedScreenspace_func</Title>
+			<Shortcut>drawRayLineExtendedScreenspace_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtendedScreenspace in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtendedScreenspace$name$()
+					{
+						Vector2 rayOrigin = $end$;
+						Vector2 rayDirection = ;
+						Color color = default(Color);
+						float width_relToViewportHeight = 0.0f;
+						string text = null;
+						bool interpretDirectionAsUnwarped = false;
+						float coneLength_relToViewportHeight = 0.05f;
+						bool displayDistanceOutsideScreenBorder = true;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.RayLineExtendedScreenspace(rayOrigin, rayDirection, color, width_relToViewportHeight, text, interpretDirectionAsUnwarped, coneLength_relToViewportHeight, displayDistanceOutsideScreenBorder, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtendedScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRayLineExtendedScreenspace_cam_func</Title>
+			<Shortcut>drawRayLineExtendedScreenspace_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a RayLineExtendedScreenspace in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawRayLineExtendedScreenspace$name$()
+					{
+						Camera screenCamera = $end$;
+						Vector2 rayOrigin = ;
+						Vector2 rayDirection = ;
+						Color color = default(Color);
+						float width_relToViewportHeight = 0.0f;
+						string text = null;
+						bool interpretDirectionAsUnwarped = false;
+						float coneLength_relToViewportHeight = 0.05f;
+						bool displayDistanceOutsideScreenBorder = true;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.RayLineExtendedScreenspace(screenCamera, rayOrigin, rayDirection, color, width_relToViewportHeight, text, interpretDirectionAsUnwarped, coneLength_relToViewportHeight, displayDistanceOutsideScreenBorder, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RayLineExtendedScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCoordinateAxesGizmo_func</Title>
+			<Shortcut>drawCoordinateAxesGizmo_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CoordinateAxesGizmo in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCoordinateAxesGizmo$name$()
+					{
+						Vector3 position = $end$;
+						float lengthPerAxis = 1.0f;
+						float linesWidth = 0.025f;
+						string text = null;
+						bool drawXYZchars = true;
+						bool skipConeDrawing = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CoordinateAxesGizmo(position, lengthPerAxis, linesWidth, text, drawXYZchars, skipConeDrawing, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CoordinateAxesGizmo</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCoordinateAxesGizmoLocal_go_func</Title>
+			<Shortcut>drawCoordinateAxesGizmoLocal_go_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CoordinateAxesGizmoLocal in the Unity Editor. (local space is defined by gameobject as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCoordinateAxesGizmoLocal$name$()
+					{
+						GameObject gameObject_whoseLocalSpaceIsDisplayed = $end$;
+						float forceAllAxesLength = 0.0f;
+						float lineWidth_inGlobalUnits = 0.025f;
+						string text = null;
+						bool drawXYZchars = true;
+						bool skipConeDrawing = false;
+						bool skipWarningForNonUniformParentScale = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CoordinateAxesGizmoLocal(gameObject_whoseLocalSpaceIsDisplayed, forceAllAxesLength, lineWidth_inGlobalUnits, text, drawXYZchars, skipConeDrawing, skipWarningForNonUniformParentScale, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CoordinateAxesGizmoLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCoordinateAxesGizmoLocal_tr_func</Title>
+			<Shortcut>drawCoordinateAxesGizmoLocal_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CoordinateAxesGizmoLocal in the Unity Editor. (local space is defined by transform as parent)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCoordinateAxesGizmoLocal$name$()
+					{
+						Transform transform_whoseLocalSpaceIsDisplayed = $end$;
+						float forceAllAxesLength = 0.0f;
+						float lineWidth_inGlobalUnits = 0.025f;
+						string text = null;
+						bool drawXYZchars = true;
+						bool skipConeDrawing = false;
+						bool skipWarningForNonUniformParentScale = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CoordinateAxesGizmoLocal(transform_whoseLocalSpaceIsDisplayed, forceAllAxesLength, lineWidth_inGlobalUnits, text, drawXYZchars, skipConeDrawing, skipWarningForNonUniformParentScale, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CoordinateAxesGizmoLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCoordinateAxesGizmoLocal_vecQuat_func</Title>
+			<Shortcut>drawCoordinateAxesGizmoLocal_vecQuat_func</Shortcut>
+			<Description>Encapsulated in a function: Draw a CoordinateAxesGizmoLocal in the Unity Editor. (local space is defined via vectors and quaternion)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawCoordinateAxesGizmoLocal$name$()
+					{
+						Vector3 position_OfLocalCoordinateSystem = $end$;
+						Quaternion rotation_OfLocalCoordinateSystem = ;
+						Vector3 scale_OfLocalCoordinateSystem = default(Vector3);
+						float forceAllAxesLength = 0.0f;
+						float lineWidth_inGlobalUnits = 0.025f;
+						string text = null;
+						bool drawXYZchars = true;
+						bool skipConeDrawing = false;
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.CoordinateAxesGizmoLocal(position_OfLocalCoordinateSystem, rotation_OfLocalCoordinateSystem, scale_OfLocalCoordinateSystem, forceAllAxesLength, lineWidth_inGlobalUnits, text, drawXYZchars, skipConeDrawing, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CoordinateAxesGizmoLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanes_tr_func</Title>
+			<Shortcut>drawGridPlanes_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanes in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanes$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanes(transformAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanes_vec_func</Title>
+			<Shortcut>drawGridPlanes_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanes in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanes$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanes(positionAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanes_tr_func</Title>
+			<Shortcut>drawXGridPlanes_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanes in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanes$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanes(transformAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanes_vec_func</Title>
+			<Shortcut>drawXGridPlanes_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanes in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanes$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanes(positionAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanes_tr_func</Title>
+			<Shortcut>drawYGridPlanes_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanes in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanes$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanes(transformAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanes_vec_func</Title>
+			<Shortcut>drawYGridPlanes_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanes in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanes$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanes(positionAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanes_tr_func</Title>
+			<Shortcut>drawZGridPlanes_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanes in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanes$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanes(transformAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanes_vec_func</Title>
+			<Shortcut>drawZGridPlanes_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanes in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanes$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float extentOfEachGridPlane_rel = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanes(positionAroundWhichToDraw, extentOfEachGridPlane_rel, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanes</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawGridPlanesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanesLocal(childTransformAroundWhichToDrawGridOfParent, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawGridPlanesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawXGridPlanesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanesLocal(childTransformAroundWhichToDrawGridOfParent, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawXGridPlanesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawYGridPlanesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanesLocal(childTransformAroundWhichToDrawGridOfParent, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawYGridPlanesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawZGridPlanesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanesLocal(childTransformAroundWhichToDrawGridOfParent, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawZGridPlanesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawGridPlanesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridPlanesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawGridPlanesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawXGridPlanesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridPlanesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawXGridPlanesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawYGridPlanesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridPlanesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawYGridPlanesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawZGridPlanesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridPlanesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawZGridPlanesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridPlanesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridPlanesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float extentOfEachGridPlane_rel_inLocalSpaceUnits = 10.0f;
+						float drawDensity = 1.0f;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = false;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridPlanesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, extentOfEachGridPlane_rel_inLocalSpaceUnits, drawDensity, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridPlanesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLines_tr_func</Title>
+			<Shortcut>drawGridLines_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLines in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLines$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLines(transformAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLines_vec_func</Title>
+			<Shortcut>drawGridLines_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLines in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLines$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLines(positionAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLines_tr_func</Title>
+			<Shortcut>drawXGridLines_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLines in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLines$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLines(transformAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLines_vec_func</Title>
+			<Shortcut>drawXGridLines_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLines in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLines$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLines(positionAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLines_tr_func</Title>
+			<Shortcut>drawYGridLines_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLines in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLines$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLines(transformAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLines_vec_func</Title>
+			<Shortcut>drawYGridLines_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLines in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLines$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLines(positionAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLines_tr_func</Title>
+			<Shortcut>drawZGridLines_tr_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLines in the Unity Editor. (around transform's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLines$name$()
+					{
+						Transform transformAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLines(transformAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLines_vec_func</Title>
+			<Shortcut>drawZGridLines_vec_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLines in the Unity Editor. (around vector's position)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLines$name$()
+					{
+						Vector3 positionAroundWhichToDraw = $end$;
+						float coveredGridUnits_rel = 10.0f;
+						float lengthOfEachGridLine_rel = 10.0f;
+						float linesWidth_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLines(positionAroundWhichToDraw, coveredGridUnits_rel, lengthOfEachGridLine_rel, linesWidth_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLines</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLinesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawGridLinesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLinesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLinesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLinesLocal(childTransformAroundWhichToDrawGridOfParent, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLinesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawGridLinesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLinesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLinesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLinesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLinesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawXGridLinesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLinesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLinesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLinesLocal(childTransformAroundWhichToDrawGridOfParent, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLinesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawXGridLinesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLinesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLinesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLinesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLinesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawYGridLinesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLinesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLinesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLinesLocal(childTransformAroundWhichToDrawGridOfParent, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLinesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawYGridLinesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLinesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLinesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLinesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLinesLocal_parentSpace_trPos_func</Title>
+			<Shortcut>drawZGridLinesLocal_parentSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLinesLocal in the Unity Editor. (local space from transfrom parent, position from transfrom itself)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLinesLocal$name$()
+					{
+						Transform childTransformAroundWhichToDrawGridOfParent = $end$;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLinesLocal(childTransformAroundWhichToDrawGridOfParent, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLinesLocal_trSpace_vecPos_func</Title>
+			<Shortcut>drawZGridLinesLocal_trSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLinesLocal in the Unity Editor. (local space from transfrom, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLinesLocal$name$()
+					{
+						Transform parentTransformThatDefinesTheLocalSpace = $end$;
+						Vector3 localPositionAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLinesLocal(parentTransformThatDefinesTheLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLinesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawGridLinesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridLinesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawGridLinesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation_ofXLines = DrawEngineBasics.XGridLinesOrientation.alongY;
+						DrawEngineBasics.YGridLinesOrientation orientation_ofYLines = DrawEngineBasics.YGridLinesOrientation.alongX;
+						DrawEngineBasics.ZGridLinesOrientation orientation_ofZLines = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColorForX = default(Color);
+						Color overwriteColorForY = default(Color);
+						Color overwriteColorForZ = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.GridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation_ofXLines, orientation_ofYLines, orientation_ofZLines, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColorForX, overwriteColorForY, overwriteColorForZ, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLinesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawXGridLinesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawXGridLinesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawXGridLinesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw XGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawXGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.XGridLinesOrientation orientation = DrawEngineBasics.XGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.XGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn XGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLinesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawYGridLinesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawYGridLinesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawYGridLinesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw YGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawYGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.YGridLinesOrientation orientation = DrawEngineBasics.YGridLinesOrientation.alongX;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.YGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn YGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLinesLocal_vecQuatSpace_trPos_func</Title>
+			<Shortcut>drawZGridLinesLocal_vecQuatSpace_trPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from transform)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Transform childTransformAroundWhichToDraw = ;
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, childTransformAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawZGridLinesLocal_vecQuatSpace_vecPos_func</Title>
+			<Shortcut>drawZGridLinesLocal_vecQuatSpace_vecPos_func</Shortcut>
+			<Description>Encapsulated in a function: Draw ZGridLinesLocal in the Unity Editor. (local space from vectors+quaternion, position from vector)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawZGridLinesLocal$name$()
+					{
+						Vector3 originOfLocalSpace = $end$;
+						Vector3 scaleOfLocalSpace = ;
+						Quaternion rotationOfLocalSpace = ;
+						Vector3 localPositionAroundWhichToDraw = default(Vector3);
+						float coveredGridUnits_rel_inLocalSpaceUnits = 10.0f;
+						float lengthOfEachGridLine_rel_inLocalSpaceUnits = 10.0f;
+						float linesWidth_inLocalSpaceUnits_signFlipsPerp = 0.0f;
+						DrawEngineBasics.ZGridLinesOrientation orientation = DrawEngineBasics.ZGridLinesOrientation.alongY;
+						bool draw1000grid = false;
+						bool draw100grid = false;
+						bool draw10grid = false;
+						bool draw1grid = true;
+						bool draw0p1grid = true;
+						bool draw0p01grid = false;
+						bool draw0p001grid = false;
+						float distanceBetweenRepeatingCoordsTexts_relToGridDistance = 20.0f;
+						Color overwriteColor = default(Color);
+						float durationInSec = 0.0f;
+						bool hiddenByNearerObjects = true;
+						DrawEngineBasics.ZGridLinesLocal(originOfLocalSpace, scaleOfLocalSpace, rotationOfLocalSpace, localPositionAroundWhichToDraw, coveredGridUnits_rel_inLocalSpaceUnits, lengthOfEachGridLine_rel_inLocalSpaceUnits, linesWidth_inLocalSpaceUnits_signFlipsPerp, orientation, draw1000grid, draw100grid, draw10grid, draw1grid, draw0p1grid, draw0p01grid, draw0p001grid, distanceBetweenRepeatingCoordsTexts_relToGridDistance, overwriteColor, durationInSec, hiddenByNearerObjects);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn ZGridLinesLocal</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridScreenspace_func</Title>
+			<Shortcut>drawGridScreenspace_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridScreenspace in the Unity Editor. (automatic detection of target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridScreenspace$name$()
+					{
+						Color color = default(Color);$end$
+						float linesWidth_relToViewportHeight = 0.0f;
+						bool drawTenthLines = true;
+						bool drawHundredthLines = true;
+						DrawEngineBasics.GridScreenspaceMode gridScreenspaceMode = DrawEngineBasics.GridScreenspaceMode.warpWidthAndHeightIndividuallyToFitScreenInBothAxes;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.GridScreenspace(color, linesWidth_relToViewportHeight, drawTenthLines, drawHundredthLines, gridScreenspaceMode, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGridScreenspace_cam_func</Title>
+			<Shortcut>drawGridScreenspace_cam_func</Shortcut>
+			<Description>Encapsulated in a function: Draw GridScreenspace in the Unity Editor. (explicitly defining the target camera)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					void DrawGridScreenspace$name$()
+					{
+						Camera camera = $end$;
+						Color color = default(Color);
+						float linesWidth_relToViewportHeight = 0.0f;
+						bool drawTenthLines = true;
+						bool drawHundredthLines = true;
+						DrawEngineBasics.GridScreenspaceMode gridScreenspaceMode = DrawEngineBasics.GridScreenspaceMode.warpWidthAndHeightIndividuallyToFitScreenInBothAxes;
+						float durationInSec = 0.0f;
+						DrawEngineBasics.GridScreenspace(camera, color, linesWidth_relToViewportHeight, drawTenthLines, drawHundredthLines, gridScreenspaceMode, durationInSec);
+					}
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GridScreenspace</ToolTip>
+					<Default>WithThisName</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

@@ -1,0 +1,1956 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCast2D</Title>
+			<Shortcut>drawBoxCast2D</Shortcut>
+			<Description>Draw a BoxCast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.AllLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.BoxCast(origin_of_$name$, size_of_$name$, angle_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCast</ToolTip>
+					<Default>boxCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCast2D_conFil_array</Title>
+			<Shortcut>drawBoxCast2D_conFil_array</Shortcut>
+			<Description>Draw a BoxCast in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.BoxCast(origin_of_$name$, size_of_$name$, angle_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCast</ToolTip>
+					<Default>boxCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCast2D_conFil_list</Title>
+			<Shortcut>drawBoxCast2D_conFil_list</Shortcut>
+			<Description>Draw a BoxCast in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<RaycastHit2D> results_of_$name$ = ;
+					float distance_of_$name$ = float.PositiveInfinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.BoxCast(origin_of_$name$, size_of_$name$, angle_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCast</ToolTip>
+					<Default>boxCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCastAll2D</Title>
+			<Shortcut>drawBoxCastAll2D</Shortcut>
+			<Description>Draw a BoxCastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.BoxCastAll(origin_of_$name$, size_of_$name$, angle_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCastAll</ToolTip>
+					<Default>boxCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCastNonAlloc2D</Title>
+			<Shortcut>drawBoxCastNonAlloc2D</Shortcut>
+			<Description>Draw a BoxCastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.BoxCastNonAlloc(origin_of_$name$, size_of_$name$, angle_of_$name$, direction_of_$name$, results_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCastNonAlloc</ToolTip>
+					<Default>boxCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCast2D</Title>
+			<Shortcut>drawCapsuleCast2D</Shortcut>
+			<Description>Draw a CapsuleCast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D capsuleDirection_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CapsuleCast(origin_of_$name$, size_of_$name$, capsuleDirection_of_$name$, angle_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCast</ToolTip>
+					<Default>capsuleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCast2D_conFil_array</Title>
+			<Shortcut>drawCapsuleCast2D_conFil_array</Shortcut>
+			<Description>Draw a CapsuleCast in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D capsuleDirection_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CapsuleCast(origin_of_$name$, size_of_$name$, capsuleDirection_of_$name$, angle_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCast</ToolTip>
+					<Default>capsuleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCast2D_conFil_list</Title>
+			<Shortcut>drawCapsuleCast2D_conFil_list</Shortcut>
+			<Description>Draw a CapsuleCast in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D capsuleDirection_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<RaycastHit2D> results_of_$name$ = ;
+					float distance_of_$name$ = float.PositiveInfinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CapsuleCast(origin_of_$name$, size_of_$name$, capsuleDirection_of_$name$, angle_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCast</ToolTip>
+					<Default>capsuleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCastAll2D</Title>
+			<Shortcut>drawCapsuleCastAll2D</Shortcut>
+			<Description>Draw a CapsuleCastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D capsuleDirection_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CapsuleCastAll(origin_of_$name$, size_of_$name$, capsuleDirection_of_$name$, angle_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCastAll</ToolTip>
+					<Default>capsuleCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCastNonAlloc2D</Title>
+			<Shortcut>drawCapsuleCastNonAlloc2D</Shortcut>
+			<Description>Draw a CapsuleCastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D capsuleDirection_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CapsuleCastNonAlloc(origin_of_$name$, size_of_$name$, capsuleDirection_of_$name$, angle_of_$name$, direction_of_$name$, results_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCastNonAlloc</ToolTip>
+					<Default>capsuleCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleCast2D</Title>
+			<Shortcut>drawCircleCast2D</Shortcut>
+			<Description>Draw a CircleCast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CircleCast(origin_of_$name$, radius_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleCast</ToolTip>
+					<Default>circleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleCast2D_conFil_array</Title>
+			<Shortcut>drawCircleCast2D_conFil_array</Shortcut>
+			<Description>Draw a CircleCast in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CircleCast(origin_of_$name$, radius_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleCast</ToolTip>
+					<Default>circleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleCast2D_conFil_list</Title>
+			<Shortcut>drawCircleCast2D_conFil_list</Shortcut>
+			<Description>Draw a CircleCast in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<RaycastHit2D> results_of_$name$ = ;
+					float distance_of_$name$ = float.PositiveInfinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CircleCast(origin_of_$name$, radius_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleCast</ToolTip>
+					<Default>circleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleCastAll2D</Title>
+			<Shortcut>drawCircleCastAll2D</Shortcut>
+			<Description>Draw a CircleCastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CircleCastAll(origin_of_$name$, radius_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleCastAll</ToolTip>
+					<Default>circleCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCircleCastNonAlloc2D</Title>
+			<Shortcut>drawCircleCastNonAlloc2D</Shortcut>
+			<Description>Draw a CircleCastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector2 direction_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.CircleCastNonAlloc(origin_of_$name$, radius_of_$name$, direction_of_$name$, results_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CircleCastNonAlloc</ToolTip>
+					<Default>circleCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGetRayIntersection2D</Title>
+			<Shortcut>drawGetRayIntersection2D</Shortcut>
+			<Description>Draw GetRayIntersection in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.GetRayIntersection(ray_of_$name$, distance_of_$name$, layerMask_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GetRayIntersection</ToolTip>
+					<Default>getRayIntersection</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGetRayIntersectionAll2D</Title>
+			<Shortcut>drawGetRayIntersectionAll2D</Shortcut>
+			<Description>Draw GetRayIntersectionAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.GetRayIntersectionAll(ray_of_$name$, distance_of_$name$, layerMask_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GetRayIntersectionAll</ToolTip>
+					<Default>getRayIntersectionAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawGetRayIntersectionNonAlloc2D</Title>
+			<Shortcut>drawGetRayIntersectionNonAlloc2D</Shortcut>
+			<Description>Draw GetRayIntersectionNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.GetRayIntersectionNonAlloc(ray_of_$name$, results_of_$name$, distance_of_$name$, layerMask_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn GetRayIntersectionNonAlloc</ToolTip>
+					<Default>getRayIntersectionNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecast2D</Title>
+			<Shortcut>drawLinecast2D</Shortcut>
+			<Description>Draw a Linecast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Linecast(start_of_$name$, end_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Linecast</ToolTip>
+					<Default>linecast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecast2D_conFil_array</Title>
+			<Shortcut>drawLinecast2D_conFil_array</Shortcut>
+			<Description>Draw a Linecast in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Linecast(start_of_$name$, end_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Linecast</ToolTip>
+					<Default>linecast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecast2D_conFil_list</Title>
+			<Shortcut>drawLinecast2D_conFil_list</Shortcut>
+			<Description>Draw a Linecast in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<RaycastHit2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Linecast(start_of_$name$, end_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Linecast</ToolTip>
+					<Default>linecast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecastAll2D</Title>
+			<Shortcut>drawLinecastAll2D</Shortcut>
+			<Description>Draw a LinecastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.LinecastAll(start_of_$name$, end_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LinecastAll</ToolTip>
+					<Default>linecastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecastNonAlloc2D</Title>
+			<Shortcut>drawLinecastNonAlloc2D</Shortcut>
+			<Description>Draw a LinecastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 start_of_$name$ = $end$;
+					Vector2 end_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.LinecastNonAlloc(start_of_$name$, end_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn LinecastNonAlloc</ToolTip>
+					<Default>linecastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast2D</Title>
+			<Shortcut>drawRaycast2D</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Raycast(origin_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast2D_conFil_array</Title>
+			<Shortcut>drawRaycast2D_conFil_array</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Raycast(origin_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast2D_conFil_list</Title>
+			<Shortcut>drawRaycast2D_conFil_list</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<RaycastHit2D> results_of_$name$ = ;
+					float distance_of_$name$ = float.PositiveInfinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.Raycast(origin_of_$name$, direction_of_$name$, contactFilter_of_$name$, results_of_$name$, distance_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastAll2D</Title>
+			<Shortcut>drawRaycastAll2D</Shortcut>
+			<Description>Draw a RaycastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.RaycastAll(origin_of_$name$, direction_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastAll</ToolTip>
+					<Default>raycastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastNonAlloc2D</Title>
+			<Shortcut>drawRaycastNonAlloc2D</Shortcut>
+			<Description>Draw a RaycastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 origin_of_$name$ = $end$;
+					Vector2 direction_of_$name$ = ;
+					RaycastHit2D[] results_of_$name$ = ;
+					float distance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.RaycastNonAlloc(origin_of_$name$, direction_of_$name$, results_of_$name$, distance_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastNonAlloc</ToolTip>
+					<Default>raycastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapArea2D</Title>
+			<Shortcut>drawOverlapArea2D</Shortcut>
+			<Description>Draw OverlapArea in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 pointA_of_$name$ = $end$;
+					Vector2 pointB_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapArea(pointA_of_$name$, pointB_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapArea</ToolTip>
+					<Default>overlapArea</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapArea2D_conFil_array</Title>
+			<Shortcut>drawOverlapArea2D_conFil_array</Shortcut>
+			<Description>Draw OverlapArea in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 pointA_of_$name$ = $end$;
+					Vector2 pointB_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapArea(pointA_of_$name$, pointB_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapArea</ToolTip>
+					<Default>overlapArea</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapArea2D_conFil_list</Title>
+			<Shortcut>drawOverlapArea2D_conFil_list</Shortcut>
+			<Description>Draw OverlapArea in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 pointA_of_$name$ = $end$;
+					Vector2 pointB_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<Collider2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapArea(pointA_of_$name$, pointB_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapArea</ToolTip>
+					<Default>overlapArea</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapAreaAll2D</Title>
+			<Shortcut>drawOverlapAreaAll2D</Shortcut>
+			<Description>Draw OverlapAreaAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 pointA_of_$name$ = $end$;
+					Vector2 pointB_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapAreaAll(pointA_of_$name$, pointB_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapAreaAll</ToolTip>
+					<Default>overlapAreaAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapAreaNonAlloc2D</Title>
+			<Shortcut>drawOverlapAreaNonAlloc2D</Shortcut>
+			<Description>Draw OverlapAreaNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 pointA_of_$name$ = $end$;
+					Vector2 pointB_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapAreaNonAlloc(pointA_of_$name$, pointB_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapAreaNonAlloc</ToolTip>
+					<Default>overlapAreaNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBox2D</Title>
+			<Shortcut>drawOverlapBox2D</Shortcut>
+			<Description>Draw OverlapBox in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapBox(point_of_$name$, size_of_$name$, angle_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBox</ToolTip>
+					<Default>overlapBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBox2D_conFil_array</Title>
+			<Shortcut>drawOverlapBox2D_conFil_array</Shortcut>
+			<Description>Draw OverlapBox in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapBox(point_of_$name$, size_of_$name$, angle_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBox</ToolTip>
+					<Default>overlapBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBox2D_conFil_list</Title>
+			<Shortcut>drawOverlapBox2D_conFil_list</Shortcut>
+			<Description>Draw OverlapBox in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<Collider2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapBox(point_of_$name$, size_of_$name$, angle_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBox</ToolTip>
+					<Default>overlapBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBoxAll2D</Title>
+			<Shortcut>drawOverlapBoxAll2D</Shortcut>
+			<Description>Draw OverlapBoxAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapBoxAll(point_of_$name$, size_of_$name$, angle_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBoxAll</ToolTip>
+					<Default>overlapBoxAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBoxNonAlloc2D</Title>
+			<Shortcut>drawOverlapBoxNonAlloc2D</Shortcut>
+			<Description>Draw OverlapBoxNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapBoxNonAlloc(point_of_$name$, size_of_$name$, angle_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBoxNonAlloc</ToolTip>
+					<Default>overlapBoxNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsule2D</Title>
+			<Shortcut>drawOverlapCapsule2D</Shortcut>
+			<Description>Draw OverlapCapsule in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D direction_of_$name$ = ;
+					float angle_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCapsule(point_of_$name$, size_of_$name$, direction_of_$name$, angle_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsule</ToolTip>
+					<Default>overlapCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsule2D_conFil_array</Title>
+			<Shortcut>drawOverlapCapsule2D_conFil_array</Shortcut>
+			<Description>Draw OverlapCapsule in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D direction_of_$name$ = ;
+					float angle_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCapsule(point_of_$name$, size_of_$name$, direction_of_$name$, angle_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsule</ToolTip>
+					<Default>overlapCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsule2D_conFil_list</Title>
+			<Shortcut>drawOverlapCapsule2D_conFil_list</Shortcut>
+			<Description>Draw OverlapCapsule in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D direction_of_$name$ = ;
+					float angle_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<Collider2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCapsule(point_of_$name$, size_of_$name$, direction_of_$name$, angle_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsule</ToolTip>
+					<Default>overlapCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsuleAll2D</Title>
+			<Shortcut>drawOverlapCapsuleAll2D</Shortcut>
+			<Description>Draw OverlapCapsuleAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D direction_of_$name$ = ;
+					float angle_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCapsuleAll(point_of_$name$, size_of_$name$, direction_of_$name$, angle_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsuleAll</ToolTip>
+					<Default>overlapCapsuleAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsuleNonAlloc2D</Title>
+			<Shortcut>drawOverlapCapsuleNonAlloc2D</Shortcut>
+			<Description>Draw OverlapCapsuleNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Vector2 size_of_$name$ = ;
+					CapsuleDirection2D direction_of_$name$ = ;
+					float angle_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCapsuleNonAlloc(point_of_$name$, size_of_$name$, direction_of_$name$, angle_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsuleNonAlloc</ToolTip>
+					<Default>overlapCapsuleNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCircle2D</Title>
+			<Shortcut>drawOverlapCircle2D</Shortcut>
+			<Description>Draw OverlapCircle in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCircle(point_of_$name$, radius_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCircle</ToolTip>
+					<Default>overlapCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCircle2D_conFil_array</Title>
+			<Shortcut>drawOverlapCircle2D_conFil_array</Shortcut>
+			<Description>Draw OverlapCircle in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCircle(point_of_$name$, radius_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCircle</ToolTip>
+					<Default>overlapCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCircle2D_conFil_list</Title>
+			<Shortcut>drawOverlapCircle2D_conFil_list</Shortcut>
+			<Description>Draw OverlapCircle in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<Collider2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCircle(point_of_$name$, radius_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCircle</ToolTip>
+					<Default>overlapCircle</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCircleAll2D</Title>
+			<Shortcut>drawOverlapCircleAll2D</Shortcut>
+			<Description>Draw OverlapCircleAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCircleAll(point_of_$name$, radius_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCircleAll</ToolTip>
+					<Default>overlapCircleAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCircleNonAlloc2D</Title>
+			<Shortcut>drawOverlapCircleNonAlloc2D</Shortcut>
+			<Description>Draw OverlapCircleNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapCircleNonAlloc(point_of_$name$, radius_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCircleNonAlloc</ToolTip>
+					<Default>overlapCircleNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapPoint2D</Title>
+			<Shortcut>drawOverlapPoint2D</Shortcut>
+			<Description>Draw OverlapPoint in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapPoint(point_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapPoint</ToolTip>
+					<Default>overlapPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapPoint2D_conFil_array</Title>
+			<Shortcut>drawOverlapPoint2D_conFil_array</Shortcut>
+			<Description>Draw OverlapPoint in the Unity Editor. (specified via ContactFilter2D) (hit results via array)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					Collider2D[] results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapPoint(point_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapPoint</ToolTip>
+					<Default>overlapPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapPoint2D_conFil_list</Title>
+			<Shortcut>drawOverlapPoint2D_conFil_list</Shortcut>
+			<Description>Draw OverlapPoint in the Unity Editor. (specified via ContactFilter2D) (hit results via list)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					ContactFilter2D contactFilter_of_$name$ = ;
+					List<Collider2D> results_of_$name$ = ;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapPoint(point_of_$name$, contactFilter_of_$name$, results_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapPoint</ToolTip>
+					<Default>overlapPoint</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapPointAll2D</Title>
+			<Shortcut>drawOverlapPointAll2D</Shortcut>
+			<Description>Draw OverlapPointAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapPointAll(point_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapPointAll</ToolTip>
+					<Default>overlapPointAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapPointNonAlloc2D</Title>
+			<Shortcut>drawOverlapPointNonAlloc2D</Shortcut>
+			<Description>Draw OverlapPointNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector2 point_of_$name$ = $end$;
+					Collider2D[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics2D.DefaultRaycastLayers;
+					float minDepth_of_$name$ = Mathf.NegativeInfinity;
+					float maxDepth_of_$name$ = Mathf.Infinity;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics2D.OverlapPointNonAlloc(point_of_$name$, results_of_$name$, layerMask_of_$name$, minDepth_of_$name$, maxDepth_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapPointNonAlloc</ToolTip>
+					<Default>overlapPointNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>

@@ -1,0 +1,1290 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCast</Title>
+			<Shortcut>drawBoxCast</Shortcut>
+			<Description>Draw a BoxCast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.BoxCast(center_of_$name$, halfExtents_of_$name$, direction_of_$name$, orientation_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCast</ToolTip>
+					<Default>boxCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCast_outInfo</Title>
+			<Shortcut>drawBoxCast_outInfo</Shortcut>
+			<Description>Draw a BoxCast in the Unity Editor. (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.BoxCast(center_of_$name$, halfExtents_of_$name$, direction_of_$name$, out hitInfo_of_$name$, orientation_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCast</ToolTip>
+					<Default>boxCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCastAll</Title>
+			<Shortcut>drawBoxCastAll</Shortcut>
+			<Description>Draw a BoxCastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.BoxCastAll(center_of_$name$, halfExtents_of_$name$, direction_of_$name$, orientation_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCastAll</ToolTip>
+					<Default>boxCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawBoxCastNonAlloc</Title>
+			<Shortcut>drawBoxCastNonAlloc</Shortcut>
+			<Description>Draw a BoxCastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit[] results_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.BoxCastNonAlloc(center_of_$name$, halfExtents_of_$name$, direction_of_$name$, results_of_$name$, orientation_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn BoxCastNonAlloc</ToolTip>
+					<Default>boxCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCast_outInfo</Title>
+			<Shortcut>drawCapsuleCast_outInfo</Shortcut>
+			<Description>Draw a CapsuleCast in the Unity Editor. (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point1_of_$name$ = $end$;
+					Vector3 point2_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.CapsuleCast(point1_of_$name$, point2_of_$name$, radius_of_$name$, direction_of_$name$, out hitInfo_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCast</ToolTip>
+					<Default>capsuleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCast</Title>
+			<Shortcut>drawCapsuleCast</Shortcut>
+			<Description>Draw a CapsuleCast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point1_of_$name$ = $end$;
+					Vector3 point2_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.CapsuleCast(point1_of_$name$, point2_of_$name$, radius_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCast</ToolTip>
+					<Default>capsuleCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCastAll</Title>
+			<Shortcut>drawCapsuleCastAll</Shortcut>
+			<Description>Draw a CapsuleCastAll in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point1_of_$name$ = $end$;
+					Vector3 point2_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.CapsuleCastAll(point1_of_$name$, point2_of_$name$, radius_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCastAll</ToolTip>
+					<Default>capsuleCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCapsuleCastNonAlloc</Title>
+			<Shortcut>drawCapsuleCastNonAlloc</Shortcut>
+			<Description>Draw a CapsuleCastNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point1_of_$name$ = $end$;
+					Vector3 point2_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit[] results_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.CapsuleCastNonAlloc(point1_of_$name$, point2_of_$name$, radius_of_$name$, direction_of_$name$, results_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CapsuleCastNonAlloc</ToolTip>
+					<Default>capsuleCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecast_outInfo</Title>
+			<Shortcut>drawLinecast_outInfo</Shortcut>
+			<Description>Draw a Linecast in the Unity Editor. (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 start_of_$name$ = $end$;
+					Vector3 end_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Linecast(start_of_$name$, end_of_$name$, out hitInfo_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Linecast</ToolTip>
+					<Default>linecast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawLinecast</Title>
+			<Shortcut>drawLinecast</Shortcut>
+			<Description>Draw a Linecast in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 start_of_$name$ = $end$;
+					Vector3 end_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Linecast(start_of_$name$, end_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Linecast</ToolTip>
+					<Default>linecast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast_ray_outInfo</Title>
+			<Shortcut>drawRaycast_ray_outInfo</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (direction defined by ray struct) (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					RaycastHit hitInfo_of_$name$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Raycast(ray_of_$name$, out hitInfo_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast_ray</Title>
+			<Shortcut>drawRaycast_ray</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Raycast(ray_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast_vec_outInfo</Title>
+			<Shortcut>drawRaycast_vec_outInfo</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (direction defined by vectors) (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Raycast(origin_of_$name$, direction_of_$name$, out hitInfo_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycast_vec</Title>
+			<Shortcut>drawRaycast_vec</Shortcut>
+			<Description>Draw a Raycast in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.Raycast(origin_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn Raycast</ToolTip>
+					<Default>raycast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastAll_vec</Title>
+			<Shortcut>drawRaycastAll_vec</Shortcut>
+			<Description>Draw a RaycastAll in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.RaycastAll(origin_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastAll</ToolTip>
+					<Default>raycastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastAll_ray</Title>
+			<Shortcut>drawRaycastAll_ray</Shortcut>
+			<Description>Draw a RaycastAll in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.RaycastAll(ray_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastAll</ToolTip>
+					<Default>raycastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastNonAlloc_ray</Title>
+			<Shortcut>drawRaycastNonAlloc_ray</Shortcut>
+			<Description>Draw a RaycastNonAlloc in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					RaycastHit[] results_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.RaycastNonAlloc(ray_of_$name$, results_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastNonAlloc</ToolTip>
+					<Default>raycastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawRaycastNonAlloc_vec</Title>
+			<Shortcut>drawRaycastNonAlloc_vec</Shortcut>
+			<Description>Draw a RaycastNonAlloc in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit[] results_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.RaycastNonAlloc(origin_of_$name$, direction_of_$name$, results_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn RaycastNonAlloc</ToolTip>
+					<Default>raycastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCast_ray</Title>
+			<Shortcut>drawSphereCast_ray</Shortcut>
+			<Description>Draw a SphereCast in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCast(ray_of_$name$, radius_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCast</ToolTip>
+					<Default>sphereCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCast_ray_outInfo</Title>
+			<Shortcut>drawSphereCast_ray_outInfo</Shortcut>
+			<Description>Draw a SphereCast in the Unity Editor. (direction defined by ray struct) (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCast(ray_of_$name$, radius_of_$name$, out hitInfo_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCast</ToolTip>
+					<Default>sphereCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCast_vec</Title>
+			<Shortcut>drawSphereCast_vec</Shortcut>
+			<Description>Draw a SphereCast in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCast(origin_of_$name$, radius_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCast</ToolTip>
+					<Default>sphereCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCast_vec_outInfo</Title>
+			<Shortcut>drawSphereCast_vec_outInfo</Shortcut>
+			<Description>Draw a SphereCast in the Unity Editor. (direction defined by vectors) (with 'out' paramter that supplies 'RaycastHit hitInfo')</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit hitInfo_of_$name$;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCast(origin_of_$name$, radius_of_$name$, direction_of_$name$, out hitInfo_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCast</ToolTip>
+					<Default>sphereCast</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCastAll_ray</Title>
+			<Shortcut>drawSphereCastAll_ray</Shortcut>
+			<Description>Draw a SphereCastAll in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCastAll(ray_of_$name$, radius_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCastAll</ToolTip>
+					<Default>sphereCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCastAll_vec</Title>
+			<Shortcut>drawSphereCastAll_vec</Shortcut>
+			<Description>Draw a SphereCastAll in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCastAll(origin_of_$name$, radius_of_$name$, direction_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCastAll</ToolTip>
+					<Default>sphereCastAll</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCastNonAlloc_ray</Title>
+			<Shortcut>drawSphereCastNonAlloc_ray</Shortcut>
+			<Description>Draw a SphereCastNonAlloc in the Unity Editor. (direction defined by ray struct)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Ray ray_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					RaycastHit[] results_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCastNonAlloc(ray_of_$name$, radius_of_$name$, results_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCastNonAlloc</ToolTip>
+					<Default>sphereCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawSphereCastNonAlloc_vec</Title>
+			<Shortcut>drawSphereCastNonAlloc_vec</Shortcut>
+			<Description>Draw a SphereCastNonAlloc in the Unity Editor. (direction defined by vectors)</Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 origin_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Vector3 direction_of_$name$ = ;
+					RaycastHit[] results_of_$name$ = ;
+					float maxDistance_of_$name$ = Mathf.Infinity;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = true;
+					DrawPhysics.SphereCastNonAlloc(origin_of_$name$, radius_of_$name$, direction_of_$name$, results_of_$name$, maxDistance_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn SphereCastNonAlloc</ToolTip>
+					<Default>sphereCastNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCheckBox</Title>
+			<Shortcut>drawCheckBox</Shortcut>
+			<Description>Draw CheckBox in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.CheckBox(center_of_$name$, halfExtents_of_$name$, orientation_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CheckBox</ToolTip>
+					<Default>checkBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCheckCapsule</Title>
+			<Shortcut>drawCheckCapsule</Shortcut>
+			<Description>Draw CheckCapsule in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 start_of_$name$ = $end$;
+					Vector3 end_of_$name$ = ;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.CheckCapsule(start_of_$name$, end_of_$name$, radius_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CheckCapsule</ToolTip>
+					<Default>checkCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawCheckSphere</Title>
+			<Shortcut>drawCheckSphere</Shortcut>
+			<Description>Draw CheckSphere in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.DefaultRaycastLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.CheckSphere(position_of_$name$, radius_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn CheckSphere</ToolTip>
+					<Default>checkSphere</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBox</Title>
+			<Shortcut>drawOverlapBox</Shortcut>
+			<Description>Draw OverlapBox in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapBox(center_of_$name$, halfExtents_of_$name$, orientation_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBox</ToolTip>
+					<Default>overlapBox</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapBoxNonAlloc</Title>
+			<Shortcut>drawOverlapBoxNonAlloc</Shortcut>
+			<Description>Draw OverlapBoxNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 center_of_$name$ = $end$;
+					Vector3 halfExtents_of_$name$ = ;
+					Collider[] results_of_$name$ = ;
+					Quaternion orientation_of_$name$ = default(Quaternion);
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapBoxNonAlloc(center_of_$name$, halfExtents_of_$name$, results_of_$name$, orientation_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapBoxNonAlloc</ToolTip>
+					<Default>overlapBoxNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsule</Title>
+			<Shortcut>drawOverlapCapsule</Shortcut>
+			<Description>Draw OverlapCapsule in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point0_of_$name$ = $end$;
+					Vector3 point1_of_$name$ = ;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapCapsule(point0_of_$name$, point1_of_$name$, radius_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsule</ToolTip>
+					<Default>overlapCapsule</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapCapsuleNonAlloc</Title>
+			<Shortcut>drawOverlapCapsuleNonAlloc</Shortcut>
+			<Description>Draw OverlapCapsuleNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 point0_of_$name$ = $end$;
+					Vector3 point1_of_$name$ = ;
+					float radius_of_$name$ = ;
+					Collider[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapCapsuleNonAlloc(point0_of_$name$, point1_of_$name$, radius_of_$name$, results_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapCapsuleNonAlloc</ToolTip>
+					<Default>overlapCapsuleNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapSphere</Title>
+			<Shortcut>drawOverlapSphere</Shortcut>
+			<Description>Draw OverlapSphere in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapSphere(position_of_$name$, radius_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapSphere</ToolTip>
+					<Default>overlapSphere</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>drawOverlapSphereNonAlloc</Title>
+			<Shortcut>drawOverlapSphereNonAlloc</Shortcut>
+			<Description>Draw OverlapSphereNonAlloc in the Unity Editor. </Description>
+			<Author>Draw XXL</Author>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[
+					Vector3 position_of_$name$ = $end$;
+					float radius_of_$name$ = ;
+					Collider[] results_of_$name$ = ;
+					int layerMask_of_$name$ = Physics.AllLayers;
+					QueryTriggerInteraction queryTriggerInteraction_of_$name$ = QueryTriggerInteraction.UseGlobal;
+					string nameTag_of_$name$ = null;
+					float durationInSec_of_$name$ = 0.0f;
+					bool hiddenByNearerObjects_of_$name$ = false;
+					DrawPhysics.OverlapSphereNonAlloc(position_of_$name$, radius_of_$name$, results_of_$name$, layerMask_of_$name$, queryTriggerInteraction_of_$name$, nameTag_of_$name$, durationInSec_of_$name$, hiddenByNearerObjects_of_$name$);
+				]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>DrawXXL</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Name of drawn OverlapSphereNonAlloc</ToolTip>
+					<Default>overlapSphereNonAlloc</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+	
+	</CodeSnippets>
