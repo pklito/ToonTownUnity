@@ -63,7 +63,6 @@ public class ToonPlayer : MonoBehaviour
         }
 
         HandleCharacterInput();
-        DrawLogs.LogsAtGameObjectScreenspace(Character.gameObject);
     }
 
     private void LateUpdate()

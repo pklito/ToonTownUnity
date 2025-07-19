@@ -66,6 +66,13 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     private bool _shouldBeCrouching = false;
     private bool _isCrouching = false;
 
+    private Vector3 _currentVelocity;
+    private Quaternion _currentRotation;
+    //Optimizations
+    private int _animMoveXHash;
+    private int _animMoveZHash;
+
+
     private void Start()
     {
         // Assign to motor
@@ -73,6 +80,10 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
         // Handle initial state
         TransitionToState(CharacterState.Default);
+
+        // Set animation float hashes
+        _animMoveXHash = Animator.StringToHash("MoveX");
+        _animMoveZHash = Animator.StringToHash("MoveZ");
     }
 
     /// <summary>
@@ -188,6 +199,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     break;
                 }
         }
+        _currentRotation = currentRotation;
     }
 
     /// <summary>
@@ -231,7 +243,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
                             Vector3 velocityDiff = Vector3.ProjectOnPlane(targetMovementVelocity - currentVelocity, Gravity);
                             currentVelocity += velocityDiff * AirAccelerationSpeed * deltaTime;
-                        } 
+                        }
 
                         // Gravity
                         currentVelocity += Gravity * deltaTime;
@@ -277,6 +289,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     break;
                 }
         }
+        _currentVelocity = currentVelocity;
     }
 
     /// <summary>
@@ -285,6 +298,8 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     /// </summary>
     public void AfterCharacterUpdate(float deltaTime)
     {
+        _updateAnimation();
+
         switch (CurrentCharacterState)
         {
             case CharacterState.Default:
@@ -338,6 +353,16 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     break;
                 }
         }
+    }
+
+    private void _updateAnimation()
+    {
+        // Calculate velocity in local space (relative to current rotation)
+        Vector3 localVelocity = Quaternion.Inverse(_currentRotation) * _currentVelocity;
+        animator.SetFloat(_animMoveXHash, localVelocity.x);
+        animator.SetFloat(_animMoveZHash, localVelocity.z);
+        DrawBasics.PointTag(gameObject.transform.position, $"{localVelocity}");
+
     }
 
     public bool IsColliderValidForCollisions(Collider coll)
