@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using KinematicCharacterController;
 using System;
+using DrawXXL;
 
 public enum CharacterState
 {
@@ -20,7 +21,7 @@ public struct PlayerCharacterInputs
 public class ToonCharacterController : MonoBehaviour, ICharacterController
 {
     public KinematicCharacterMotor Motor;
-
+    public Animator animator;
     [Header("Stable Movement")]
     public float MaxStableMoveSpeed = 10f;
     public float StableMovementSharpness = 15;
@@ -38,8 +39,6 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
     [Header("Jumping")]
     public bool AllowJumpingWhenSliding = false;
-    public bool AllowDoubleJump = false;
-    public bool AllowWallJump = false;
     public float JumpSpeed = 10f;
     public float JumpPreGroundingGraceTime = 0f;
     public float JumpPostGroundingGraceTime = 0f;
@@ -60,10 +59,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     private Vector3 _lookInputVector;
     private bool _jumpRequested = false;
     private bool _jumpConsumed = false;
-    private bool _doubleJumpConsumed = false;
     private bool _jumpedThisFrame = false;
-    private bool _canWallJump = false;
-    private Vector3 _wallJumpNormal;
     private float _timeSinceJumpRequested = Mathf.Infinity;
     private float _timeSinceLastAbleToJump = 0f;
     private Vector3 _internalVelocityAdd = Vector3.zero;
@@ -243,39 +239,18 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                         // Drag
                         currentVelocity *= (1f / (1f + (Drag * deltaTime)));
                     }
-
                     // Handle jumping
                     {
                         _jumpedThisFrame = false;
                         _timeSinceJumpRequested += deltaTime;
                         if (_jumpRequested)
                         {
-                            // Handle double jump
-                            if (AllowDoubleJump)
-                            {
-                                if (_jumpConsumed && !_doubleJumpConsumed && (AllowJumpingWhenSliding ? !Motor.GroundingStatus.FoundAnyGround : !Motor.GroundingStatus.IsStableOnGround))
-                                {
-                                    Motor.ForceUnground(0.1f);
-
-                                    // Add to the return velocity and reset jump state
-                                    currentVelocity += (Motor.CharacterUp * JumpSpeed) - Vector3.Project(currentVelocity, Motor.CharacterUp);
-                                    _jumpRequested = false;
-                                    _doubleJumpConsumed = true;
-                                    _jumpedThisFrame = true;
-                                }
-                            }
-
                             // See if we actually are allowed to jump
-                            if (_canWallJump ||
-                                (!_jumpConsumed && ((AllowJumpingWhenSliding ? Motor.GroundingStatus.FoundAnyGround : Motor.GroundingStatus.IsStableOnGround) || _timeSinceLastAbleToJump <= JumpPostGroundingGraceTime)))
+                            if (!_jumpConsumed && ((AllowJumpingWhenSliding ? Motor.GroundingStatus.FoundAnyGround : Motor.GroundingStatus.IsStableOnGround) || _timeSinceLastAbleToJump <= JumpPostGroundingGraceTime))
                             {
                                 // Calculate jump direction before ungrounding
                                 Vector3 jumpDirection = Motor.CharacterUp;
-                                if (_canWallJump)
-                                {
-                                    jumpDirection = _wallJumpNormal;
-                                }
-                                else if (Motor.GroundingStatus.FoundAnyGround && !Motor.GroundingStatus.IsStableOnGround)
+                                if (Motor.GroundingStatus.FoundAnyGround && !Motor.GroundingStatus.IsStableOnGround)
                                 {
                                     jumpDirection = Motor.GroundingStatus.GroundNormal;
                                 }
@@ -291,9 +266,6 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                                 _jumpedThisFrame = true;
                             }
                         }
-
-                        // Reset wall jump
-                        _canWallJump = false;
                     }
 
                     // Take into account additive velocity
@@ -330,7 +302,6 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                             // If we're on a ground surface, reset jumping values
                             if (!_jumpedThisFrame)
                             {
-                                _doubleJumpConsumed = false;
                                 _jumpConsumed = false;
                             }
                             _timeSinceLastAbleToJump = 0f;
@@ -388,17 +359,12 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
         {
             case CharacterState.Default:
                 {
-                    // We can wall jump only if we are not stable on ground and are moving against an obstruction
-                    if (AllowWallJump && !Motor.GroundingStatus.IsStableOnGround && !hitStabilityReport.IsStable)
-                    {
-                        _canWallJump = true;
-                        _wallJumpNormal = hitNormal;
-                    }
                     break;
                 }
         }
     }
 
+    // To be called by other scripts, to add velocity to the player.
     public void AddVelocity(Vector3 velocity)
     {
         switch (CurrentCharacterState)

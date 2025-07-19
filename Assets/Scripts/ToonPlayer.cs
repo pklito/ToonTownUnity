@@ -2,6 +2,7 @@
 using UnityEngine;
 using KinematicCharacterController;
 using UnityEngine.InputSystem;
+using DrawXXL;
 
 public class ToonPlayer : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class ToonPlayer : MonoBehaviour
         }
 
         HandleCharacterInput();
+        DrawLogs.LogsAtGameObjectScreenspace(Character.gameObject);
     }
 
     private void LateUpdate()
