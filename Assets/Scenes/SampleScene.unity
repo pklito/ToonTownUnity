@@ -2143,8 +2143,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: turnHeadingRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: MaxStableMoveSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: OrientationSharpness
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
       propertyPath: AllowJumpingWhenSliding
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: StableMovementSharpness
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 296394406589772242, guid: df8928a554723004aa335c3cc00e629d, type: 3}
       propertyPath: JumpPreGroundingGraceTime
@@ -2157,6 +2173,14 @@ PrefabInstance:
     - target: {fileID: 456510727406075272, guid: df8928a554723004aa335c3cc00e629d, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 602004449388508067, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: CapsuleRadius
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 602004449388508067, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: MaxStableDistanceFromLedge
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 839438980648856542, guid: df8928a554723004aa335c3cc00e629d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2197,6 +2221,18 @@ PrefabInstance:
     - target: {fileID: 839438980648856542, guid: df8928a554723004aa335c3cc00e629d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757828363366602330, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: m_Radius
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349101260600231522, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349101260600231522, guid: df8928a554723004aa335c3cc00e629d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

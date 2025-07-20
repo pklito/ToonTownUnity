@@ -194,7 +194,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     if (OrientTowardsGravity)
                     {
                         // Rotate from current up to invert gravity
-                        currentRotation = Quaternion.FromToRotation((currentRotation * Vector3.up), -Gravity) * currentRotation;
+                        currentRotation =  Quaternion.LookRotation(_lookInputVector, Motor.CharacterUp);
                     }
                     break;
                 }
