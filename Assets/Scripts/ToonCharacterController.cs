@@ -30,7 +30,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     [Range(0f, 180f)]
     public float MaxStableDenivelationAngle = 180f;
     public float turnHeadingRate = 1f;
-    
+
 
     [Header("Air Movement")]
     public float MaxAirMoveSpeed = 10f;
@@ -42,6 +42,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     public float JumpSpeed = 10f;
     public float JumpPreGroundingGraceTime = 0f;
     public float JumpPostGroundingGraceTime = 0f;
+    public float JumpCooldown = 0.0f;
 
     [Header("Misc")]
     public List<Collider> IgnoredColliders = new List<Collider>();
@@ -52,7 +53,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
 
     public CharacterState CurrentCharacterState { get; private set; }
-    
+
     private Collider[] _probedColliders = new Collider[8];
     private Vector3 _moveInputVector;
     private Vector3 _moveHeading;
@@ -65,6 +66,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     private Vector3 _internalVelocityAdd = Vector3.zero;
     private bool _shouldBeCrouching = false;
     private bool _isCrouching = false;
+    private float _timeSinceLastJump = 0f;
 
     private Vector3 _currentVelocity;
     private Quaternion _currentRotation;
@@ -194,7 +196,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     if (OrientTowardsGravity)
                     {
                         // Rotate from current up to invert gravity
-                        currentRotation =  Quaternion.LookRotation(_lookInputVector, Motor.CharacterUp);
+                        currentRotation = Quaternion.LookRotation(_lookInputVector, Motor.CharacterUp);
                     }
                     break;
                 }
@@ -255,10 +257,17 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                     {
                         _jumpedThisFrame = false;
                         _timeSinceJumpRequested += deltaTime;
+                        _timeSinceLastJump += deltaTime;
                         if (_jumpRequested)
                         {
                             // See if we actually are allowed to jump
-                            if (!_jumpConsumed && ((AllowJumpingWhenSliding ? Motor.GroundingStatus.FoundAnyGround : Motor.GroundingStatus.IsStableOnGround) || _timeSinceLastAbleToJump <= JumpPostGroundingGraceTime))
+                            // Hasn't already jumped
+                            bool canActuallyJump = !_jumpConsumed;
+                            // Is or was recently on ground
+                            canActuallyJump &= ((AllowJumpingWhenSliding ? Motor.GroundingStatus.FoundAnyGround : Motor.GroundingStatus.IsStableOnGround) || _timeSinceLastAbleToJump <= JumpPostGroundingGraceTime);
+                            // Hasn't jumped too recently
+                            canActuallyJump &= _timeSinceLastJump > JumpCooldown;
+                            if (canActuallyJump)
                             {
                                 // Calculate jump direction before ungrounding
                                 Vector3 jumpDirection = Motor.CharacterUp;
@@ -276,6 +285,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
                                 _jumpRequested = false;
                                 _jumpConsumed = true;
                                 _jumpedThisFrame = true;
+                                _timeSinceLastJump = 0.0f;
                             }
                         }
                     }
@@ -358,10 +368,10 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     private void _updateAnimation()
     {
         // Calculate velocity in local space (relative to current rotation)
+        //TODO: change this to floor tangent speed
         Vector3 localVelocity = Quaternion.Inverse(_currentRotation) * _currentVelocity;
         animator.SetFloat(_animMoveXHash, localVelocity.x);
         animator.SetFloat(_animMoveZHash, localVelocity.z);
-        DrawBasics.PointTag(gameObject.transform.position, $"{localVelocity}");
 
     }
 
@@ -412,5 +422,10 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
     public void OnDiscreteCollisionDetected(Collider hitCollider)
     {
+    }
+
+    public void Update()
+    {
+        
     }
 }
