@@ -435,6 +435,6 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
     public void Update()
     {
-        
+        DrawBasics.PointTag(gameObject.transform.position, $"{_timeSinceLastAbleToJump}\n{JumpPostGroundingGraceTime}");
     }
 }
