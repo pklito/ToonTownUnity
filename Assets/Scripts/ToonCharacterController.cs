@@ -74,6 +74,10 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     private int _animMoveXHash;
     private int _animMoveZHash;
 
+    private int _animJumpHash;
+    private int _animInAirHash;
+
+
 
     private void Start()
     {
@@ -86,6 +90,8 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
         // Set animation float hashes
         _animMoveXHash = Animator.StringToHash("MoveX");
         _animMoveZHash = Animator.StringToHash("MoveZ");
+        _animInAirHash = Animator.StringToHash("InAir");
+        _animJumpHash = Animator.StringToHash("Jumped");
     }
 
     /// <summary>
@@ -372,6 +378,9 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
         Vector3 localVelocity = Quaternion.Inverse(_currentRotation) * _currentVelocity;
         animator.SetFloat(_animMoveXHash, localVelocity.x);
         animator.SetFloat(_animMoveZHash, localVelocity.z);
+        animator.SetBool(_animInAirHash, !Motor.GroundingStatus.FoundAnyGround);
+        animator.SetBool(_animJumpHash, _jumpedThisFrame);
+
 
     }
 
