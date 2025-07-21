@@ -379,7 +379,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
         animator.SetFloat(_animMoveXHash, localVelocity.x);
         animator.SetFloat(_animMoveZHash, localVelocity.z);
         animator.SetBool(_animInAirHash, !Motor.GroundingStatus.FoundAnyGround);
-        animator.SetBool(_animJumpHash, _jumpedThisFrame);
+        animator.SetBool(_animJumpHash, _jumpConsumed);
 
 
     }
