@@ -555,3 +555,4 @@ sysinfo.txt
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,rider,csharp,visualstudiocode
+Assets/KinematicCharacterController/APIReference/**/*
