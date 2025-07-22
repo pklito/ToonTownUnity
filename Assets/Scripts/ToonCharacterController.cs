@@ -4,6 +4,7 @@ using UnityEngine;
 using KinematicCharacterController;
 using System;
 using DrawXXL;
+using UnityEditor.Rendering.Universal;
 
 public enum CharacterState
 {
@@ -315,7 +316,12 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
     public void AfterCharacterUpdate(float deltaTime)
     {
         _updateAnimation();
-
+        // DrawLogs.ClearLogs();
+        for (int i = 0; i < Motor.OverlapsCount; i++) {
+            var overlap = Motor.Overlaps[i];
+            DrawLogs.Log(overlap.Collider.gameObject.transform.position, overlap.Collider.gameObject);
+            DrawBasics.VectorFrom(overlap.Collider.gameObject.transform.position, overlap.Normal, Color.magenta); 
+        }
         switch (CurrentCharacterState)
         {
             case CharacterState.Default:
@@ -431,6 +437,8 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
     public void OnDiscreteCollisionDetected(Collider hitCollider)
     {
+        // DrawLogs.Log("Collision", hitCollider.gameObject);
+        DrawLogs.LogsAtGameObject(hitCollider.gameObject);
     }
 
     public void Update()
