@@ -12,7 +12,8 @@ public class ToonPlayer : MonoBehaviour
         public InputAction
         move,
         look_around,
-        jump;
+        jump,
+        debug;
     }
     private InputReferences inputReferences;
     public ToonCharacterController Character;
@@ -26,7 +27,8 @@ public class ToonPlayer : MonoBehaviour
         {
             move = InputSystem.actions.FindAction("Player/Move"),
             look_around = InputSystem.actions.FindAction("Player/Look"),
-            jump = InputSystem.actions.FindAction("Player/jump")
+            jump = InputSystem.actions.FindAction("Player/jump"),
+            debug = InputSystem.actions.FindAction("Player/Interact")
         };
 
         //Sensitivity - find and modify the delta binding
@@ -109,6 +111,7 @@ public class ToonPlayer : MonoBehaviour
         characterInputs.MoveAxisRight = moveInput.x;
         characterInputs.CameraRotation = CharacterCamera.Transform.rotation;
         characterInputs.JumpDown = inputReferences.jump.ReadValue<float>() > 0.5;
+        characterInputs.DebugDown = inputReferences.debug.ReadValue<float>() > 0.5;
 
         // Apply inputs to character
         Character.SetInputs(ref characterInputs);

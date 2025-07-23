@@ -18,12 +18,14 @@ public struct PlayerCharacterInputs
     public float MoveAxisRight;
     public Quaternion CameraRotation;
     public bool JumpDown;
+    public bool DebugDown;
 }
 
 public class ToonCharacterController : MonoBehaviour, ICharacterController
 {
     public KinematicCharacterMotor Motor;
     public Animator animator;
+    public SquashControl squashScript;
     [Header("Stable Movement")]
     public float MaxStableMoveSpeed = 10f;
     public float StableMovementSharpness = 15;
@@ -168,6 +170,14 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
 
                     break;
                 }
+        }
+        if (inputs.DebugDown)
+        {
+            squashScript.startSquash(0.9F);
+        }
+        else
+        {
+            squashScript.startSquash(0);
         }
     }
 
