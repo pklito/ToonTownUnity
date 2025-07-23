@@ -9,6 +9,7 @@ using UnityEditor.Rendering.Universal;
 public enum CharacterState
 {
     Default,
+    Squashed
 }
 
 public struct PlayerCharacterInputs
@@ -319,7 +320,7 @@ public class ToonCharacterController : MonoBehaviour, ICharacterController
         // DrawLogs.ClearLogs();
         for (int i = 0; i < Motor.OverlapsCount; i++) {
             var overlap = Motor.Overlaps[i];
-            DrawLogs.Log(overlap.Collider.gameObject.transform.position, overlap.Collider.gameObject);
+            DrawLogs.Log(overlap.Normal, overlap.Collider.gameObject);
             DrawBasics.VectorFrom(overlap.Collider.gameObject.transform.position, overlap.Normal, Color.magenta); 
         }
         switch (CurrentCharacterState)
